@@ -1,0 +1,22 @@
+id: west-yorkshire-metro
+name: West Yorkshire Metro
+description: Bus and rail travel across West Yorkshire.
+icon_id: mcard
+operator: West Yorkshire Combined Authority (Metro)
+country_codes:
+  - GB
+website_url: https://www.wymetro.com/
+app_store_urls: []
+transport_modes:
+  - bus
+  - rail
+marker:
+  coordinates: [-1.5491, 53.8008]
+  label: West Yorkshire Metro
+source_url: https://www.wymetro.com/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is derived from NaPTAN ATCO area 450: every West
+  Yorkshire bus stop, bus station and rail station entrance. The icon reproduces
+  the MCard Mobile app icon (white tag with M on black).

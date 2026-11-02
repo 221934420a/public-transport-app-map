@@ -1,0 +1,45 @@
+id: tfl-payg
+app_id: tfl
+name: Pay as you go (contactless or Oyster)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: Zones 1-2 daily cap
+    amount: 8.90
+  - selection: Zones 1-3 daily cap
+    amount: 10.50
+  - selection: Zones 1-4 daily cap
+    amount: 12.80
+  - selection: Zones 1-5 daily cap
+    amount: 15.30
+  - selection: Zones 1-6 daily cap
+    amount: 16.30
+passenger_type: adult
+modes:
+  - bus
+  - tube
+  - rail
+  - dlr
+  - tram
+  - ferry
+validity_description: >-
+  Contactless or Oyster pay as you go. Fares are capped per day (04:30 to 04:29)
+  once your travel in the chosen zones reaches the adult cap. Caps apply to Tube,
+  DLR, Elizabeth line, London Overground and most National Rail services in
+  Zones 1-9; Southeastern high-speed and Heathrow Express are excluded. 2026
+  adult caps shown.
+purchase_channels:
+  - contactless
+  - oyster
+  - app
+source_url: https://content.tfl.gov.uk/adult-fares.pdf
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The single `price.amount` is null because the cap depends on the zones
+  travelled. Display `price_options` (2026 adult daily caps) instead.
+sort_order: 10

@@ -1,0 +1,12 @@
+id: tfwm
+view_box: '0 0 48 48'
+svg: |
+  <g fill="#ffffff" stroke="#ffffff" stroke-width="1" stroke-linejoin="round">
+    <polygon points="15,10 21,10 18,18" />
+    <polygon points="27,10 33,10 30,18" />
+    <polygon points="14,14 17,24 14,34 11,24" />
+    <polygon points="24,9 28,24 24,39 20,24" />
+    <polygon points="34,14 37,24 34,34 31,24" />
+    <polygon points="15,38 21,38 18,30" />
+    <polygon points="27,38 33,38 30,30" />
+  </g>

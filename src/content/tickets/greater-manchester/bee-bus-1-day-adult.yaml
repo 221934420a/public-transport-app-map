@@ -1,0 +1,23 @@
+id: bee-bus-1-day-adult
+app_id: bee-network
+name: 1-day Bee Bus ticket (adult)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: 5
+  currency: GBP
+passenger_type: adult
+modes:
+  - bus
+validity_description: >-
+  Unlimited travel on bus services in Greater Manchester and on Bee Network
+  buses that travel across the Greater Manchester boundary. Valid until 03:59
+  the following day, subject to the ticket terms.
+purchase_channels:
+  - app
+  - on_bus
+source_url: https://tfgm.com/tickets-and-passes/bus-tickets
+checked_at: '2026-11-01'
+status: draft
+sort_order: 10

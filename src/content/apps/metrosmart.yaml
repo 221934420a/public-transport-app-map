@@ -1,0 +1,24 @@
+id: metrosmart
+name: MetroSmart
+description: Merseytravel smart ticketing for bus, rail and Mersey Ferries across Merseyside.
+icon_id: metrosmart
+operator: Merseytravel (Liverpool City Region Combined Authority)
+country_codes:
+  - GB
+website_url: https://www.metro-smart.org.uk/home
+app_store_urls: []
+transport_modes:
+  - bus
+  - train
+  - ferry
+marker:
+  coordinates: [-2.985, 53.405]
+  label: MetroSmart
+source_url: https://www.merseytravel.gov.uk/tickets-and-pricing/ticket-types/saveaway-ticket/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is derived from NaPTAN: every Merseyside bus stop and
+  rail station (ATCO area 280), plus the rail-only extensions to Ormskirk,
+  Chester and Ellesmere Port. The icon reproduces the Merseytravel Journey
+  Planner app icon (yellow field, grey disc, yellow M).

@@ -1,0 +1,8 @@
+id: bee
+view_box: '0 0 48 48'
+svg: |
+  <path fill="#ffffff" stroke="#1d1b20" stroke-width="1.5" d="M18 18c-7-8-13-4-10 2 2 4 7 5 12 4m10-6c7-8 13-4 10 2-2 4-7 5-12 4" />
+  <ellipse fill="#1d1b20" cx="24" cy="25" rx="6" ry="10" />
+  <path fill="none" stroke="#f6c900" stroke-linecap="round" stroke-width="2" d="M19 22h10M18 27h12" />
+  <path fill="none" stroke="#1d1b20" stroke-linecap="round" stroke-width="1.7" d="m22 16-3-4m7 4 3-4" />
+  <path fill="none" stroke="#1d1b20" stroke-linecap="round" stroke-width="1.7" d="m20 31-4 4m12-4 4 4" />

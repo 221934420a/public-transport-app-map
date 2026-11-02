@@ -1,0 +1,22 @@
+id: saveaway-area
+app_id: metrosmart
+name: Saveaway area (Merseyside)
+geometry_refs:
+  - /geo/merseyside-coverage.geojson#merseyside-coverage
+  - /geo/saveaway-rail-extensions.geojson
+style:
+  fill_color: '#0072ce'
+  fill_opacity: 0.43
+  outline_color: '#00427a'
+  outline_width: 2.5
+  accent: '#f5e13c'
+  accent_strong: '#8a6d00'
+boundary_description: >-
+  Built from the location of every Merseyside bus stop and rail station (from
+  NaPTAN), plus the rail-only extensions beyond Merseyside. Saveaway is valid for
+  bus, rail and Mersey Ferries across Merseyside and is not valid in Halton. An
+  All Areas Saveaway also allows rail-only travel to Ormskirk, Chester and
+  Ellesmere Port.
+source_url: https://www.merseytravel.gov.uk/tickets-and-pricing/ticket-types/saveaway-ticket/
+checked_at: '2026-11-02'
+status: draft

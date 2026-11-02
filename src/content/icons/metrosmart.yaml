@@ -1,0 +1,5 @@
+id: metrosmart
+view_box: '0 0 48 48'
+svg: |
+  <circle cx="24" cy="24" r="18.5" fill="#a9a6ab" />
+  <path fill="#f5e13c" d="M14 33V16h5l5 8 5-8h5v17h-4.5V23.5L24 30l-5.5-6.5V33z" />

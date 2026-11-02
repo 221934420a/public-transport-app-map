@@ -1,0 +1,20 @@
+id: west-yorkshire-service-area
+app_id: west-yorkshire-metro
+name: West Yorkshire Metro area
+geometry_refs:
+  - /geo/west-yorkshire-coverage.geojson#west-yorkshire-coverage
+style:
+  fill_color: '#0f766e'
+  fill_opacity: 0.43
+  outline_color: '#0a4f4a'
+  outline_width: 2.5
+  accent: '#000000'
+  accent_strong: '#000000'
+boundary_description: >-
+  Built from the location of every West Yorkshire bus stop, bus station and rail
+  station (NaPTAN ATCO area 450), so the shaded area covers the West Yorkshire
+  Metro bus network and the rail stations across Leeds, Bradford, Calderdale,
+  Kirklees and Wakefield.
+source_url: https://www.wymetro.com/
+checked_at: '2026-11-02'
+status: draft

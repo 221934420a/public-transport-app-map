@@ -1,0 +1,27 @@
+id: tfl
+name: TfL
+description: Tube, bus, DLR, London Overground, Elizabeth line and tram fares across London.
+icon_id: tfl
+operator: Transport for London (TfL)
+country_codes:
+  - GB
+website_url: https://tfl.gov.uk/
+app_store_urls: []
+transport_modes:
+  - bus
+  - tube
+  - rail
+  - dlr
+  - tram
+  - ferry
+marker:
+  coordinates: [-0.1276, 51.5072]
+  label: TfL
+source_url: https://tfl.gov.uk/fares/find-fares/caps-and-travelcard-prices
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is derived from the TfL StopPoint API: every bus stop
+  and Underground station, so it covers the whole reach of those modes including
+  stops and stations outside Greater London. The icon reproduces the TfL Go app
+  icon (white roundel on TfL blue).

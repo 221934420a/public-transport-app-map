@@ -1,0 +1,41 @@
+id: bee-anybus-tram-1-day-adult
+app_id: bee-network
+name: 1-day Bee AnyBus + Tram (anytime, adult)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: Zone 1, 2, 3, or 4
+    amount: 6.00
+  - selection: Zones 1-2
+    amount: 7.30
+  - selection: Zones 2-3
+    amount: 6.70
+  - selection: Zones 2-4
+    amount: 7.60
+  - selection: Zones 3-4
+    amount: 6.70
+  - selection: Zones 1-3
+    amount: 8.70
+  - selection: Zones 1-4
+    amount: 9.50
+passenger_type: adult
+modes:
+  - bus
+  - tram
+validity_description: >-
+  Unlimited travel for one day on buses in Greater Manchester plus Metrolink
+  travel in the selected tram zone or zone combination. This is an anytime
+  product; zone selection determines the fare and tram coverage.
+purchase_channels:
+  - app
+source_url: https://tfgm.com/tickets-and-passes/1-day-bee-anybus-tram-anytime-adult
+checked_at: '2026-11-01'
+status: draft
+notes: >-
+  The single `price.amount` is null because the official product has multiple
+  fares by zone selection. Display `price_options` instead.
+sort_order: 20

@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+import MapShell from '../components/MapShell.astro';
+import '@material/web/labs/gb/styles/color/md-color-tokens.css';
+import '@material/web/labs/gb/styles/elevation/md-elevation-tokens.css';
+import '@material/web/labs/gb/styles/shape/md-shape-tokens.css';
+import '@material/web/labs/gb/styles/typography/md-typography-tokens.css';
+import '@material/web/typography/md-typescale-styles.css';
+import '../styles/map.css';
+
+interface Props {
+  /** Map shell to render. Falls back to the featured shell, then the first. */
+  mapId?: string;
+}
+
+const { mapId } = Astro.props;
+
+const [mapEntries, apps, icons, coverages, tickets] = await Promise.all([
+  getCollection('maps'),
+  getCollection('apps'),
+  getCollection('icons'),
+  getCollection('coverage'),
+  getCollection('tickets'),
+]);
+
+const shell = mapId
+  ? mapEntries.find((entry) => entry.data.id === mapId)
+  : (mapEntries.find((entry) => entry.data.featured) ?? mapEntries[0]);
+
+if (!shell) {
+  throw new Error(
+    mapId
+      ? `No map shell found with id "${mapId}". Add a YAML file under src/content/maps.`
+      : 'No map shells found. Add a YAML file under src/content/maps.',
+  );
+}
+
+const pageTitle =
+  shell.data.page_title ?? `${shell.data.title} | Public Transport Ticket Map`;
+const metaDescription =
+  shell.data.meta_description ?? 'Which public transport apps work where, across the UK.';
+---
+
+<!doctype html>
+<html lang={shell.data.locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content={shell.data.theme_color} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add,arrow_back,chevron_right,close,remove&display=block"
+      rel="stylesheet"
+    />
+    <meta name="description" content={metaDescription} />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="md-typescale-body-medium">
+    <MapShell
+      map={shell}
+      apps={apps}
+      icons={icons}
+      coverages={coverages}
+      tickets={tickets}
+    />
+  </body>
+</html>

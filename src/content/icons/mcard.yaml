@@ -1,0 +1,5 @@
+id: mcard
+view_box: '0 0 48 48'
+svg: |
+  <rect x="13" y="9" width="22" height="22" rx="4" transform="rotate(6 24 20)" fill="#ffffff" />
+  <path fill="#000000" d="M17 26V16h3.5l3.5 5.4 3.5-5.4H31V26h-3V19.6l-3.5 5.4h-1l-3.5-5.4V26z" />

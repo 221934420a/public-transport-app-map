@@ -1,0 +1,23 @@
+id: bee-network-service-area
+app_id: bee-network
+name: Bee Network service area
+# The official TfGM AnyBus layer also contains a "Fylde Coast" (Blackpool)
+# polygon, which was removed from public/geo/bee-network-anybus.geojson because
+# bee-network does not actually serve there. Re-apply that exclusion if the
+# geometry is ever re-fetched from the source service.
+geometry_refs:
+  - /geo/greater-manchester.geojson#greater-manchester
+  - /geo/bee-network-anybus.geojson
+style:
+  fill_color: '#f6c900'
+  fill_opacity: 0.43
+  outline_color: '#9a7200'
+  outline_width: 2.5
+boundary_description: >-
+  Greater Manchester plus the official TfGM AnyBus outer areas around Preston
+  and East Lancashire. AnyBus products apply to specified services when a
+  journey starts or ends outside Greater Manchester but stays inside the
+  official AnyBus boundary.
+source_url: https://tfgm.com/public-transport/maps/greater-manchester-bus-boundary-map/anybus
+checked_at: '2026-11-01'
+status: draft

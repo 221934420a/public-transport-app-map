@@ -1,0 +1,23 @@
+id: travelmaster
+name: TravelMaster
+description: Bus, tram and train travel across South Yorkshire.
+icon_id: travelmaster
+operator: Travel South Yorkshire (South Yorkshire Mayoral Combined Authority)
+country_codes:
+  - GB
+website_url: https://www.sytravelmaster.com/
+app_store_urls: []
+transport_modes:
+  - bus
+  - tram
+  - rail
+marker:
+  coordinates: [-1.4701, 53.3811]
+  label: TravelMaster
+source_url: https://www.sytravelmaster.com/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is derived from NaPTAN ATCO area 370: every Travel
+  South Yorkshire bus stop, bus station, tram stop and rail station entrance.
+  The icon reproduces the TravelMaster app icon (tricolour triangle).

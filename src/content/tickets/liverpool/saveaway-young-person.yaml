@@ -1,0 +1,32 @@
+id: saveaway-young-person
+app_id: metrosmart
+name: 1-day Saveaway (young person)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: One area (A, B, C or D)
+    amount: 2.90
+  - selection: All areas
+    amount: 3.40
+passenger_type: young person
+modes:
+  - bus
+  - train
+  - ferry
+validity_description: >-
+  Off-peak day ticket for anyone aged 5 to 18, for unlimited bus, rail and
+  Mersey Ferries travel within the chosen Merseyside area, or across all areas.
+  Valid after 09:30 Monday to Friday, and all day Saturday, Sunday and bank
+  holidays. Not valid in Halton. Requires a £1 MetroCard.
+purchase_channels:
+  - app
+  - ticket_machine
+  - retailer
+source_url: https://www.merseytravel.gov.uk/tickets-and-pricing/ticket-types/saveaway-ticket/
+checked_at: '2026-11-02'
+status: draft
+sort_order: 20

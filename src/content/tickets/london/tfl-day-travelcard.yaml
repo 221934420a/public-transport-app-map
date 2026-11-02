@@ -1,0 +1,36 @@
+id: tfl-day-travelcard
+app_id: tfl
+name: Day Travelcard (Zones 1-6)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: Any time
+    amount: 23.60
+  - selection: Off-peak
+    amount: 16.60
+passenger_type: adult
+modes:
+  - bus
+  - tube
+  - rail
+  - dlr
+  - tram
+  - ferry
+validity_description: >-
+  One-day Travelcard for unlimited travel in Zones 1-6 on Tube, DLR, Elizabeth
+  line, London Overground, bus, tram and most National Rail services. Anytime
+  versions are valid from 00:01; off-peak versions from 09:30 on weekdays (all
+  day at weekends and bank holidays). Southeastern high-speed and Heathrow
+  Express are excluded. 2026 adult prices shown.
+purchase_channels:
+  - app
+  - ticket_machine
+  - station
+source_url: https://content.tfl.gov.uk/adult-fares.pdf
+checked_at: '2026-11-02'
+status: draft
+sort_order: 20

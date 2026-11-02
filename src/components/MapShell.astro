@@ -1,0 +1,148 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import AppIcon from './AppIcon.astro';
+
+interface Props {
+  map: CollectionEntry<'maps'>;
+  apps: CollectionEntry<'apps'>[];
+  icons: CollectionEntry<'icons'>[];
+  coverages: CollectionEntry<'coverage'>[];
+  tickets: CollectionEntry<'tickets'>[];
+}
+
+const { map: shell, apps, icons, coverages, tickets } = Astro.props;
+const copy = shell.data.copy;
+
+const panelId = `info-panel-${shell.data.id}`;
+const panelTitleId = `panel-title-${shell.data.id}`;
+
+const iconById = new Map(icons.map((entry) => [entry.data.id, entry]));
+const iconFor = (iconId: string) => iconById.get(iconId) ?? iconById.get('pin');
+
+const coverageByApp = new Map<string, CollectionEntry<'coverage'>['data']>();
+for (const entry of coverages) {
+  if (!coverageByApp.has(entry.data.app_id)) coverageByApp.set(entry.data.app_id, entry.data);
+}
+
+const accentFor = (appId: string, strong: boolean, fallback: string) => {
+  const style = coverageByApp.get(appId)?.style;
+  const value = strong
+    ? (style?.accent_strong ?? style?.outline_color)
+    : (style?.accent ?? style?.fill_color);
+  return value ?? fallback;
+};
+
+const markerApps = apps
+  .filter((app) => app.data.marker)
+  .map((app) => {
+    const appName = app.data.name;
+    return {
+      app,
+      icon: iconFor(app.data.icon_id),
+      marker: app.data.marker!,
+      accent: accentFor(app.data.id, false, shell.data.theme.accent),
+      label: app.data.marker!.label ?? appName,
+      actionLabel: copy.marker_action_label.replace(/\{(\w+)\}/g, (match, key: string) =>
+        key === 'app' ? appName : match,
+      ),
+    };
+  });
+
+const data = JSON.stringify({
+  shell: shell.data,
+  apps: apps.map((entry) => {
+    const icon = iconFor(entry.data.icon_id);
+    return {
+      ...entry.data,
+      accent: accentFor(entry.data.id, false, shell.data.theme.accent),
+      accent_strong: accentFor(entry.data.id, true, shell.data.theme.outline),
+      icon: icon
+        ? { view_box: icon.data.view_box, class: icon.data.class, svg: icon.data.svg }
+        : undefined,
+    };
+  }),
+  coverages: coverages.map((entry) => entry.data),
+  tickets: tickets.map((entry) => entry.data),
+}).replaceAll('<', '\\u003c');
+
+const themeStyle = [
+  `--map-accent: ${shell.data.theme.accent}`,
+  `--map-accent-strong: ${shell.data.theme.accent_strong}`,
+  `--map-marker-border: ${shell.data.theme.marker_border}`,
+].join('; ');
+---
+
+<main
+  class="map-shell"
+  data-map-shell
+  data-map-error={copy.map_data_error}
+  aria-label={shell.data.map_aria_label}
+  style={`${themeStyle};`}
+>
+  <div class="map-canvas" data-map-canvas></div>
+
+  {
+    markerApps.map(({ app, icon, marker, accent, label, actionLabel }) => (
+      <md-fab
+        class="map-marker"
+        data-map-marker
+        data-app-id={app.data.id}
+        variant="surface"
+        label={label}
+        aria-label={actionLabel}
+        style={`--map-accent: ${accent};`}
+      >
+        <span slot="icon" class="map-app-icon" aria-hidden="true">
+          {icon && <AppIcon icon={icon} />}
+        </span>
+      </md-fab>
+    ))
+  }
+
+  <md-elevated-card class="map-status" role="status" aria-live="polite" data-map-status>
+    {copy.loading}
+  </md-elevated-card>
+
+  <md-elevated-card
+    class="map-controls"
+    role="group"
+    aria-label={copy.map_controls_label}
+  >
+    <md-icon-button data-map-zoom-in aria-label={copy.zoom_in_label}>
+      <md-icon aria-hidden="true">add</md-icon>
+    </md-icon-button>
+    <md-divider></md-divider>
+    <md-icon-button data-map-zoom-out aria-label={copy.zoom_out_label}>
+      <md-icon aria-hidden="true">remove</md-icon>
+    </md-icon-button>
+  </md-elevated-card>
+
+  <aside id={panelId} class="info-panel" aria-labelledby={panelTitleId} data-info-panel>
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <header class="panel-header">
+      <md-icon-button data-panel-back aria-label={copy.back_label} hidden>
+        <md-icon aria-hidden="true">arrow_back</md-icon>
+      </md-icon-button>
+      <span class="panel-app-icon" data-panel-icon aria-hidden="true" hidden></span>
+      <div class="panel-heading">
+        <p class="eyebrow md-typescale-label-medium text-muted" data-panel-eyebrow>
+          {shell.data.eyebrow}
+        </p>
+        <h1 id={panelTitleId} class="md-typescale-title-large" data-panel-title>
+          {shell.data.title}
+        </h1>
+      </div>
+      <md-icon-button data-panel-close aria-label={copy.close_label}>
+        <md-icon aria-hidden="true">close</md-icon>
+      </md-icon-button>
+    </header>
+
+    <div class="panel-content" data-panel-content></div>
+  </aside>
+
+  <script type="application/json" data-map-data set:html={data}></script>
+</main>
+
+<script>
+  import '../scripts/map-shell.ts';
+</script>

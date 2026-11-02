@@ -1,0 +1,35 @@
+id: saveaway-adult
+app_id: metrosmart
+name: 1-day Saveaway (adult)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: One area (A, B, C or D)
+    amount: 5.10
+  - selection: All areas
+    amount: 6.80
+passenger_type: adult
+modes:
+  - bus
+  - train
+  - ferry
+validity_description: >-
+  Off-peak day ticket for unlimited bus, rail and Mersey Ferries travel within
+  the chosen Merseyside area, or across all areas. Valid after 09:30 Monday to
+  Friday, and all day Saturday, Sunday and bank holidays. Not valid in Halton.
+  Requires a £1 MetroCard.
+purchase_channels:
+  - app
+  - ticket_machine
+  - retailer
+source_url: https://www.merseytravel.gov.uk/tickets-and-pricing/ticket-types/saveaway-ticket/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The single `price.amount` is null because the fare depends on the chosen
+  area. Display `price_options` instead.
+sort_order: 10

@@ -1,0 +1,22 @@
+id: bee-network
+name: Bee Network
+description: Bus and Metrolink tram tickets across Greater Manchester.
+icon_id: bee
+operator: Transport for Greater Manchester (TfGM)
+country_codes:
+  - GB
+website_url: https://tfgm.com/tickets-and-passes/ways-to-pay/bee-network-mobile-app
+app_store_urls: []
+transport_modes:
+  - bus
+  - tram
+marker:
+  coordinates: [-2.245, 53.48]
+  label: Bee Network
+source_url: https://tfgm.com/tickets-and-passes/ways-to-pay/bee-network-mobile-app/terms-and-conditions
+checked_at: '2026-11-01'
+status: draft
+notes: >-
+  The mapped service area is Greater Manchester plus the official TfGM AnyBus
+  outer areas. It is the extent of the app's tickets, not the validity area of
+  every individual ticket.

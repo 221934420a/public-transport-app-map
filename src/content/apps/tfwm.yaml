@@ -1,0 +1,23 @@
+id: tfwm
+name: TfWM
+description: Bus, tram and rail travel across the West Midlands.
+icon_id: tfwm
+operator: Transport for West Midlands (TfWM)
+country_codes:
+  - GB
+website_url: https://www.tfwm.org.uk/
+app_store_urls: []
+transport_modes:
+  - bus
+  - tram
+  - rail
+marker:
+  coordinates: [-1.9026, 52.4796]
+  label: TfWM
+source_url: https://www.tfwm.org.uk/plan-your-journey/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is derived from NaPTAN ATCO area 430: every
+  TfWM-managed bus stop and West Midlands Metro tram stop. The icon reproduces
+  the TfWM app icon (white motif on dark purple).

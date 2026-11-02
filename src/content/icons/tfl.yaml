@@ -1,0 +1,5 @@
+id: tfl
+view_box: '0 0 48 48'
+svg: |
+  <rect x="6" y="20" width="36" height="8" fill="#ffffff" />
+  <circle cx="24" cy="24" r="11.5" fill="none" stroke="#ffffff" stroke-width="7" />

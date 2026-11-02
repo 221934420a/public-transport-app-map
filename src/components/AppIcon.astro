@@ -1,0 +1,17 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  icon: CollectionEntry<'icons'>;
+}
+
+const { icon } = Astro.props;
+---
+
+<svg
+  class={icon.data.class}
+  viewBox={icon.data.view_box}
+  focusable="false"
+  aria-hidden="true"
+  set:html={icon.data.svg}
+></svg>
