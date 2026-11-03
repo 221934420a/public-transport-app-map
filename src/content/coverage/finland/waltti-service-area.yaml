@@ -1,0 +1,17 @@
+id: waltti-service-area
+app_id: waltti
+name: Waltti Mobiili coverage (the Waltti cities)
+geometry_refs:
+  - /geo/finland/waltti-coverage.geojson
+style:
+  fill_color: '#17083b'
+  fill_opacity: 0.43
+  outline_color: '#0e0526'
+  outline_width: 2.5
+  accent: '#17083b'
+  accent_strong: '#0b041e'
+boundary_description: >-
+  Built from the location of every Waltti Mobiili stop in the Waltti cities, so the shaded area covers the whole Waltti Mobiili network for buses, trams and trains.
+source_url: https://waltti.fi/
+checked_at: '2026-11-03'
+status: draft

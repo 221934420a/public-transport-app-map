@@ -1,0 +1,23 @@
+id: waltti
+name: Waltti Mobiili
+description: Tickets for buses, trams and trains across the Waltti cities.
+icon_id: waltti
+operator: Waltti Solutions Oy
+country_codes:
+  - FI
+website_url: https://waltti.fi/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=waltti.com.mobiili
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://waltti.fi/
+marker:
+  coordinates: [23.761, 61.4978]
+  label: Waltti Mobiili
+source_url: https://waltti.fi/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 17741 Waltti Mobiili stops across the Waltti cities, so the shaded area follows the network. The icon is the official Waltti Mobiili app icon from Google Play, stored as public/icons/waltti.png.

@@ -1,0 +1,17 @@
+id: payiq-aland-service-area
+app_id: payiq-aland
+name: PayiQ Tickets coverage (Åland)
+geometry_refs:
+  - /geo/finland/payiq-aland-coverage.geojson
+style:
+  fill_color: '#e22726'
+  fill_opacity: 0.43
+  outline_color: '#8f1817'
+  outline_width: 2.5
+  accent: '#e22726'
+  accent_strong: '#7a1413'
+boundary_description: >-
+  Built from the location of every PayiQ Tickets stop in Åland, so the shaded area covers the whole PayiQ Tickets network for buses and ferries.
+source_url: https://www.alandstrafiken.ax/
+checked_at: '2026-11-03'
+status: draft

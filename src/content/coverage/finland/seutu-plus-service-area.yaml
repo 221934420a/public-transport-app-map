@@ -1,0 +1,17 @@
+id: seutu-plus-service-area
+app_id: seutu-plus
+name: Seutu+ coverage (Varsinais-Suomi and Satakunta)
+geometry_refs:
+  - /geo/finland/seutu-plus-coverage.geojson
+style:
+  fill_color: '#00bf6f'
+  fill_opacity: 0.43
+  outline_color: '#007a47'
+  outline_width: 2.5
+  accent: '#00bf6f'
+  accent_strong: '#00693d'
+boundary_description: >-
+  Built from the location of every Seutu+ stop in Varsinais-Suomi and Satakunta, so the shaded area covers the whole Seutu+ network for regional buses.
+source_url: https://seutuplus.fi/
+checked_at: '2026-11-03'
+status: draft

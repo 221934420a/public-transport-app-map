@@ -1,0 +1,30 @@
+id: finland
+country_code: FI
+title: Public transport apps
+eyebrow: Finland
+page_title: Public Transport App Map | Finland
+meta_description: Which public transport apps work where, across Finland.
+theme_color: '#fef7ff'
+locale: fi-FI
+map_aria_label: Finland public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [25.6, 64.2]
+  zoom: 5
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#005ea0'
+  accent_strong: '#00406d'
+  outline: '#005ea0'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

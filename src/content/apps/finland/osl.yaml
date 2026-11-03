@@ -1,0 +1,21 @@
+id: osl
+name: OSL
+description: Tickets for buses across the Oulu region.
+icon_id: osl
+operator: Oulun seudun liikenne
+country_codes:
+  - FI
+website_url: https://www.osl.fi/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=osl.fi.mobiili
+transport_modes:
+  - bus
+tickets_url: https://www.osl.fi/liput-ja-hinnat
+marker:
+  coordinates: [25.4651, 65.0121]
+  label: OSL
+source_url: https://www.osl.fi/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 2798 OSL stops across the Oulu region, so the shaded area follows the network. The icon is the official OSL app icon from Google Play, stored as public/icons/osl.png.

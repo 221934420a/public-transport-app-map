@@ -28,6 +28,7 @@ public/geo/
   denmark/                       /geo/<country>/<file>.geojson; polygon geometry,
   sweden/                        optionally addressed with #feature-id
   norway/
+  finland/
 ```
 
 Records are grouped by country. The folder is for authoring and review and is not

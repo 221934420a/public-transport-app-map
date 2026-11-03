@@ -1,0 +1,21 @@
+id: cityapp
+name: CityApp
+description: Tickets for buses across Seinäjoki.
+icon_id: cityapp
+operator: Seinäjoen kaupunki
+country_codes:
+  - FI
+website_url: https://www.seinajoki.fi/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fi.porinlinjat.kyyti_likel
+transport_modes:
+  - bus
+tickets_url: https://www.seinajoki.fi/
+marker:
+  coordinates: [22.8417, 62.7903]
+  label: CityApp
+source_url: https://www.seinajoki.fi/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 845 CityApp stops across Seinäjoki, so the shaded area follows the network. The icon is the official CityApp app icon from Google Play, stored as public/icons/cityapp.png.

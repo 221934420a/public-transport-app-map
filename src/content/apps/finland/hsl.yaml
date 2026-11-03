@@ -1,0 +1,25 @@
+id: hsl
+name: HSL
+description: Tickets for buses, trams, the metro, trains and ferries across the Helsinki region.
+icon_id: hsl
+operator: Helsingin seudun liikenne (HSL)
+country_codes:
+  - FI
+website_url: https://www.hsl.fi/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fi.hsl.app
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+  - ferry
+tickets_url: https://www.hsl.fi/
+marker:
+  coordinates: [24.9384, 60.1699]
+  label: HSL
+source_url: https://www.hsl.fi/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 8613 HSL stops across the Helsinki region, so the shaded area follows the network. The icon is the official HSL app icon from Google Play, stored as public/icons/hsl.png.

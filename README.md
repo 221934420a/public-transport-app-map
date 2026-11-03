@@ -26,41 +26,47 @@ src/content/
     denmark/
     sweden/
     norway/
+    finland/
   coverage/
     united-kingdom/        one service area per YAML file
     denmark/               an app may have several (Rejsebillet City Pass areas)
     sweden/
     norway/
+    finland/
   icons/
     united-kingdom/        one app icon per YAML file
     denmark/
     sweden/
     norway/
+    finland/
   maps/                    one shell per map: all-countries.yaml (the index map),
                            united-kingdom.yaml, denmark.yaml, sweden.yaml,
-                           norway.yaml
+                           norway.yaml, finland.yaml
   tickets/
     united-kingdom/        one ticket per YAML file
     denmark/
     sweden/
     norway/
+    finland/
 public/icons/
   pop.png                  raster icon asset used by the Pop app icon record
   rejsebillet.png          official Rejsebillet app icon
   sl.png                   official SL app icon
   skanetrafiken.png        official Skånetrafiken app icon
   vasttrafik.png           official Västtrafik To Go app icon
-  <app>.png                one official app icon per icon record; the Swedish and
-                           Norwegian regional operators each have their own file
+  <app>.png                one official app icon per icon record; the Swedish,
+                           Norwegian and Finnish regional operators each have
+                           their own file
 public/geo/
   united-kingdom/          one folder per country; geometry is referenced as
   denmark/                 /geo/<country>/<file>.geojson
   sweden/
   norway/
+  finland/
 ```
 
 Data is grouped by country (`united-kingdom/`, `denmark/`, `sweden/`, `norway/`,
-and later other countries). A map shell with a `country_code` draws that country's apps only;
+`finland/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
 `all-countries.yaml` leaves it out and draws **every** app, which is what the
 index page uses, so a new country appears on the home page as soon as its
 records exist. Record IDs remain global, so `app_id` and `geometry_refs` do not
@@ -92,8 +98,8 @@ An app with no ticket records links its "Ticket prices" heading straight to its
 `src/layouts/MapPage.astro` resolves the shell, app, icon, service areas, and
 tickets for a map. The index page renders the all-countries shell; each country
 also has its own path, for example the United Kingdom map at `/united-kingdom/`,
-the Denmark map at `/denmark/`, the Sweden map at `/sweden/` and the Norway map
-at `/norway/`.
+the Denmark map at `/denmark/`, the Sweden map at `/sweden/`, the Norway map at
+`/norway/` and the Finland map at `/finland/`.
 
 See `docs/data-schema.md` for all fields and `docs/data-storage.md` for guidance
 on YAML versus GeoJSON, PMTiles, or a database.
@@ -179,6 +185,17 @@ on YAML versus GeoJSON, PMTiles, or a database.
   or counties (OpenStreetMap via the Overpass API, `ISO3166-2=NO-*`), gridded at
   0.02°, dilated, dissolved and smoothed into one outline. Each icon is the official
   Google Play icon, stored as `public/icons/<app>.png`.
+- **Finnish regional coverage** — for the seven regional operators and cities in
+  scope (HSL for the nine Helsinki-region municipalities, Waltti Mobiili for the
+  Waltti cities, Föli for the Turku region, OSL for the Oulu region, CityApp for
+  Seinäjoki, Seutu+ for Varsinais-Suomi and Satakunta, and PayiQ Tickets for
+  Åland) the service area is built from every bus stop, tram stop, rail station
+  and ferry pier inside those municipalities or regions (OpenStreetMap via the
+  Overpass API), gridded at 0.02°, dilated, dissolved and smoothed into one
+  outline per app. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`. Municipalities are matched by name, and names such as
+  Rusko or Kerava also exist outside the intended region, so each app's points are
+  clipped to the box that actually contains its network.
 - **Denmark coverage** — the [Natural Earth](https://www.naturalearthdata.com/)
   1:10m admin-0 country outline for Denmark, rounded to five decimals, used as the
   Rejsebillet service area because the app sells tickets in every Danish fare

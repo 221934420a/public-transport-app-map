@@ -1,0 +1,21 @@
+id: foli
+name: Föli
+description: Tickets for buses across the Turku region.
+icon_id: foli
+operator: Turun kaupunki
+country_codes:
+  - FI
+website_url: https://www.foli.fi/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.iqpai.turunjoukkoliikenne
+transport_modes:
+  - bus
+tickets_url: https://www.foli.fi/liput
+marker:
+  coordinates: [22.2666, 60.4518]
+  label: Föli
+source_url: https://www.foli.fi/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 3432 Föli stops across the Turku region, so the shaded area follows the network. The icon is the official Föli app icon from Google Play, stored as public/icons/foli.png.

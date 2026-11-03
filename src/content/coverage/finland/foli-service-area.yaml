@@ -1,0 +1,17 @@
+id: foli-service-area
+app_id: foli
+name: Föli coverage (the Turku region)
+geometry_refs:
+  - /geo/finland/foli-coverage.geojson
+style:
+  fill_color: '#febd2d'
+  fill_opacity: 0.43
+  outline_color: '#9c7300'
+  outline_width: 2.5
+  accent: '#febd2d'
+  accent_strong: '#7a5a00'
+boundary_description: >-
+  Built from the location of every Föli stop in the Turku region, so the shaded area covers the whole Föli network for buses.
+source_url: https://www.foli.fi/
+checked_at: '2026-11-03'
+status: draft

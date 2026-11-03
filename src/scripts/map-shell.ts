@@ -264,6 +264,9 @@ const initialiseMapShell = (root: HTMLElement) => {
   map.on('load', updateZoomButtons);
   updateZoomButtons();
 
+  /** Drawn bounds of each base area, so an app marker can focus the same range. */
+  const coverageBoundsById = new Map<string, LngLatBounds>();
+
   const markerElements = Array.from(
     root.querySelectorAll<HTMLElement>('[data-map-marker]'),
   );
@@ -276,7 +279,16 @@ const initialiseMapShell = (root: HTMLElement) => {
     new Marker({ element, anchor: 'bottom' })
       .setLngLat(app.marker.coordinates)
       .addTo(map);
-    element.addEventListener('click', () => openApp(app.id));
+    element.addEventListener('click', (event) => {
+      // Markers live inside MapLibre's canvas container, so without this the
+      // click would bubble up and also fire a map click on whatever area sits
+      // under the marker, opening the wrong app.
+      event.stopPropagation();
+      openApp(app.id);
+      const coverage = data.coverages.find((entry) => entry.app_id === app.id);
+      const bounds = coverage ? coverageBoundsById.get(coverage.id) : undefined;
+      if (bounds) centerOn(bounds);
+    });
   }
 
   const updateMarkers = () => {
@@ -715,6 +727,7 @@ const initialiseMapShell = (root: HTMLElement) => {
     });
 
     const coverageBounds = boundsFromFeatures(features);
+    if (coverageBounds) coverageBoundsById.set(coverage.id, coverageBounds);
     map.on('click', fillId, () => {
       openApp(coverage.app_id, coverage.id);
       if (coverageBounds) centerOn(coverageBounds);

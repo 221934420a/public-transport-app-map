@@ -1,0 +1,4 @@
+id: cityapp
+view_box: '0 0 48 48'
+svg: |
+  <image href="/icons/cityapp.png" width="48" height="48" />

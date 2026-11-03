@@ -1,0 +1,22 @@
+id: payiq-aland
+name: PayiQ Tickets
+description: Tickets for buses and ferries across Åland.
+icon_id: payiq-aland
+operator: Ålandstrafiken
+country_codes:
+  - FI
+website_url: https://www.alandstrafiken.ax/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.payiq.tickets
+transport_modes:
+  - bus
+  - ferry
+tickets_url: https://www.alandstrafiken.ax/liput-ja-hinnat
+marker:
+  coordinates: [19.9348, 60.0972]
+  label: PayiQ Tickets
+source_url: https://www.alandstrafiken.ax/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 645 PayiQ Tickets stops across Åland, so the shaded area follows the network. The icon is the official PayiQ Tickets app icon from Google Play, stored as public/icons/payiq-aland.png.

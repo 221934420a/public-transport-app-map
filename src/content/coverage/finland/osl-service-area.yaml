@@ -1,0 +1,17 @@
+id: osl-service-area
+app_id: osl
+name: OSL coverage (the Oulu region)
+geometry_refs:
+  - /geo/finland/osl-coverage.geojson
+style:
+  fill_color: '#e20c69'
+  fill_opacity: 0.43
+  outline_color: '#8f0741'
+  outline_width: 2.5
+  accent: '#e20c69'
+  accent_strong: '#7a0638'
+boundary_description: >-
+  Built from the location of every OSL stop in the Oulu region, so the shaded area covers the whole OSL network for buses.
+source_url: https://www.osl.fi/
+checked_at: '2026-11-03'
+status: draft

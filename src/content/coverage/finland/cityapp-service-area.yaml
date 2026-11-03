@@ -1,0 +1,17 @@
+id: cityapp-service-area
+app_id: cityapp
+name: CityApp coverage (Seinäjoki)
+geometry_refs:
+  - /geo/finland/cityapp-coverage.geojson
+style:
+  fill_color: '#4ec5cd'
+  fill_opacity: 0.43
+  outline_color: '#2c7f86'
+  outline_width: 2.5
+  accent: '#4ec5cd'
+  accent_strong: '#256b71'
+boundary_description: >-
+  Built from the location of every CityApp stop in Seinäjoki, so the shaded area covers the whole CityApp network for buses.
+source_url: https://www.seinajoki.fi/
+checked_at: '2026-11-03'
+status: draft

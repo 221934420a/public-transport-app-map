@@ -1,0 +1,21 @@
+id: seutu-plus
+name: Seutu+
+description: Tickets for regional buses across Varsinais-Suomi and Satakunta.
+icon_id: seutu-plus
+operator: Varsinais-Suomen ELY-keskus
+country_codes:
+  - FI
+website_url: https://seutuplus.fi/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.payiq.seutu
+transport_modes:
+  - bus
+tickets_url: https://seutuplus.fi/liput-ja-hinnat
+marker:
+  coordinates: [23.1331, 60.3833]
+  label: Seutu+
+source_url: https://seutuplus.fi/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 12243 Seutu+ stops across Varsinais-Suomi and Satakunta, so the shaded area follows the network. The icon is the official Seutu+ app icon from Google Play, stored as public/icons/seutu-plus.png.

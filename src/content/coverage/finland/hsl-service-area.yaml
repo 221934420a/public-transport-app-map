@@ -1,0 +1,17 @@
+id: hsl-service-area
+app_id: hsl
+name: HSL coverage (the Helsinki region)
+geometry_refs:
+  - /geo/finland/hsl-coverage.geojson
+style:
+  fill_color: '#007ac9'
+  fill_opacity: 0.43
+  outline_color: '#005ea0'
+  outline_width: 2.5
+  accent: '#007ac9'
+  accent_strong: '#004d84'
+boundary_description: >-
+  Built from the location of every HSL stop in the Helsinki region, so the shaded area covers the whole HSL network for buses, trams, the metro, trains and ferries.
+source_url: https://www.hsl.fi/
+checked_at: '2026-11-03'
+status: draft
