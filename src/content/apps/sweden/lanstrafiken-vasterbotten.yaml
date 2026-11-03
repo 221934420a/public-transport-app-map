@@ -1,0 +1,23 @@
+id: lanstrafiken-vasterbotten
+name: Tabussen.nu
+description: Bus, tram, ferry and train tickets across Västerbotten County.
+icon_id: lanstrafiken-vasterbotten
+operator: Länstrafiken i Västerbotten AB
+country_codes:
+  - SE
+website_url: https://www.tabussen.nu/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.vb.travelassistant
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.tabussen.nu/
+marker:
+  coordinates: [20.2639, 63.8258]
+  label: Tabussen.nu
+source_url: https://www.tabussen.nu/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Tabussen.nu bus stops, tram stops, rail stations and ferry piers across Västerbotten County (OSM, ISO 3166-2 SE-AC), so the shaded area follows the network rather than the county line. The icon is the official Tabussen.nu app icon from Google Play, stored as public/icons/lanstrafiken-vasterbotten.png.

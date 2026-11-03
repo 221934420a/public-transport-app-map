@@ -1,0 +1,17 @@
+id: kalmar-lanstrafik-service-area
+app_id: kalmar-lanstrafik
+name: Kalmar länstrafik coverage (Kalmar County)
+geometry_refs:
+  - /geo/sweden/kalmar-lanstrafik-coverage.geojson
+style:
+  fill_color: '#e41d25'
+  fill_opacity: 0.43
+  outline_color: '#8f1217'
+  outline_width: 2.5
+  accent: '#e41d25'
+  accent_strong: '#7a0f13'
+boundary_description: >-
+  Built from the location of every Kalmar länstrafik bus stop, tram stop, rail station and ferry pier in Kalmar County, so the shaded area covers the whole Kalmar länstrafik network rather than stopping at the county line.
+source_url: https://www.kalmarlanstrafik.se/
+checked_at: '2026-11-02'
+status: draft

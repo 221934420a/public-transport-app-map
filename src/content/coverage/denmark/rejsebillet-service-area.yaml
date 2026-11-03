@@ -1,0 +1,24 @@
+id: rejsebillet-service-area
+app_id: rejsebillet
+name: Rejsebillet coverage (Denmark)
+geometry_refs:
+  - /geo/denmark/denmark-coverage.geojson
+style:
+  fill_color: '#094507'
+  fill_opacity: 0.4
+  outline_color: '#094507'
+  outline_width: 2
+  # The nationwide record sets the app's panel accent, so the Rejsebillet green
+  # stays in place when one of the City Pass areas below is selected.
+  accent: '#094507'
+  accent_strong: '#052b04'
+boundary_description: >-
+  All of Denmark. Rejsebillet sells tickets and travel passes for every Danish
+  fare area — the Copenhagen zone system, the rest of Zealand, Funen, Jutland and
+  Bornholm — across the regional and city transport companies. The shaded area is
+  the national boundary; a single ticket is valid only in the zones it was bought
+  for.
+source_url: https://www.rejsebillet.dk/da-dk
+checked_at: '2026-11-02'
+status: draft
+sort_order: 0

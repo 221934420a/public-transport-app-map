@@ -1,0 +1,22 @@
+id: varmlandstrafik
+name: Värmlandstrafik
+description: Bus, tram, ferry and train tickets across Värmland County.
+icon_id: varmlandstrafik
+operator: Värmlandstrafik
+country_codes:
+  - SE
+website_url: https://www.varmlandstrafik.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.infospread.android.mobitime.r.vtab
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.varmlandstrafik.se/biljetter/
+marker:
+  coordinates: [13.5037, 59.3793]
+  label: Värmlandstrafik
+source_url: https://www.varmlandstrafik.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Värmlandstrafik bus stops, tram stops, rail stations and ferry piers across Värmland County (OSM, ISO 3166-2 SE-S), so the shaded area follows the network rather than the county line. The icon is the official Värmlandstrafik app icon from Google Play, stored as public/icons/varmlandstrafik.png.

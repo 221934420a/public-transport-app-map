@@ -1,0 +1,17 @@
+id: snelandia-mobillett-service-area
+app_id: snelandia-mobillett
+name: Snelandia Mobillett coverage (Finnmark)
+geometry_refs:
+  - /geo/norway/snelandia-mobillett-coverage.geojson
+style:
+  fill_color: '#007698'
+  fill_opacity: 0.43
+  outline_color: '#004e63'
+  outline_width: 2.5
+  accent: '#007698'
+  accent_strong: '#004154'
+boundary_description: >-
+  Built from the location of every Snelandia Mobillett stop and station across Finnmark, so the shaded area covers the whole Snelandia Mobillett network for buses and express boats.
+source_url: https://snelandia.no/
+checked_at: '2026-11-03'
+status: draft

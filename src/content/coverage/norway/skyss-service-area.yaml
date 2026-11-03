@@ -1,0 +1,17 @@
+id: skyss-service-area
+app_id: skyss
+name: Skyss coverage (Vestland)
+geometry_refs:
+  - /geo/norway/skyss-coverage.geojson
+style:
+  fill_color: '#fd2000'
+  fill_opacity: 0.43
+  outline_color: '#9f1300'
+  outline_width: 2.5
+  accent: '#fd2000'
+  accent_strong: '#870f00'
+boundary_description: >-
+  Built from the location of every Skyss stop and station across Vestland, so the shaded area covers the whole Skyss network for buses, the Bybanen tram, trains and ferries.
+source_url: https://www.skyss.no/
+checked_at: '2026-11-03'
+status: draft

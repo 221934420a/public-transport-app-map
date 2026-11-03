@@ -1,0 +1,17 @@
+id: vl-service-area
+app_id: vl
+name: VL coverage (Västmanland County)
+geometry_refs:
+  - /geo/sweden/vl-coverage.geojson
+style:
+  fill_color: '#4e8fa1'
+  fill_opacity: 0.43
+  outline_color: '#345f6b'
+  outline_width: 2.5
+  accent: '#4e8fa1'
+  accent_strong: '#2c515c'
+boundary_description: >-
+  Built from the location of every VL bus stop, tram stop, rail station and ferry pier in Västmanland County, so the shaded area covers the whole VL network rather than stopping at the county line.
+source_url: https://vl.ridango.com/sv/home
+checked_at: '2026-11-02'
+status: draft

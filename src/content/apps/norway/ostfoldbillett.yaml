@@ -1,0 +1,22 @@
+id: ostfoldbillett
+name: ØstfoldBillett
+description: Tickets for buses and trains across Østfold.
+icon_id: ostfoldbillett
+operator: Østfold kollektivtrafikk
+country_codes:
+  - NO
+website_url: https://www.ostfold-kollektiv.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.ostfold_kollektiv.ostfoldbillett
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.ostfold-kollektiv.no/billetter/
+marker:
+  coordinates: [11.3875, 59.2181]
+  label: ØstfoldBillett
+source_url: https://www.ostfold-kollektiv.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 3659 ØstfoldBillett stops across Østfold (OSM, ISO 3166-2 NO-31), so the shaded area follows the network rather than the county line. The icon is the official ØstfoldBillett app icon from Google Play, stored as public/icons/ostfoldbillett.png.

@@ -1,0 +1,17 @@
+id: reis-service-area
+app_id: reis
+name: Reis coverage (Nordland)
+geometry_refs:
+  - /geo/norway/reis-coverage.geojson
+style:
+  fill_color: '#0181a2'
+  fill_opacity: 0.43
+  outline_color: '#015468'
+  outline_width: 2.5
+  accent: '#0181a2'
+  accent_strong: '#014657'
+boundary_description: >-
+  Built from the location of every Reis stop and station across Nordland, so the shaded area covers the whole Reis network for buses, trains and express boats.
+source_url: https://www.reisnordland.no/
+checked_at: '2026-11-03'
+status: draft

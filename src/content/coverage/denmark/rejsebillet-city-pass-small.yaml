@@ -1,0 +1,19 @@
+id: rejsebillet-city-pass-small
+app_id: rejsebillet
+name: City Pass Small area (zones 1-4)
+geometry_refs:
+  - /geo/denmark/city-pass-areas.geojson#city-pass-small
+style:
+  fill_color: '#b3261e'
+  fill_opacity: 0.45
+  outline_color: '#7a1810'
+  outline_width: 2.5
+boundary_description: >-
+  Copenhagen city centre, Frederiksberg and the inner districts, Amager,
+  Ørestad and Copenhagen Airport (zones 1-4). This is the narrow area inside
+  City Pass Large; it also covers the harbour buses. City Pass Small is sold for
+  24, 48, 72, 96 or 120 hours.
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+sort_order: 50

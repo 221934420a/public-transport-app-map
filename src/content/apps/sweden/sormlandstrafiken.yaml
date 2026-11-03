@@ -1,0 +1,22 @@
+id: sormlandstrafiken
+name: Sörmlandstrafiken
+description: Bus, tram, ferry and train tickets across Södermanland County.
+icon_id: sormlandstrafiken
+operator: Sörmlandstrafiken
+country_codes:
+  - SE
+website_url: https://sormlandstrafiken.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.infospread.android.mobitime.r.lts
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://sormlandstrafiken.se/biljetter/
+marker:
+  coordinates: [17.0086, 58.7528]
+  label: Sörmlandstrafiken
+source_url: https://sormlandstrafiken.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 3689 Sörmlandstrafiken bus stops, tram stops, rail stations and ferry piers across Södermanland County (OSM, ISO 3166-2 SE-D), so the shaded area follows the network rather than the county line. The icon is the official Sörmlandstrafiken app icon from Google Play, stored as public/icons/sormlandstrafiken.png.

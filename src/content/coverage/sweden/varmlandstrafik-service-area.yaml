@@ -1,0 +1,17 @@
+id: varmlandstrafik-service-area
+app_id: varmlandstrafik
+name: Värmlandstrafik coverage (Värmland County)
+geometry_refs:
+  - /geo/sweden/varmlandstrafik-coverage.geojson
+style:
+  fill_color: '#f9b000'
+  fill_opacity: 0.43
+  outline_color: '#9c6e00'
+  outline_width: 2.5
+  accent: '#f9b000'
+  accent_strong: '#7a5600'
+boundary_description: >-
+  Built from the location of every Värmlandstrafik bus stop, tram stop, rail station and ferry pier in Värmland County, so the shaded area covers the whole Värmlandstrafik network rather than stopping at the county line.
+source_url: https://www.varmlandstrafik.se/
+checked_at: '2026-11-02'
+status: draft

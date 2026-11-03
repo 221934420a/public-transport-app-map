@@ -1,0 +1,17 @@
+id: ul-service-area
+app_id: ul
+name: UL coverage (Uppsala County)
+geometry_refs:
+  - /geo/sweden/ul-coverage.geojson
+style:
+  fill_color: '#f1c800'
+  fill_opacity: 0.43
+  outline_color: '#8f7400'
+  outline_width: 2.5
+  accent: '#f1c800'
+  accent_strong: '#5c4a00'
+boundary_description: >-
+  Built from the location of every UL bus stop, tram stop, rail station and ferry pier in Uppsala County, so the shaded area covers the whole UL network rather than stopping at the county line.
+source_url: https://www.ul.se/
+checked_at: '2026-11-02'
+status: draft

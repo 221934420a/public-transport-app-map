@@ -1,0 +1,17 @@
+id: rejsebillet-city-pass-south
+app_id: rejsebillet
+name: City Pass South area (zones 201-299)
+geometry_refs:
+  - /geo/denmark/city-pass-areas.geojson#city-pass-south
+style:
+  fill_color: '#ea580c'
+  fill_opacity: 0.3
+  outline_color: '#9a3412'
+  outline_width: 2
+boundary_description: >-
+  South Zealand and the islands (zones 201-299): Køge, Næstved, Vordingborg,
+  Stevns, Lolland, Falster and Møn. City Pass South is sold for 24 hours only.
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+sort_order: 40

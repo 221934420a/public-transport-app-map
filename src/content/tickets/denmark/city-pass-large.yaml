@@ -1,0 +1,45 @@
+id: city-pass-large
+app_id: rejsebillet
+coverage_ids:
+  - rejsebillet-city-pass-large
+name: City Pass Large (zones 1-99)
+duration:
+  value: 24
+  unit: hour
+price:
+  amount: null
+  currency: DKK
+price_options:
+  - selection: 24 hours
+    amount: 200
+  - selection: 48 hours
+    amount: 320
+  - selection: 72 hours
+    amount: 440
+  - selection: 96 hours
+    amount: 560
+  - selection: 120 hours
+    amount: 680
+passenger_type: adult
+modes:
+  - bus
+  - train
+  - metro
+validity_description: >-
+  Unlimited travel with buses, trains, the metro and the harbour buses in zones
+  1-99 for the period bought: the whole Greater Copenhagen area, including
+  Copenhagen Airport, Roskilde and North Zealand up to Helsingør and Hundested.
+  An adult travelling on a valid ticket can bring two children under 12 free,
+  and children aged 12-15 pay half price. It does not cover the rest of Denmark.
+purchase_channels:
+  - app
+  - ticket_machine
+  - retailer
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  Adult prices from the DOT fare sheet 2026 (24/48/72/96/120 hours: 200/320/440/
+  560/680 DKK). `price.amount` is null because the fare depends on the validity
+  period, so `price_options` lists the adult prices.
+sort_order: 20

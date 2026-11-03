@@ -1,0 +1,20 @@
+id: sl-service-area
+app_id: sl
+name: SL coverage (Stockholm County)
+geometry_refs:
+  - /geo/sweden/sl-coverage.geojson
+style:
+  fill_color: '#2870f0'
+  fill_opacity: 0.43
+  outline_color: '#1a4fa8'
+  outline_width: 2.5
+  accent: '#2870f0'
+  accent_strong: '#123a7d'
+boundary_description: >-
+  Built from the location of every SL bus stop, tram stop, metro and rail station
+  and ferry pier in Stockholm County, so the shaded area covers the whole SL
+  network: the metro, the commuter rail, Roslagsbanan and Saltsjöbanan, the
+  trams, the inner-city ferries and the archipelago piers out to Sandhamn.
+source_url: https://sl.se/en/
+checked_at: '2026-11-02'
+status: draft

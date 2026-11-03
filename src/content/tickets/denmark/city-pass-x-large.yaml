@@ -1,0 +1,31 @@
+id: city-pass-x-large
+app_id: rejsebillet
+coverage_ids:
+  - rejsebillet-city-pass-x-large
+name: City Pass X-Large (zones 1-299)
+duration:
+  value: 24
+  unit: hour
+price:
+  amount: 300
+  currency: DKK
+passenger_type: adult
+modes:
+  - bus
+  - train
+  - metro
+validity_description: >-
+  Unlimited travel with buses, trains, the metro and the harbour buses in zones
+  1-299 for 24 hours: Copenhagen, the whole of Zealand and the islands, including
+  Roskilde, Helsingør, Køge, Næstved, Lolland, Falster and Møn. An adult
+  travelling on a valid ticket can bring two children under 12 free, and children
+  aged 12-15 pay half price. Sold in the Rejsebillet app only.
+purchase_channels:
+  - app
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  Adult price from the DOT fare sheet 2026 (24 hours: 300 DKK). Child price is
+  half. The area is the union of the Large, West and South areas.
+sort_order: 30

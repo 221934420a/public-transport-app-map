@@ -1,0 +1,17 @@
+id: dalatrafik-service-area
+app_id: dalatrafik
+name: Dalatrafik coverage (Dalarna County)
+geometry_refs:
+  - /geo/sweden/dalatrafik-coverage.geojson
+style:
+  fill_color: '#e00034'
+  fill_opacity: 0.43
+  outline_color: '#8f0021'
+  outline_width: 2.5
+  accent: '#e00034'
+  accent_strong: '#7a001c'
+boundary_description: >-
+  Built from the location of every Dalatrafik bus stop, tram stop, rail station and ferry pier in Dalarna County, so the shaded area covers the whole Dalatrafik network rather than stopping at the county line.
+source_url: https://www.dalatrafik.se/
+checked_at: '2026-11-02'
+status: draft

@@ -1,0 +1,17 @@
+id: hallandstrafiken-service-area
+app_id: hallandstrafiken
+name: Hallandstrafiken coverage (Halland County)
+geometry_refs:
+  - /geo/sweden/hallandstrafiken-coverage.geojson
+style:
+  fill_color: '#006eb8'
+  fill_opacity: 0.43
+  outline_color: '#004a7a'
+  outline_width: 2.5
+  accent: '#006eb8'
+  accent_strong: '#003f69'
+boundary_description: >-
+  Built from the location of every Hallandstrafiken bus stop, tram stop, rail station and ferry pier in Halland County, so the shaded area covers the whole Hallandstrafiken network rather than stopping at the county line.
+source_url: https://www.hallandstrafiken.se/
+checked_at: '2026-11-02'
+status: draft

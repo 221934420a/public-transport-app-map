@@ -1,0 +1,22 @@
+id: lanstrafiken-jonkoping
+name: Jönköpings Länstrafik
+description: Bus, tram, ferry and train tickets across Jönköping County.
+icon_id: lanstrafiken-jonkoping
+operator: Region Jönköpings län
+country_codes:
+  - SE
+website_url: https://www.jlt.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.jlt.travelassistant
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.jlt.se/biljetter-och-priser/
+marker:
+  coordinates: [14.1618, 57.7826]
+  label: Jönköpings Länstrafik
+source_url: https://www.jlt.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 1512 Jönköpings Länstrafik bus stops, tram stops, rail stations and ferry piers across Jönköping County (OSM, ISO 3166-2 SE-F), so the shaded area follows the network rather than the county line. The icon is the official Jönköpings Länstrafik app icon from Google Play, stored as public/icons/lanstrafiken-jonkoping.png.

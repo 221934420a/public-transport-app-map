@@ -1,0 +1,20 @@
+id: vasttrafik-service-area
+app_id: vasttrafik
+name: Västtrafik coverage (Västra Götaland)
+geometry_refs:
+  - /geo/sweden/vasttrafik-coverage.geojson
+style:
+  fill_color: '#00a9eb'
+  fill_opacity: 0.43
+  outline_color: '#006e9a'
+  outline_width: 2.5
+  accent: '#00a9eb'
+  accent_strong: '#00546f'
+boundary_description: >-
+  Built from the location of every Västtrafik bus stop, tram stop and rail
+  station in Västra Götaland and Kungsbacka, so the shaded area covers the whole
+  Västtrafik network: Gothenburg's trams, the Bohuslän and Dalsland coast, the
+  Göta älv valley, Skaraborg, Sjuhärad and Kungsbacka.
+source_url: https://www.vasttrafik.se/en/
+checked_at: '2026-11-02'
+status: draft

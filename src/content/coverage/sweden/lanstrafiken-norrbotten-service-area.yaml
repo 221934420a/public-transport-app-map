@@ -1,0 +1,17 @@
+id: lanstrafiken-norrbotten-service-area
+app_id: lanstrafiken-norrbotten
+name: Länstrafiken Norrbotten coverage (Norrbotten County)
+geometry_refs:
+  - /geo/sweden/lanstrafiken-norrbotten-coverage.geojson
+style:
+  fill_color: '#00426f'
+  fill_opacity: 0.43
+  outline_color: '#002f50'
+  outline_width: 2.5
+  accent: '#00426f'
+  accent_strong: '#002744'
+boundary_description: >-
+  Built from the location of every Länstrafiken Norrbotten bus stop, tram stop, rail station and ferry pier in Norrbotten County, so the shaded area covers the whole Länstrafiken Norrbotten network rather than stopping at the county line.
+source_url: https://lanstrafikennorrbotten.se/
+checked_at: '2026-11-02'
+status: draft

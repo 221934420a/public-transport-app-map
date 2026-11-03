@@ -1,0 +1,23 @@
+id: hallandstrafiken
+name: Hallandstrafiken
+description: Bus, tram, ferry and train tickets across Halland County.
+icon_id: hallandstrafiken
+operator: Region Halland
+country_codes:
+  - SE
+website_url: https://www.hallandstrafiken.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.hlt.travelassistant
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.hallandstrafiken.se/biljetter-och-priser/
+marker:
+  coordinates: [12.8567, 56.6745]
+  label: Hallandstrafiken
+source_url: https://www.hallandstrafiken.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Hallandstrafiken bus stops, tram stops, rail stations and ferry piers across Halland County (OSM, ISO 3166-2 SE-N), so the shaded area follows the network rather than the county line. The icon is the official Hallandstrafiken app icon from Google Play, stored as public/icons/hallandstrafiken.png.

@@ -1,0 +1,19 @@
+id: rejsebillet-city-pass-large
+app_id: rejsebillet
+name: City Pass Large area (zones 1-99)
+geometry_refs:
+  - /geo/denmark/city-pass-areas.geojson#city-pass-large
+style:
+  fill_color: '#2563eb'
+  fill_opacity: 0.3
+  outline_color: '#1e3a8a'
+  outline_width: 2
+boundary_description: >-
+  Copenhagen and the Greater Copenhagen area (zones 1-99): the city centre,
+  Copenhagen Airport, the northern suburbs, North Zealand up to Helsingør and
+  Hundested, and Roskilde. City Pass Large is sold for 24, 48, 72, 96 or 120
+  hours.
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+sort_order: 20

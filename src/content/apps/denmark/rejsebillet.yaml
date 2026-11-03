@@ -1,0 +1,29 @@
+id: rejsebillet
+name: Rejsebillet
+description: Tickets, City Passes and travel passes for public transport across all of Denmark.
+icon_id: rejsebillet
+operator: Rejsekort & Rejseplan A/S
+country_codes:
+  - DK
+website_url: https://www.rejsebillet.dk/
+app_store_urls:
+  - https://apps.apple.com/dk/app/rejsebillet/id1664432486
+  - https://play.google.com/store/apps/details?id=dk.rejsekort.rejsebillet
+transport_modes:
+  - bus
+  - train
+  - metro
+  - tram
+marker:
+  coordinates: [12.5683, 55.6761]
+  label: Rejsebillet
+source_url: https://www.rejsebillet.dk/da-dk
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The app sells tickets and passes for every Danish fare area, so the mapped
+  service area is the national boundary. Each City Pass type has its own
+  coverage record built from the official DOT fare zone geometry
+  (zones 1-4, 1-99, 101-199, 201-299 and their union 1-299), which is why one
+  app carries several coverage records. The icon is the official Rejsebillet app
+  icon, stored as public/icons/rejsebillet.png.

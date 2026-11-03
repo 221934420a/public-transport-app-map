@@ -1,0 +1,22 @@
+id: ul
+name: UL
+description: Bus, tram, ferry and train tickets across Uppsala County.
+icon_id: ul
+operator: Kollektivtrafikförvaltningen UL
+country_codes:
+  - SE
+website_url: https://www.ul.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.ul.app
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.ul.se/biljetter/
+marker:
+  coordinates: [17.6389, 59.8586]
+  label: UL
+source_url: https://www.ul.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 4084 UL bus stops, tram stops, rail stations and ferry piers across Uppsala County (OSM, ISO 3166-2 SE-C), so the shaded area follows the network rather than the county line. The icon is the official UL app icon from Google Play, stored as public/icons/ul.png.

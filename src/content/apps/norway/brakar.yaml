@@ -1,0 +1,22 @@
+id: brakar
+name: Brakar
+description: Tickets for buses and trains across Buskerud.
+icon_id: brakar
+operator: Brakar AS
+country_codes:
+  - NO
+website_url: https://brakar.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.brakar.brakarbillett
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://brakar.no/
+marker:
+  coordinates: [10.2045, 59.7439]
+  label: Brakar
+source_url: https://brakar.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 4492 Brakar stops across Buskerud (OSM, ISO 3166-2 NO-33), so the shaded area follows the network rather than the county line. The icon is the official Brakar app icon from Google Play, stored as public/icons/brakar.png.

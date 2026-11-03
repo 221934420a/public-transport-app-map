@@ -1,0 +1,22 @@
+id: lanstrafiken-kronoberg
+name: Länstrafiken Kronoberg
+description: Bus, tram, ferry and train tickets across Kronoberg County.
+icon_id: lanstrafiken-kronoberg
+operator: Region Kronoberg
+country_codes:
+  - SE
+website_url: https://www.lanstrafikenkron.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.ltk.travelassistant
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.lanstrafikenkron.se/biljetter/
+marker:
+  coordinates: [14.8094, 56.879]
+  label: Länstrafiken Kronoberg
+source_url: https://www.lanstrafikenkron.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Länstrafiken Kronoberg bus stops, tram stops, rail stations and ferry piers across Kronoberg County (OSM, ISO 3166-2 SE-G), so the shaded area follows the network rather than the county line. The icon is the official Länstrafiken Kronoberg app icon from Google Play, stored as public/icons/lanstrafiken-kronoberg.png.

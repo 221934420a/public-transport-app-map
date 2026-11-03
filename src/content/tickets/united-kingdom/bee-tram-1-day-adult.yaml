@@ -1,0 +1,39 @@
+id: bee-tram-1-day-adult
+app_id: bee-network
+name: Metrolink anytime 1-day travelcard (adult)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: Any one zone (1, 2, 3 or 4)
+    amount: 2.70
+  - selection: Two zones (1+2)
+    amount: 4.30
+  - selection: Two zones (2+3 or 3+4)
+    amount: 3.50
+  - selection: Three zones (1+2+3)
+    amount: 6.10
+  - selection: Three zones (2+3+4)
+    amount: 4.70
+  - selection: All zones (1+2+3+4)
+    amount: 7.10
+passenger_type: adult
+modes:
+  - tram
+validity_description: >-
+  Unlimited travel on Metrolink throughout your chosen zones for one day,
+  including peak periods, until the last tram. Your ticket must be valid in all
+  zones you travel through.
+purchase_channels:
+  - app
+  - ticket_machine
+source_url: https://tfgm.com/tickets-and-passes/tram-anytime-all-day-travelcard-adult
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The single `price.amount` is null because the fare depends on the zones
+  travelled. Display `price_options` instead.
+sort_order: 15

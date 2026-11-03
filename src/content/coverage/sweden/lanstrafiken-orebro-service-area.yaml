@@ -1,0 +1,17 @@
+id: lanstrafiken-orebro-service-area
+app_id: lanstrafiken-orebro
+name: Länstrafiken Örebro coverage (Örebro County)
+geometry_refs:
+  - /geo/sweden/lanstrafiken-orebro-coverage.geojson
+style:
+  fill_color: '#0073b9'
+  fill_opacity: 0.43
+  outline_color: '#004d7a'
+  outline_width: 2.5
+  accent: '#0073b9'
+  accent_strong: '#004269'
+boundary_description: >-
+  Built from the location of every Länstrafiken Örebro bus stop, tram stop, rail station and ferry pier in Örebro County, so the shaded area covers the whole Länstrafiken Örebro network rather than stopping at the county line.
+source_url: https://www.lanstrafiken.se/
+checked_at: '2026-11-02'
+status: draft

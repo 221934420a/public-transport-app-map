@@ -1,0 +1,17 @@
+id: svipper-service-area
+app_id: svipper
+name: Svipper coverage (Troms)
+geometry_refs:
+  - /geo/norway/svipper-coverage.geojson
+style:
+  fill_color: '#ed5d15'
+  fill_opacity: 0.43
+  outline_color: '#94400d'
+  outline_width: 2.5
+  accent: '#ed5d15'
+  accent_strong: '#7d360b'
+boundary_description: >-
+  Built from the location of every Svipper stop and station across Troms, so the shaded area covers the whole Svipper network for buses, trains and ferries.
+source_url: https://svipper.no/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,17 @@
+id: ostfoldbillett-service-area
+app_id: ostfoldbillett
+name: ØstfoldBillett coverage (Østfold)
+geometry_refs:
+  - /geo/norway/ostfoldbillett-coverage.geojson
+style:
+  fill_color: '#dd0000'
+  fill_opacity: 0.43
+  outline_color: '#8a0000'
+  outline_width: 2.5
+  accent: '#dd0000'
+  accent_strong: '#750000'
+boundary_description: >-
+  Built from the location of every ØstfoldBillett stop and station across Østfold, so the shaded area covers the whole ØstfoldBillett network for buses and trains.
+source_url: https://www.ostfold-kollektiv.no/
+checked_at: '2026-11-03'
+status: draft

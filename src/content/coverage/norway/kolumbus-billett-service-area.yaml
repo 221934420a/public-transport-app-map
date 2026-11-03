@@ -1,0 +1,17 @@
+id: kolumbus-billett-service-area
+app_id: kolumbus-billett
+name: Kolumbus Billett coverage (Rogaland)
+geometry_refs:
+  - /geo/norway/kolumbus-billett-coverage.geojson
+style:
+  fill_color: '#3cb454'
+  fill_opacity: 0.43
+  outline_color: '#276f36'
+  outline_width: 2.5
+  accent: '#3cb454'
+  accent_strong: '#205f2d'
+boundary_description: >-
+  Built from the location of every Kolumbus Billett stop and station across Rogaland, so the shaded area covers the whole Kolumbus Billett network for buses, trains and ferries.
+source_url: https://www.kolumbus.no/
+checked_at: '2026-11-03'
+status: draft

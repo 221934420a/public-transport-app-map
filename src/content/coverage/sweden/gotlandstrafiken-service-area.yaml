@@ -1,0 +1,17 @@
+id: gotlandstrafiken-service-area
+app_id: gotlandstrafiken
+name: Gotlands Kollektivtrafik coverage (Gotland County)
+geometry_refs:
+  - /geo/sweden/gotlandstrafiken-coverage.geojson
+style:
+  fill_color: '#004a99'
+  fill_opacity: 0.43
+  outline_color: '#00315f'
+  outline_width: 2.5
+  accent: '#004a99'
+  accent_strong: '#002a52'
+boundary_description: >-
+  Built from the location of every Gotlands Kollektivtrafik bus stop, tram stop, rail station and ferry pier in Gotland County, so the shaded area covers the whole Gotlands Kollektivtrafik network rather than stopping at the county line.
+source_url: https://www.gotlandbiljett.se/
+checked_at: '2026-11-02'
+status: draft

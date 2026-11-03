@@ -1,0 +1,24 @@
+id: skyss
+name: Skyss
+description: Tickets for buses, the Bybanen tram, trains and ferries across Vestland.
+icon_id: skyss
+operator: Skyss
+country_codes:
+  - NO
+website_url: https://www.skyss.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.skyss.planner
+transport_modes:
+  - bus
+  - tram
+  - rail
+  - ferry
+tickets_url: https://www.skyss.no/billett/
+marker:
+  coordinates: [5.3221, 60.3913]
+  label: Skyss
+source_url: https://www.skyss.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 15060 Skyss stops across Vestland (OSM, ISO 3166-2 NO-46), so the shaded area follows the network rather than the county line. The icon is the official Skyss app icon from Google Play, stored as public/icons/skyss.png.

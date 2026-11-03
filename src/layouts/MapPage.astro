@@ -35,6 +35,17 @@ if (!shell) {
   );
 }
 
+const countryCode = shell.data.country_code;
+const countryApps = countryCode
+  ? apps.filter((entry) => entry.data.country_codes.includes(countryCode))
+  : apps;
+const appIds = new Set(countryApps.map((entry) => entry.data.id));
+/** Drawing order, so a narrow area drawn later stays visible and clickable on top. */
+const countryCoverages = coverages
+  .filter((entry) => appIds.has(entry.data.app_id))
+  .sort((a, b) => a.data.sort_order - b.data.sort_order);
+const countryTickets = tickets.filter((entry) => appIds.has(entry.data.app_id));
+
 const pageTitle =
   shell.data.page_title ?? `${shell.data.title} | Public Transport Ticket Map`;
 const metaDescription =
@@ -63,10 +74,10 @@ const metaDescription =
   <body class="md-typescale-body-medium">
     <MapShell
       map={shell}
-      apps={apps}
+      apps={countryApps}
       icons={icons}
-      coverages={coverages}
-      tickets={tickets}
+      coverages={countryCoverages}
+      tickets={countryTickets}
     />
   </body>
 </html>

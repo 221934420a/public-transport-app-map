@@ -1,0 +1,25 @@
+id: syconnect-day
+app_id: travelmaster
+name: SYConnect+ day (bus, tram & train)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: 12.20
+  currency: GBP
+passenger_type: adult
+modes:
+  - bus
+  - tram
+  - rail
+validity_description: >-
+  Unlimited travel on all buses, trams and trains in South Yorkshire for one day
+  with a SYConnect+ ticket, accepted on all operators' services across Sheffield,
+  Rotherham, Doncaster and Barnsley. Bought in the TravelMaster App and loaded
+  onto a smartcard.
+purchase_channels:
+  - app
+source_url: https://www.sytravelmaster.com/south-yorkshire
+checked_at: '2026-11-02'
+status: draft
+sort_order: 10

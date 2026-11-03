@@ -1,0 +1,22 @@
+id: farte
+name: Farte
+description: Tickets for buses and trains across Telemark.
+icon_id: farte
+operator: Telemark fylkeskommune
+country_codes:
+  - NO
+website_url: https://farte.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.tfk.travelassistant
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://farte.no/billett/
+marker:
+  coordinates: [9.61, 59.2099]
+  label: Farte
+source_url: https://farte.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 3453 Farte stops across Telemark (OSM, ISO 3166-2 NO-40), so the shaded area follows the network rather than the county line. The icon is the official Farte app icon from Google Play, stored as public/icons/farte.png.

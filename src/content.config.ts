@@ -29,6 +29,8 @@ const apps = defineCollection({
     website_url: z.string().url(),
     app_store_urls: z.array(z.string().url()).default([]),
     transport_modes: z.array(z.string()),
+    /** Fares page linked from the panel when the app's tickets are not listed. */
+    tickets_url: z.string().url().optional(),
     marker: z
       .object({
         coordinates: z.tuple([z.number(), z.number()]),
@@ -70,7 +72,12 @@ const areaStyle = z.object({
  * A coverage record is one app's service area. Its `geometry_refs` point at the
  * official GeoJSON polygons drawn as that app's coloured area; the area may
  * extend beyond administrative boundaries. The map draws every coverage record
- * whose `app_id` matches its app.
+ * whose `app_id` matches its app, so an app with several ticket areas (such as
+ * Rejsebillet's City Pass types) keeps one record per area.
+ *
+ * `sort_order` is the drawing order: lower numbers are drawn first, so a
+ * narrower area drawn later stays visible and wins the click where areas
+ * overlap.
  */
 const coverage = defineCollection({
   loader: recordLoader('coverage'),
@@ -84,6 +91,7 @@ const coverage = defineCollection({
     source_url: z.string().url(),
     checked_at: z.string(),
     status,
+    sort_order: z.number().default(0),
   }),
 });
 
@@ -96,6 +104,10 @@ const tickets = defineCollection({
     duration: z.object({ value: z.number(), unit: z.string() }),
     price: z.object({ amount: z.number().nullable(), currency: z.string() }),
     price_options: z.array(z.object({ selection: z.string(), amount: z.number() })).optional(),
+    /** Short billing-rules note shown instead of "View fares" when there is no single price. */
+    price_note: z.string().optional(),
+    /** Coverage areas shown on the map only when this ticket is selected. */
+    coverage_ids: z.array(z.string()).default([]),
     passenger_type: z.string(),
     modes: z.array(z.string()),
     validity_description: z.string(),
@@ -111,11 +123,15 @@ const tickets = defineCollection({
 /**
  * Presentation data for one full-screen map. Ticket, fare, and boundary facts
  * stay in their own collections; this record only controls how the shell looks.
+ * A shell with a `country_code` draws that country's apps only; without one it
+ * draws every app, which is how the index map shows all mapped regions.
  */
 const maps = defineCollection({
   loader: recordLoader('maps'),
   schema: z.object({
     id: z.string(),
+    /** ISO 3166-1 alpha-2 country this map covers; omit it to draw every country. */
+    country_code: z.string().optional(),
     title: z.string(),
     eyebrow: z.string().default('Public transport app'),
     page_title: z.string().optional(),

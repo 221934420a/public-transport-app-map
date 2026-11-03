@@ -1,0 +1,22 @@
+id: vkt
+name: VKT
+description: Tickets for buses and trains across Vestfold.
+icon_id: vkt
+operator: VKT AS
+country_codes:
+  - NO
+website_url: https://www.vkt.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.vfk.travelassistant
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.vkt.no/billett/
+marker:
+  coordinates: [10.4073, 59.2675]
+  label: VKT
+source_url: https://www.vkt.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 3577 VKT stops across Vestfold (OSM, ISO 3166-2 NO-39), so the shaded area follows the network rather than the county line. The icon is the official VKT app icon from Google Play, stored as public/icons/vkt.png.

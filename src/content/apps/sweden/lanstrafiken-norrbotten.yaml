@@ -1,0 +1,22 @@
+id: lanstrafiken-norrbotten
+name: Länstrafiken Norrbotten
+description: Bus, tram, ferry and train tickets across Norrbotten County.
+icon_id: lanstrafiken-norrbotten
+operator: Länstrafiken Norrbotten AB
+country_codes:
+  - SE
+website_url: https://lanstrafikennorrbotten.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.ltn.travelassistant
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://lanstrafikennorrbotten.se/biljetter/
+marker:
+  coordinates: [22.1567, 65.5848]
+  label: Länstrafiken Norrbotten
+source_url: https://lanstrafikennorrbotten.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Länstrafiken Norrbotten bus stops, tram stops, rail stations and ferry piers across Norrbotten County (OSM, ISO 3166-2 SE-BD), so the shaded area follows the network rather than the county line. The icon is the official Länstrafiken Norrbotten app icon from Google Play, stored as public/icons/lanstrafiken-norrbotten.png.

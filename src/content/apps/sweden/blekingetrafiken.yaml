@@ -1,0 +1,23 @@
+id: blekingetrafiken
+name: Blekingetrafiken
+description: Bus, tram, ferry and train tickets across Blekinge County.
+icon_id: blekingetrafiken
+operator: Blekingetrafiken
+country_codes:
+  - SE
+website_url: https://www.blekingetrafiken.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.blekingetrafiken.washington
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.blekingetrafiken.se/biljetter/
+marker:
+  coordinates: [15.5866, 56.1612]
+  label: Blekingetrafiken
+source_url: https://www.blekingetrafiken.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Blekingetrafiken bus stops, tram stops, rail stations and ferry piers across Blekinge County (OSM, ISO 3166-2 SE-K), so the shaded area follows the network rather than the county line. The icon is the official Blekingetrafiken app icon from Google Play, stored as public/icons/blekingetrafiken.png.

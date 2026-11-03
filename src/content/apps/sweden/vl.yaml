@@ -1,0 +1,22 @@
+id: vl
+name: VL
+description: Bus, tram, ferry and train tickets across Västmanland County.
+icon_id: vl
+operator: Västmanlands Lokaltrafik
+country_codes:
+  - SE
+website_url: https://vl.ridango.com/sv/home
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.vl.app
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://vl.ridango.com/sv/home
+marker:
+  coordinates: [16.5448, 59.6099]
+  label: VL
+source_url: https://vl.ridango.com/sv/home
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the VL bus stops, tram stops, rail stations and ferry piers across Västmanland County (OSM, ISO 3166-2 SE-U), so the shaded area follows the network rather than the county line. The icon is the official VL app icon from Google Play, stored as public/icons/vl.png.

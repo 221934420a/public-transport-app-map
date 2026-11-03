@@ -1,0 +1,17 @@
+id: sormlandstrafiken-service-area
+app_id: sormlandstrafiken
+name: Sörmlandstrafiken coverage (Södermanland County)
+geometry_refs:
+  - /geo/sweden/sormlandstrafiken-coverage.geojson
+style:
+  fill_color: '#0f8a53'
+  fill_opacity: 0.43
+  outline_color: '#0a5c37'
+  outline_width: 2.5
+  accent: '#0f8a53'
+  accent_strong: '#08492c'
+boundary_description: >-
+  Built from the location of every Sörmlandstrafiken bus stop, tram stop, rail station and ferry pier in Södermanland County, so the shaded area covers the whole Sörmlandstrafiken network rather than stopping at the county line.
+source_url: https://sormlandstrafiken.se/
+checked_at: '2026-11-02'
+status: draft

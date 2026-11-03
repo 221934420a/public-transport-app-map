@@ -187,7 +187,7 @@ body {
   width: min(var(--map-panel-width), 100%);
   flex-direction: column;
   overflow: hidden;
-  border-radius: var(--md-sys-shape-corner-lg) 0 0 var(--md-sys-shape-corner-lg);
+  border-radius: 0;
   background: var(--md-sys-color-surface-container-low);
   color: var(--md-sys-color-on-surface);
   box-shadow: var(--md-sys-elevation-shadow-3);
@@ -255,6 +255,25 @@ body {
   margin: 0;
 }
 
+.ticket-heading-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--map-accent-strong, var(--md-sys-color-primary));
+  text-decoration: none;
+}
+
+.ticket-heading-link:hover,
+.ticket-heading-link:focus-visible {
+  text-decoration: underline;
+}
+
+.ticket-heading-link md-icon {
+  font-size: inherit;
+  width: 1.15em;
+  height: 1.15em;
+}
+
 .status-chip {
   display: inline-flex;
   align-items: center;
@@ -314,6 +333,19 @@ body {
   color: var(--md-sys-color-on-secondary-container);
 }
 
+.price-note {
+  margin: 0;
+  white-space: normal;
+}
+
+.price-note-line {
+  margin: 0;
+}
+
+.price-note-line + .price-note-line {
+  margin-top: 0.25rem;
+}
+
 /* Service-area description, shown as supporting text under a hairline. */
 .coverage-note {
   margin: 1rem 0 0;
@@ -326,7 +358,7 @@ body {
     inset: auto 0 0;
     width: 100%;
     max-height: min(82dvh, 46rem);
-    border-radius: var(--md-sys-shape-corner-xl) var(--md-sys-shape-corner-xl) 0 0;
+    border-radius: 0;
   }
 
   .sheet-handle {

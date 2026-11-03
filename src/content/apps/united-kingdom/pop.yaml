@@ -1,0 +1,24 @@
+id: pop
+name: Pop
+description: Metro, bus and rail travel across Tyne and Wear.
+icon_id: pop
+operator: Nexus (Tyne and Wear Passenger Transport Executive)
+country_codes:
+  - GB
+website_url: https://www.nexus.org.uk/
+app_store_urls: []
+transport_modes:
+  - bus
+  - metro
+  - rail
+marker:
+  coordinates: [-1.6178, 54.972]
+  label: Pop
+source_url: https://www.nexus.org.uk/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area combines NaPTAN ATCO area 410 (Tyne and Wear bus stops
+  and bus stations) with the Tyne and Wear Metro stations (national tram data)
+  and rail stations within the area. The icon is the official Pop app icon,
+  stored as public/icons/pop.png.

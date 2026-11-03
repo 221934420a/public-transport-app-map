@@ -1,0 +1,23 @@
+id: ostgotatrafiken
+name: Östgötatrafiken
+description: Bus, tram, ferry and train tickets across Östergötland County.
+icon_id: ostgotatrafiken
+operator: AB Östgötatrafiken
+country_codes:
+  - SE
+website_url: https://www.ostgotatrafiken.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.ostgotatrafiken.washington
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.ostgotatrafiken.se/biljetter/
+marker:
+  coordinates: [15.6214, 58.4109]
+  label: Östgötatrafiken
+source_url: https://www.ostgotatrafiken.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 2173 Östgötatrafiken bus stops, tram stops, rail stations and ferry piers across Östergötland County (OSM, ISO 3166-2 SE-E), so the shaded area follows the network rather than the county line. The icon is the official Östgötatrafiken app icon from Google Play, stored as public/icons/ostgotatrafiken.png.

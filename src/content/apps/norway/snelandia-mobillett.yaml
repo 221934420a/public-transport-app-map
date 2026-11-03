@@ -1,0 +1,22 @@
+id: snelandia-mobillett
+name: Snelandia Mobillett
+description: Tickets for buses and express boats across Finnmark.
+icon_id: snelandia-mobillett
+operator: Finnmark fylkeskommune
+country_codes:
+  - NO
+website_url: https://snelandia.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.wtw.mobillett.ffk
+transport_modes:
+  - bus
+  - ferry
+tickets_url: https://snelandia.no/billetter/
+marker:
+  coordinates: [23.2716, 69.9689]
+  label: Snelandia Mobillett
+source_url: https://snelandia.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 1272 Snelandia Mobillett stops across Finnmark (OSM, ISO 3166-2 NO-56), so the shaded area follows the network rather than the county line. The icon is the official Snelandia Mobillett app icon from Google Play, stored as public/icons/snelandia-mobillett.png.

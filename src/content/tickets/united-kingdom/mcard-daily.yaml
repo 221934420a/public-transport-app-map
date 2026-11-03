@@ -1,0 +1,36 @@
+id: mcard-daily
+app_id: west-yorkshire-metro
+name: MCard daily ticket (bus & rail)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_options:
+  - selection: Zones 1-5 (off-peak)
+    amount: 11.10
+  - selection: Zones 1-3 (peak)
+    amount: 13.70
+  - selection: Zones 1-4 (peak)
+    amount: 15.70
+  - selection: Zones 1-5 (peak)
+    amount: 17.20
+passenger_type: adult
+modes:
+  - bus
+  - rail
+validity_description: >-
+  Unlimited bus and rail travel in West Yorkshire for one day. Off-peak tickets
+  are valid on buses from 09:30 and trains between 09:30-16:01 and after 18:30 on
+  weekdays, and all day at weekends and public holidays. Peak tickets are valid
+  anytime. Bought in the MCard Mobile App.
+purchase_channels:
+  - app
+source_url: https://www.wymetro.com/tickets-and-passes/mcard-adult-tickets/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The single `price.amount` is null because the fare depends on the zones
+  travelled. Display `price_options` instead.
+sort_order: 10

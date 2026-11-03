@@ -1,0 +1,17 @@
+id: ostgotatrafiken-service-area
+app_id: ostgotatrafiken
+name: Östgötatrafiken coverage (Östergötland County)
+geometry_refs:
+  - /geo/sweden/ostgotatrafiken-coverage.geojson
+style:
+  fill_color: '#e10e1c'
+  fill_opacity: 0.43
+  outline_color: '#8f0912'
+  outline_width: 2.5
+  accent: '#e10e1c'
+  accent_strong: '#7a0710'
+boundary_description: >-
+  Built from the location of every Östgötatrafiken bus stop, tram stop, rail station and ferry pier in Östergötland County, so the shaded area covers the whole Östgötatrafiken network rather than stopping at the county line.
+source_url: https://www.ostgotatrafiken.se/
+checked_at: '2026-11-02'
+status: draft

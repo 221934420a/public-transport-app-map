@@ -1,0 +1,22 @@
+id: lanstrafiken-jamtland
+name: Länstrafiken Jämtland
+description: Bus, tram, ferry and train tickets across Jämtland County.
+icon_id: lanstrafiken-jamtland
+operator: Region Jämtland Härjedalen
+country_codes:
+  - SE
+website_url: https://www.ltr.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.ltr.travelassistant
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.ltr.se/biljetter/
+marker:
+  coordinates: [14.6357, 63.1792]
+  label: Länstrafiken Jämtland
+source_url: https://www.ltr.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Länstrafiken Jämtland bus stops, tram stops, rail stations and ferry piers across Jämtland County (OSM, ISO 3166-2 SE-Z), so the shaded area follows the network rather than the county line. The icon is the official Länstrafiken Jämtland app icon from Google Play, stored as public/icons/lanstrafiken-jamtland.png.

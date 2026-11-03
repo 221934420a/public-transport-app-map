@@ -1,0 +1,19 @@
+id: pop-service-area
+app_id: pop
+name: Network One area (Tyne and Wear)
+geometry_refs:
+  - /geo/united-kingdom/tyne-and-wear-coverage.geojson#tyne-and-wear-coverage
+style:
+  fill_color: '#d81b60'
+  fill_opacity: 0.43
+  outline_color: '#8e0f3d'
+  outline_width: 2.5
+  accent: '#ffffff'
+  accent_strong: '#8e0f3d'
+boundary_description: >-
+  Built from the location of every Tyne and Wear bus stop, bus station, Metro
+  station and rail station, so the shaded area covers the Network One network
+  across Newcastle, Gateshead, Sunderland, South Tyneside and North Tyneside.
+source_url: https://www.nexus.org.uk/
+checked_at: '2026-11-02'
+status: draft

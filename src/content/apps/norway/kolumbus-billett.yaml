@@ -1,0 +1,23 @@
+id: kolumbus-billett
+name: Kolumbus Billett
+description: Tickets for buses, trains and ferries across Rogaland.
+icon_id: kolumbus-billett
+operator: Kolumbus AS
+country_codes:
+  - NO
+website_url: https://www.kolumbus.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.kolumbus.kolumbusbillett
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.kolumbus.no/billett/
+marker:
+  coordinates: [5.7331, 58.97]
+  label: Kolumbus Billett
+source_url: https://www.kolumbus.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 4874 Kolumbus Billett stops across Rogaland (OSM, ISO 3166-2 NO-11), so the shaded area follows the network rather than the county line. The icon is the official Kolumbus Billett app icon from Google Play, stored as public/icons/kolumbus-billett.png.

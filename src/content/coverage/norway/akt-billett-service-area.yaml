@@ -1,0 +1,17 @@
+id: akt-billett-service-area
+app_id: akt-billett
+name: AKT Billett coverage (Agder)
+geometry_refs:
+  - /geo/norway/akt-billett-coverage.geojson
+style:
+  fill_color: '#1aa172'
+  fill_opacity: 0.43
+  outline_color: '#0f6144'
+  outline_width: 2.5
+  accent: '#1aa172'
+  accent_strong: '#0c5238'
+boundary_description: >-
+  Built from the location of every AKT Billett stop and station across Agder, so the shaded area covers the whole AKT Billett network for buses, trains and ferries.
+source_url: https://akt.no/
+checked_at: '2026-11-03'
+status: draft

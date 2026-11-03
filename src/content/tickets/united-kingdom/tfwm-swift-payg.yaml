@@ -1,0 +1,33 @@
+id: tfwm-swift-payg
+app_id: tfwm
+name: Swift pay as you go
+duration:
+  value: 1
+  unit: day
+price:
+  amount: null
+  currency: GBP
+price_note: |-
+  You pay a single fare for each journey. Once your spending in a day (04:30 to 04:29) reaches the cap for the zones and modes you use, further travel that day is free.
+  Bus and tram have separate caps, and combined caps apply when you use both.
+passenger_type: adult
+modes:
+  - bus
+  - tram
+  - rail
+validity_description: >-
+  Pay as you go with a Swift card or contactless on bus, West Midlands Metro and
+  rail services across the West Midlands. Daily and weekly caps apply once your
+  spending reaches the cap for the zones and modes you use; check the current
+  fares before travelling.
+purchase_channels:
+  - swift
+  - contactless
+  - app
+source_url: https://www.tfwm.org.uk/plan-your-journey/fares/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The single `price.amount` is null because the fare depends on the zones, modes
+  and caps used. The link points at the official fares information.
+sort_order: 10

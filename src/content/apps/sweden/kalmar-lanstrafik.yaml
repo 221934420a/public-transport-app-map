@@ -1,0 +1,23 @@
+id: kalmar-lanstrafik
+name: Kalmar länstrafik
+description: Bus, tram, ferry and train tickets across Kalmar County.
+icon_id: kalmar-lanstrafik
+operator: Region Kalmar län
+country_codes:
+  - SE
+website_url: https://www.kalmarlanstrafik.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.klt.travelassistant
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.kalmarlanstrafik.se/biljetter/
+marker:
+  coordinates: [16.3617, 56.6634]
+  label: Kalmar länstrafik
+source_url: https://www.kalmarlanstrafik.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Kalmar länstrafik bus stops, tram stops, rail stations and ferry piers across Kalmar County (OSM, ISO 3166-2 SE-H), so the shaded area follows the network rather than the county line. The icon is the official Kalmar länstrafik app icon from Google Play, stored as public/icons/kalmar-lanstrafik.png.

@@ -1,0 +1,28 @@
+id: skanetrafiken
+name: Skånetrafiken
+description: Bus, train and ferry tickets for all of Skåne.
+icon_id: skanetrafiken
+operator: Skånetrafiken
+country_codes:
+  - SE
+website_url: https://www.skanetrafiken.se/
+app_store_urls:
+  - https://apps.apple.com/se/app/sk%C3%A5netrafiken/id1180539331
+  - https://play.google.com/store/apps/details?id=se.skanetrafiken.washington
+transport_modes:
+  - bus
+  - tram
+  - rail
+  - ferry
+tickets_url: https://www.skanetrafiken.se/biljetter/
+marker:
+  coordinates: [13.0007, 55.605]
+  label: Skånetrafiken
+source_url: https://www.skanetrafiken.se/appen/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 6,143 Skånetrafiken
+  bus stops, tram stops, rail stations and ferry piers across Skåne, so the shaded
+  area follows the network rather than the county line. The icon is the official
+  Skånetrafiken app icon, stored as public/icons/skanetrafiken.png.

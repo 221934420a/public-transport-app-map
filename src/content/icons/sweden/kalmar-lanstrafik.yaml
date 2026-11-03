@@ -1,0 +1,4 @@
+id: kalmar-lanstrafik
+view_box: '0 0 48 48'
+svg: |
+  <image href="/icons/kalmar-lanstrafik.png" width="48" height="48" />

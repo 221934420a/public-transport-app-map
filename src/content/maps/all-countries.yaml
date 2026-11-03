@@ -1,0 +1,58 @@
+id: all-countries
+# No `country_code`: the index map draws every app in every mapped country, so a
+# new country shows up on the home page as soon as its records exist.
+title: Public transport apps
+eyebrow: All mapped regions
+page_title: Public Transport App Map
+meta_description: Which public transport apps work where, across every mapped country and region.
+theme_color: '#fef7ff'
+# One locale formats every ticket on this map; each ticket's own `currency` still
+# decides the symbol, so mixing GBP and DKK fares stays readable.
+locale: en-GB
+featured: true
+map_aria_label: Public transport apps map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [3.3, 54.5]
+  zoom: 5
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#3d5a80'
+  accent_strong: '#22344a'
+  outline: '#2f4763'
+  marker_border: '#1d1b20'
+
+# The map draws every service area from every app.
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy:
+  status_chip: Reference fares
+  ticket_heading: Ticket prices
+  ticket_hint: Select a ticket to view its details.
+  area_hint: Select a coloured area or marker to see the app that serves it.
+  back_label: Back to app information
+  close_label: Close information panel
+  marker_action_label: View {app} coverage
+  website_link_label: '{app} official website'
+  description_fallback: Ticket and coverage information for {app}.
+  ticket_source_label: View ticket source
+  coverage_source_label: View service area source
+  ticket_meta: '{passenger} · {duration}'
+  from_price: From {price}
+  view_fares: View fares
+  zoom_in_label: Zoom in
+  zoom_out_label: Zoom out
+  map_controls_label: Map controls
+  map_data_error: Map data could not be read.
+  map_error: 'Map error: {message}'
+  price_options_heading: Price depends on the selection
+  loading: Loading map...
+  loading_slow: The map is taking longer than expected. Ticket information is available in the panel.
+  load_error: Could not load the mapped areas. Ticket information is still available.

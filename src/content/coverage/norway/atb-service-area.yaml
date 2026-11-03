@@ -1,0 +1,17 @@
+id: atb-service-area
+app_id: atb
+name: AtB coverage (Trøndelag)
+geometry_refs:
+  - /geo/norway/atb-coverage.geojson
+style:
+  fill_color: '#37424a'
+  fill_opacity: 0.43
+  outline_color: '#222a2f'
+  outline_width: 2.5
+  accent: '#37424a'
+  accent_strong: '#1c2327'
+boundary_description: >-
+  Built from the location of every AtB stop and station across Trøndelag, so the shaded area covers the whole AtB network for buses, the tram, trains and ferries.
+source_url: https://www.atb.no/
+checked_at: '2026-11-03'
+status: draft

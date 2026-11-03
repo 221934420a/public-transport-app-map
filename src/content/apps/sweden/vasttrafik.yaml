@@ -1,0 +1,28 @@
+id: vasttrafik
+name: Västtrafik To Go
+description: Bus, tram and train tickets for Västra Götaland and Kungsbacka.
+icon_id: vasttrafik
+operator: Västtrafik
+country_codes:
+  - SE
+website_url: https://www.vasttrafik.se/en/
+app_store_urls:
+  - https://apps.apple.com/se/app/v%C3%A4sttrafik-to-go/id424903083
+  - https://play.google.com/store/apps/details?id=com.vaesttrafik.vaesttrafik
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.vasttrafik.se/en/tickets/
+marker:
+  coordinates: [11.9746, 57.7089]
+  label: Västtrafik
+source_url: https://www.vasttrafik.se/en/tickets/more-about-tickets/vasttrafik-to-go/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 12,099 Västtrafik
+  bus stops, tram stops and rail stations across Västra Götaland and Kungsbacka,
+  so the shaded area follows the network rather than the county line. The icon
+  is the official Västtrafik To Go app icon, stored as
+  public/icons/vasttrafik.png.

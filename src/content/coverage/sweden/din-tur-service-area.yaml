@@ -1,0 +1,17 @@
+id: din-tur-service-area
+app_id: din-tur
+name: Din Tur coverage (Västernorrland County)
+geometry_refs:
+  - /geo/sweden/din-tur-coverage.geojson
+style:
+  fill_color: '#379250'
+  fill_opacity: 0.43
+  outline_color: '#256232'
+  outline_width: 2.5
+  accent: '#379250'
+  accent_strong: '#1f5429'
+boundary_description: >-
+  Built from the location of every Din Tur bus stop, tram stop, rail station and ferry pier in Västernorrland County, so the shaded area covers the whole Din Tur network rather than stopping at the county line.
+source_url: https://www.dintur.se/
+checked_at: '2026-11-02'
+status: draft

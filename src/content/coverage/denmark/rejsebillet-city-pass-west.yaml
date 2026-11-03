@@ -1,0 +1,18 @@
+id: rejsebillet-city-pass-west
+app_id: rejsebillet
+name: City Pass West area (zones 101-199)
+geometry_refs:
+  - /geo/denmark/city-pass-areas.geojson#city-pass-west
+style:
+  fill_color: '#7c3aed'
+  fill_opacity: 0.3
+  outline_color: '#5b21b6'
+  outline_width: 2
+boundary_description: >-
+  West Zealand (zones 101-199): Kalundborg, Holbæk, Slagelse, Sorø, Ringsted and
+  the surrounding area, but not Copenhagen. City Pass West starts where the
+  Greater Copenhagen area ends and is sold for 24 hours only.
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+sort_order: 30

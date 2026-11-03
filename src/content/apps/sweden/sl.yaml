@@ -1,0 +1,30 @@
+id: sl
+name: SL
+description: Metro, commuter rail, tram, bus and ferry tickets across Stockholm County.
+icon_id: sl
+operator: AB Storstockholms Lokaltrafik
+country_codes:
+  - SE
+website_url: https://sl.se/en/
+app_store_urls:
+  - https://apps.apple.com/se/app/sl/id918418291
+  - https://play.google.com/store/apps/details?id=com.sl.SLBiljetter
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+  - ferry
+tickets_url: https://sl.se/en/fares-and-tickets/
+marker:
+  coordinates: [18.0686, 59.3293]
+  label: SL
+source_url: https://sl.se/en/fares-and-tickets/smart-phone-ticket-app
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 11,760 SL bus stops,
+  tram stops, metro and rail stations and ferry piers across Stockholm County, so
+  the shaded area follows the network rather than the county line. The island
+  piers carry the outline out through the archipelago to Sandhamn. The icon is
+  the official SL app icon, stored as public/icons/sl.png.

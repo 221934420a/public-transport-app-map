@@ -1,0 +1,25 @@
+id: ruter
+name: Ruter
+description: Tickets for buses, trams, the metro, trains and ferries across Oslo and Akershus.
+icon_id: ruter
+operator: Ruter AS
+country_codes:
+  - NO
+website_url: https://ruter.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.ruter.reise
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+  - ferry
+tickets_url: https://ruter.no/billetter/
+marker:
+  coordinates: [10.7522, 59.9139]
+  label: Ruter
+source_url: https://ruter.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 7740 Ruter stops across Oslo and Akershus (OSM, ISO 3166-2 NO-03 + NO-32), so the shaded area follows the network rather than the county line. The icon is the official Ruter app icon from Google Play, stored as public/icons/ruter.png.

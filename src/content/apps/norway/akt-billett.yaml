@@ -1,0 +1,23 @@
+id: akt-billett
+name: AKT Billett
+description: Tickets for buses, trains and ferries across Agder.
+icon_id: akt-billett
+operator: Agder Kollektivtrafikk AS
+country_codes:
+  - NO
+website_url: https://akt.no/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=no.akt.aktbillett
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://akt.no/
+marker:
+  coordinates: [7.9956, 58.1467]
+  label: AKT Billett
+source_url: https://akt.no/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the 6378 AKT Billett stops across Agder (OSM, ISO 3166-2 NO-42), so the shaded area follows the network rather than the county line. The icon is the official AKT Billett app icon from Google Play, stored as public/icons/akt-billett.png.

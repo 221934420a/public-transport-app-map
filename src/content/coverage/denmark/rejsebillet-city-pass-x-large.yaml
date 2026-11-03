@@ -1,0 +1,23 @@
+id: rejsebillet-city-pass-x-large
+app_id: rejsebillet
+name: City Pass X-Large area (zones 1-299)
+# The X-Large pass is the union of the Large, West and South areas, so it reuses
+# their three features instead of a duplicate copy of the same geometry.
+geometry_refs:
+  - /geo/denmark/city-pass-areas.geojson#city-pass-large
+  - /geo/denmark/city-pass-areas.geojson#city-pass-west
+  - /geo/denmark/city-pass-areas.geojson#city-pass-south
+style:
+  fill_color: '#0f172a'
+  fill_opacity: 0.05
+  outline_color: '#0f172a'
+  outline_width: 2.5
+boundary_description: >-
+  Copenhagen and all of Zealand and its islands (zones 1-299): the Greater
+  Copenhagen area, West Zealand, South Zealand, Lolland, Falster and Møn. It is
+  the combined area of the City Pass Large, West and South areas and is sold for
+  24 hours only.
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+sort_order: 10

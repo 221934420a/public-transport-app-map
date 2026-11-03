@@ -1,0 +1,24 @@
+id: network-one-day
+app_id: pop
+name: Network One day (bus, Metro & rail)
+duration:
+  value: 1
+  unit: day
+price:
+  amount: 7.50
+  currency: GBP
+passenger_type: adult
+modes:
+  - bus
+  - metro
+  - rail
+validity_description: >-
+  All-day unlimited travel across Tyne and Wear on local buses, the Metro, the
+  Shields Ferry and the Northern rail services between Blaydon and Sunderland,
+  for the day of purchase. Bought in the Pop app.
+purchase_channels:
+  - app
+source_url: https://networkonetickets.co.uk/tickets/pricing/
+checked_at: '2026-11-02'
+status: draft
+sort_order: 10

@@ -1,0 +1,22 @@
+id: gotlandstrafiken
+name: Gotlands Kollektivtrafik
+description: Bus, tram, ferry and train tickets across Gotland County.
+icon_id: gotlandstrafiken
+operator: Region Gotland
+country_codes:
+  - SE
+website_url: https://www.gotlandbiljett.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.ridango.gotland.app
+transport_modes:
+  - bus
+  - ferry
+tickets_url: https://www.gotlandbiljett.se/biljetter/
+marker:
+  coordinates: [18.2948, 57.6348]
+  label: Gotlands Kollektivtrafik
+source_url: https://www.gotlandbiljett.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Gotlands Kollektivtrafik bus stops, tram stops, rail stations and ferry piers across Gotland County (OSM, ISO 3166-2 SE-I), so the shaded area follows the network rather than the county line. The icon is the official Gotlands Kollektivtrafik app icon from Google Play, stored as public/icons/gotlandstrafiken.png.

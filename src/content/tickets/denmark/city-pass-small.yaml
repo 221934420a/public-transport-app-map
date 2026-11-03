@@ -1,0 +1,46 @@
+id: city-pass-small
+app_id: rejsebillet
+coverage_ids:
+  - rejsebillet-city-pass-small
+name: City Pass Small (zones 1-4)
+duration:
+  value: 24
+  unit: hour
+price:
+  amount: null
+  currency: DKK
+price_options:
+  - selection: 24 hours
+    amount: 100
+  - selection: 48 hours
+    amount: 160
+  - selection: 72 hours
+    amount: 220
+  - selection: 96 hours
+    amount: 280
+  - selection: 120 hours
+    amount: 340
+passenger_type: adult
+modes:
+  - bus
+  - train
+  - metro
+validity_description: >-
+  Unlimited travel with buses, trains, the metro and the harbour buses in zones
+  1-4 for the period bought: Copenhagen city centre, Frederiksberg, Amager,
+  Ørestad and Copenhagen Airport. An adult travelling on a valid ticket can
+  bring two children under 12 free, and children aged 12-15 pay half price.
+  Journeys beyond zones 1-4 need a separate ticket.
+purchase_channels:
+  - app
+  - ticket_machine
+  - retailer
+source_url: https://www.publictransport.dk/tickets/citypass
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  Adult prices from the DOT fare sheet 2026 (24/48/72/96/120 hours: 100/160/220/
+  280/340 DKK). `price.amount` is null because the fare depends on the validity
+  period, so `price_options` lists the adult prices. Also sold at ticket
+  machines, DSB 7-Eleven stores and DSB Sales and Service at Copenhagen Central.
+sort_order: 10

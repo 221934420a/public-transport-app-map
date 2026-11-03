@@ -1,0 +1,4 @@
+id: kolumbus-billett
+view_box: '0 0 48 48'
+svg: |
+  <image href="/icons/kolumbus-billett.png" width="48" height="48" />

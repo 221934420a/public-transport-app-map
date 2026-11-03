@@ -1,0 +1,30 @@
+id: norway
+country_code: NO
+title: Public transport apps
+eyebrow: Norway
+page_title: Public Transport App Map | Norway
+meta_description: Which public transport apps work where, across Norway.
+theme_color: '#fef7ff'
+locale: nb-NO
+map_aria_label: Norway public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [10.6, 64.3]
+  zoom: 5.2
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#005c8a'
+  accent_strong: '#00405f'
+  outline: '#005c8a'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

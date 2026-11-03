@@ -1,0 +1,23 @@
+id: din-tur
+name: Din Tur
+description: Bus, tram, ferry and train tickets across Västernorrland County.
+icon_id: din-tur
+operator: Din Tur Västernorrlands län
+country_codes:
+  - SE
+website_url: https://www.dintur.se/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=se.vn.travelassistant
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.dintur.se/biljetter/
+marker:
+  coordinates: [17.9379, 62.6323]
+  label: Din Tur
+source_url: https://www.dintur.se/
+checked_at: '2026-11-02'
+status: draft
+notes: >-
+  The mapped service area is built from the position of the Din Tur bus stops, tram stops, rail stations and ferry piers across Västernorrland County (OSM, ISO 3166-2 SE-Y), so the shaded area follows the network rather than the county line. The icon is the official Din Tur app icon from Google Play, stored as public/icons/din-tur.png.

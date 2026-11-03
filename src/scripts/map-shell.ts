@@ -45,6 +45,7 @@ type App = {
   name: string;
   description?: string;
   website_url: string;
+  tickets_url?: string;
   accent: string;
   accent_strong: string;
   icon?: AppIcon;
@@ -57,6 +58,8 @@ type Ticket = {
   name: string;
   price: { amount: number | null; currency: string };
   price_options?: { selection: string; amount: number }[];
+  price_note?: string;
+  coverage_ids?: string[];
   duration: { value: number; unit: string };
   passenger_type: string;
   validity_description: string;
@@ -341,6 +344,10 @@ const initialiseMapShell = (root: HTMLElement) => {
     });
   };
 
+  const centerOn = (bounds: LngLatBounds) => {
+    map.easeTo({ center: bounds.getCenter(), duration: 350 });
+  };
+
   const setAccent = (accent: string, accentStrong: string) => {
     root.style.setProperty('--map-accent', accent);
     root.style.setProperty('--map-accent-strong', accentStrong);
@@ -387,10 +394,97 @@ const initialiseMapShell = (root: HTMLElement) => {
     return button;
   };
 
+  const externalLink = (label: string, href: string, className: string) => {
+    const link = document.createElement('a');
+    link.className = className;
+    link.href = href;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.append(document.createTextNode(label));
+    const icon = document.createElement('md-icon');
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = 'open_in_new';
+    link.append(icon);
+    return link;
+  };
+
+  const emptyCollection = () => ({
+    type: 'FeatureCollection' as const,
+    features: [] as unknown[],
+  });
+
+  let ticketAreaAdded = false;
+
+  const ensureTicketArea = (style: AreaStyle) => {
+    const fillColor = style.fill_color ?? shell.theme.accent;
+    const fillOpacity = style.fill_opacity ?? 0.35;
+    const outlineColor = style.outline_color ?? shell.theme.outline;
+    const outlineWidth = style.outline_width ?? shell.overview.outline_width;
+
+    if (ticketAreaAdded) {
+      map.setPaintProperty('ticket-fill', 'fill-color', fillColor);
+      map.setPaintProperty('ticket-fill', 'fill-opacity', fillOpacity);
+      map.setPaintProperty('ticket-outline', 'line-color', outlineColor);
+      map.setPaintProperty('ticket-outline', 'line-width', outlineWidth);
+      return;
+    }
+
+    map.addSource('ticket-area', { type: 'geojson', data: emptyCollection() });
+    map.addLayer({
+      id: 'ticket-fill',
+      type: 'fill',
+      source: 'ticket-area',
+      paint: { 'fill-color': fillColor, 'fill-opacity': fillOpacity },
+    });
+    map.addLayer({
+      id: 'ticket-outline',
+      type: 'line',
+      source: 'ticket-area',
+      paint: { 'line-color': outlineColor, 'line-width': outlineWidth },
+    });
+    ticketAreaAdded = true;
+  };
+
+  const setTicketArea = (features: any[], style: AreaStyle) => {
+    ensureTicketArea(style);
+    const source = map.getSource('ticket-area') as
+      | { setData?: (data: unknown) => void }
+      | undefined;
+    source?.setData?.({ type: 'FeatureCollection', features });
+    const bounds = boundsFromFeatures(features);
+    if (bounds) centerOn(bounds);
+  };
+
+  const clearTicketArea = () => {
+    if (!ticketAreaAdded) return;
+    const source = map.getSource('ticket-area') as
+      | { setData?: (data: unknown) => void }
+      | undefined;
+    source?.setData?.(emptyCollection());
+  };
+
+  const showTicketArea = async (ticket: Ticket, coverages: Coverage[]) => {
+    try {
+      const groups = await Promise.all(
+        coverages.flatMap((coverage) =>
+          coverage.geometry_refs.map((ref) =>
+            fetchGeometry(ref).catch(() => [] as any[]),
+          ),
+        ),
+      );
+      const features = groups.flat();
+      if (currentTicketId !== ticket.id) return;
+      setTicketArea(features, coverages[0]?.style ?? {});
+    } catch {
+      clearTicketArea();
+    }
+  };
+
   const renderIntro = () => {
     currentApp = null;
     currentCoverage = undefined;
     currentTicketId = null;
+    clearTicketArea();
     setAccent(shell.theme.accent, shell.theme.accent_strong);
     setPanelIcon(undefined);
     panelTitle.textContent = shell.title;
@@ -405,6 +499,7 @@ const initialiseMapShell = (root: HTMLElement) => {
     currentApp = app;
     currentCoverage = coverage;
     currentTicketId = null;
+    clearTicketArea();
     setAccent(app.accent, app.accent_strong);
     setPanelIcon(app.icon);
     panelTitle.textContent = app.name;
@@ -433,28 +528,41 @@ const initialiseMapShell = (root: HTMLElement) => {
 
     const section = el('section', 'ticket-section');
     const headingRow = el('div', 'section-heading-row');
+    const heading = el('h2', 'md-typescale-title-medium');
+    if (appTickets.length) {
+      heading.textContent = copy.ticket_heading;
+    } else {
+      heading.append(
+        externalLink(
+          copy.ticket_heading,
+          app.tickets_url ?? app.website_url,
+          'ticket-heading-link',
+        ),
+      );
+    }
     headingRow.append(
-      el('h2', 'md-typescale-title-medium', copy.ticket_heading),
+      heading,
       el('span', 'status-chip md-typescale-label-medium', copy.status_chip),
     );
-    section.append(
-      headingRow,
-      el('p', 'section-hint md-typescale-body-small text-muted', copy.ticket_hint),
-    );
+    section.append(headingRow);
 
     if (appTickets.length) {
+      section.append(
+        el('p', 'section-hint md-typescale-body-small text-muted', copy.ticket_hint),
+      );
       const list = el('md-list', 'ticket-list');
       appTickets.forEach((ticket, index) => {
         if (index > 0) list.append(document.createElement('md-divider'));
+        const clickable =
+          (ticket.price_options?.length ?? 0) > 0 ||
+          Boolean(ticket.price_note) ||
+          (ticket.coverage_ids?.length ?? 0) > 0;
         const item = document.createElement('md-list-item');
-        item.setAttribute('type', 'button');
         item.setAttribute('multiline', '');
-        item.dataset.ticketId = ticket.id;
-
-        const icon = document.createElement('md-icon');
-        icon.setAttribute('slot', 'end');
-        icon.setAttribute('aria-hidden', 'true');
-        icon.textContent = 'chevron_right';
+        if (clickable) {
+          item.setAttribute('type', 'button');
+          item.dataset.ticketId = ticket.id;
+        }
 
         item.append(
           withSlot(el('span', 'md-typescale-title-small', ticket.name), 'headline'),
@@ -463,8 +571,16 @@ const initialiseMapShell = (root: HTMLElement) => {
             el('span', 'ticket-price md-typescale-title-small', priceLabel(ticket)),
             'trailing-supporting-text',
           ),
-          icon,
         );
+
+        if (clickable) {
+          const icon = document.createElement('md-icon');
+          icon.setAttribute('slot', 'end');
+          icon.setAttribute('aria-hidden', 'true');
+          icon.textContent = 'chevron_right';
+          item.append(icon);
+        }
+
         list.append(item);
       });
       section.append(list);
@@ -511,6 +627,12 @@ const initialiseMapShell = (root: HTMLElement) => {
         list.append(row);
       }
       priceBox.append(list);
+    } else if (ticket.price.amount === null && ticket.price_note) {
+      const note = el('div', 'price-note md-typescale-body-medium');
+      for (const line of ticket.price_note.split('\n')) {
+        note.append(el('p', 'price-note-line', line));
+      }
+      priceBox.append(note);
     } else {
       priceBox.append(el('strong', 'price-single md-typescale-headline-small', priceLabel(ticket)));
     }
@@ -522,6 +644,15 @@ const initialiseMapShell = (root: HTMLElement) => {
     );
 
     panelContent.replaceChildren(...parts);
+
+    const ticketCoverages = data.coverages.filter((coverage) =>
+      (ticket.coverage_ids ?? []).includes(coverage.id),
+    );
+    if (ticketCoverages.length) {
+      void showTicketArea(ticket, ticketCoverages);
+    } else {
+      clearTicketArea();
+    }
   };
 
   const openApp = (appId: string, coverageId?: string) => {
@@ -583,7 +714,11 @@ const initialiseMapShell = (root: HTMLElement) => {
       paint: { 'line-color': outlineColor, 'line-width': outlineWidth },
     });
 
-    map.on('click', fillId, () => openApp(coverage.app_id, coverage.id));
+    const coverageBounds = boundsFromFeatures(features);
+    map.on('click', fillId, () => {
+      openApp(coverage.app_id, coverage.id);
+      if (coverageBounds) centerOn(coverageBounds);
+    });
     map.on('mouseenter', fillId, () => {
       map.getCanvas().style.cursor = 'pointer';
     });
@@ -601,9 +736,15 @@ const initialiseMapShell = (root: HTMLElement) => {
     statusElement?.setAttribute('hidden', '');
 
     try {
+      const detailCoverageIds = new Set<string>();
+      for (const ticket of data.tickets) {
+        for (const id of ticket.coverage_ids ?? []) detailCoverageIds.add(id);
+      }
+
       let layerIndex = 0;
 
       for (const coverage of data.coverages) {
+        if (detailCoverageIds.has(coverage.id)) continue;
         try {
           const groups = await Promise.all(
             coverage.geometry_refs.map((ref) =>
