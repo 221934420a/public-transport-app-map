@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "check": "astro check",
     "preview": "astro preview",
     "geo:simplify": "node scripts/simplify-geo.mjs"
   },
@@ -17,6 +18,8 @@
     "maplibre-gl": "^6.16.0"
   },
   "devDependencies": {
-    "mapshaper": "^0.7.101"
+    "@astrojs/check": "^0.9.12",
+    "mapshaper": "^0.7.101",
+    "typescript": "^6.0.3"
   }
 }
