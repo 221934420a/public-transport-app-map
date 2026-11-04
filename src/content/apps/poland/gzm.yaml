@@ -1,0 +1,26 @@
+id: gzm
+name: Transport GZM
+description: Tickets for trams and buses across the 56 GZM municipalities across the Katowice metropolitan area.
+icon_id: gzm
+operator: GZM / ZTM (Górnośląsko-Zagłębiowska Metropolia)
+country_codes:
+  - PL
+website_url: https://metropoliagzm.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.assecods.innompa.m2go
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://metropoliagzm.pl/
+marker:
+  coordinates: [19.0238, 50.2649]
+  label: Transport GZM
+source_url: https://metropoliagzm.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Katowice metropolitan
+  area, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official Transport GZM app icon from Google Play, stored as
+  public/icons/gzm.png.

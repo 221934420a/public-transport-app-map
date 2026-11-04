@@ -1,0 +1,19 @@
+id: wroclaw-service-area
+app_id: wroclaw
+name: UrbanCard coverage (Wrocław)
+geometry_refs:
+  - /geo/poland/wroclaw-coverage.geojson
+style:
+  fill_color: '#25a5db'
+  fill_opacity: 0.43
+  outline_color: '#186d92'
+  outline_width: 2.5
+  accent: '#25a5db'
+  accent_strong: '#155f80'
+boundary_description: >-
+  The official boundary of Wrocław, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.urbancard.pl/
+checked_at: '2026-11-03'
+status: draft

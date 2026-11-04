@@ -1,0 +1,25 @@
+id: poznan
+name: PEKA
+description: Tickets for trams and buses across Poznań.
+icon_id: poznan
+operator: ZTM Poznań
+country_codes:
+  - PL
+website_url: https://ztm.poznan.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.poznan.peka.app
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://ztm.poznan.pl/
+marker:
+  coordinates: [16.9252, 52.4064]
+  label: PEKA
+source_url: https://ztm.poznan.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Poznań, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  PEKA app icon from Google Play, stored as public/icons/poznan.png.

@@ -1,0 +1,19 @@
+id: olomouc-service-area
+app_id: olomouc
+name: DPMO coverage (Olomouc)
+geometry_refs:
+  - /geo/czechia/olomouc-coverage.geojson
+style:
+  fill_color: '#ee1d26'
+  fill_opacity: 0.43
+  outline_color: '#941218'
+  outline_width: 2.5
+  accent: '#ee1d26'
+  accent_strong: '#7e0f14'
+boundary_description: >-
+  The official boundary of Olomouc, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.dpmo.cz/
+checked_at: '2026-11-03'
+status: draft

@@ -7,7 +7,7 @@ import '@material/web/labs/card/elevated-card.js';
 import '@material/web/labs/card/filled-card.js';
 import '@material/web/list/list-item.js';
 import '@material/web/list/list.js';
-import { LngLatBounds, Map as MapLibreMap, Marker, setWorkerUrl } from 'maplibre-gl';
+import { LngLatBounds, Map as MapLibreMap, Marker, setWorkerUrl, type GeoJSONSource } from 'maplibre-gl';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -31,6 +31,7 @@ type Coverage = {
   source_url: string;
   checked_at: string;
   status: string;
+  sort_order?: number;
   style?: AreaStyle;
 };
 
@@ -119,6 +120,21 @@ type ShellData = {
 
 const MARKER_ICON_ONLY_ZOOM = 7.5;
 const MARKER_HIDE_ZOOM = 6;
+
+/**
+ * Every service area is drawn from one source with two layers; each feature
+ * carries its own colours, so the layer count stays constant however many apps
+ * the map shows.
+ */
+const AREA_SOURCE_ID = 'area-coverages';
+const AREA_FILL_LAYER_ID = 'area-fill';
+const AREA_OUTLINE_LAYER_ID = 'area-outline';
+
+/** Geometry files fetched at the same time. */
+const GEOMETRY_CONCURRENCY = 8;
+
+/** Newly loaded areas are pushed to the map at most this often. */
+const AREA_FLUSH_INTERVAL = 150;
 
 /** Geometry is cached across every map shell on the page. */
 const geometryCache = new Map<string, Promise<any>>();
@@ -270,13 +286,24 @@ const initialiseMapShell = (root: HTMLElement) => {
   const markerElements = Array.from(
     root.querySelectorAll<HTMLElement>('[data-map-marker]'),
   );
+  /** Markers that share a position are stacked vertically so none is hidden. */
+  const MARKER_STACK_OFFSET = 60;
+  const markerStackIndex = new Map<string, number>();
   for (const element of markerElements) {
     const app = appById.get(element.dataset.appId ?? '');
     if (!app?.marker) {
       element.hidden = true;
       continue;
     }
-    new Marker({ element, anchor: 'bottom' })
+    const [lon, lat] = app.marker.coordinates;
+    const stackKey = `${lon.toFixed(4)},${lat.toFixed(4)}`;
+    const stackIndex = markerStackIndex.get(stackKey) ?? 0;
+    markerStackIndex.set(stackKey, stackIndex + 1);
+    new Marker({
+      element,
+      anchor: 'bottom',
+      offset: [0, -stackIndex * MARKER_STACK_OFFSET],
+    })
       .setLngLat(app.marker.coordinates)
       .addTo(map);
     element.addEventListener('click', (event) => {
@@ -698,44 +725,71 @@ const initialiseMapShell = (root: HTMLElement) => {
     if (event.key === 'Escape' && !panel.hidden) panelClose.click();
   });
 
-  const addArea = (coverage: Coverage, features: any[], index: number) => {
+  /**
+   * Copy each feature before adding the style the paint expressions read:
+   * geometry files are cached and shared between coverage records, so mutating
+   * a feature in place would leak one area's style into another.
+   */
+  const decorateArea = (coverage: Coverage, features: any[]) => {
     const style = coverage.style ?? {};
-    const sourceId = `area-${index}`;
-    const fillId = `area-fill-${index}`;
-    const outlineId = `area-outline-${index}`;
+    const decoration = {
+      areaFillColor: style.fill_color ?? shell.theme.accent,
+      areaFillOpacity: style.fill_opacity ?? shell.overview.fill_opacity,
+      areaOutlineColor: style.outline_color ?? shell.theme.outline,
+      areaOutlineWidth: style.outline_width ?? shell.overview.outline_width,
+      coverageId: coverage.id,
+      appId: coverage.app_id,
+      areaSort: coverage.sort_order ?? 0,
+    };
+    return features.map((feature) => ({
+      ...feature,
+      properties: { ...(feature.properties ?? {}), ...decoration },
+    }));
+  };
 
-    const fillColor = style.fill_color ?? shell.theme.accent;
-    const fillOpacity = style.fill_opacity ?? shell.overview.fill_opacity;
-    const outlineColor = style.outline_color ?? shell.theme.outline;
-    const outlineWidth = style.outline_width ?? shell.overview.outline_width;
-
-    map.addSource(sourceId, {
+  const addAreaLayers = () => {
+    map.addSource(AREA_SOURCE_ID, {
       type: 'geojson',
-      data: { type: 'FeatureCollection', features },
+      data: { type: 'FeatureCollection', features: [] as any[] },
     });
     map.addLayer({
-      id: fillId,
+      id: AREA_FILL_LAYER_ID,
       type: 'fill',
-      source: sourceId,
-      paint: { 'fill-color': fillColor, 'fill-opacity': fillOpacity },
+      source: AREA_SOURCE_ID,
+      paint: {
+        'fill-color': ['get', 'areaFillColor'],
+        'fill-opacity': ['get', 'areaFillOpacity'],
+      },
     });
     map.addLayer({
-      id: outlineId,
+      id: AREA_OUTLINE_LAYER_ID,
       type: 'line',
-      source: sourceId,
-      paint: { 'line-color': outlineColor, 'line-width': outlineWidth },
+      source: AREA_SOURCE_ID,
+      paint: {
+        'line-color': ['get', 'areaOutlineColor'],
+        'line-width': ['get', 'areaOutlineWidth'],
+      },
     });
 
-    const coverageBounds = boundsFromFeatures(features);
-    if (coverageBounds) coverageBoundsById.set(coverage.id, coverageBounds);
-    map.on('click', fillId, () => {
-      openApp(coverage.app_id, coverage.id);
-      if (coverageBounds) centerOn(coverageBounds);
+    map.on('click', AREA_FILL_LAYER_ID, (event) => {
+      const features = event.features ?? [];
+      if (!features.length) return;
+      // Areas are drawn in sort_order, so the last drawn one is on top and
+      // should win the click where areas overlap.
+      const top = features.reduce((best, feature) =>
+        Number(feature.properties?.areaSort ?? 0) >= Number(best.properties?.areaSort ?? 0)
+          ? feature
+          : best,
+      );
+      const coverageId = String(top.properties?.coverageId ?? '');
+      openApp(String(top.properties?.appId ?? ''), coverageId || undefined);
+      const bounds = coverageBoundsById.get(coverageId);
+      if (bounds) centerOn(bounds);
     });
-    map.on('mouseenter', fillId, () => {
+    map.on('mouseenter', AREA_FILL_LAYER_ID, () => {
       map.getCanvas().style.cursor = 'pointer';
     });
-    map.on('mouseleave', fillId, () => {
+    map.on('mouseleave', AREA_FILL_LAYER_ID, () => {
       map.getCanvas().style.cursor = '';
     });
   };
@@ -754,24 +808,69 @@ const initialiseMapShell = (root: HTMLElement) => {
         for (const id of ticket.coverage_ids ?? []) detailCoverageIds.add(id);
       }
 
-      let layerIndex = 0;
+      const baseCoverages = data.coverages.filter(
+        (coverage) => !detailCoverageIds.has(coverage.id),
+      );
 
-      for (const coverage of data.coverages) {
-        if (detailCoverageIds.has(coverage.id)) continue;
-        try {
-          const groups = await Promise.all(
-            coverage.geometry_refs.map((ref) =>
-              fetchGeometry(ref).catch(() => [] as any[]),
-            ),
-          );
-          const features = groups.flat();
-          if (!features.length) continue;
-          addArea(coverage, features, layerIndex++);
-          areaBounds = mergeBounds(areaBounds, boundsFromFeatures(features));
-        } catch {
-          // Try the next area; one broken file should not hide the whole map.
+      addAreaLayers();
+      const source = map.getSource(AREA_SOURCE_ID) as GeoJSONSource;
+      const loaded: any[] = [];
+
+      // Fetches finish out of order, but features must reach the source in
+      // sort_order, so completed areas wait until every earlier one is done.
+      const pending: ({ coverage: Coverage; features: any[] } | null)[] = baseCoverages.map(
+        () => null,
+      );
+      let next = 0;
+      let flushTimer: number | null = null;
+
+      const flush = () => {
+        flushTimer = null;
+        source.setData({ type: 'FeatureCollection', features: loaded });
+      };
+
+      // Areas are pushed to the map in batches so they appear while later
+      // files are still downloading without re-uploading geometry per area.
+      const drain = () => {
+        let appended = false;
+        while (next < pending.length && pending[next]) {
+          const entry = pending[next]!;
+          pending[next] = null;
+          next += 1;
+          if (!entry.features.length) continue;
+          loaded.push(...entry.features);
+          const bounds = boundsFromFeatures(entry.features);
+          if (bounds) {
+            coverageBoundsById.set(entry.coverage.id, bounds);
+            areaBounds = mergeBounds(areaBounds, bounds);
+          }
+          appended = true;
         }
-      }
+        if (appended && flushTimer === null) {
+          flushTimer = window.setTimeout(flush, AREA_FLUSH_INTERVAL);
+        }
+      };
+
+      let cursor = 0;
+      const loadAreas = async () => {
+        while (cursor < baseCoverages.length) {
+          const index = cursor;
+          cursor += 1;
+          const coverage = baseCoverages[index];
+          const groups = await Promise.all(
+            coverage.geometry_refs.map((ref) => fetchGeometry(ref).catch(() => [] as any[])),
+          );
+          pending[index] = { coverage, features: decorateArea(coverage, groups.flat()) };
+          drain();
+        }
+      };
+
+      await Promise.all(
+        Array.from({ length: Math.min(GEOMETRY_CONCURRENCY, baseCoverages.length) }, loadAreas),
+      );
+
+      if (flushTimer !== null) window.clearTimeout(flushTimer);
+      flush();
 
       updateMarkers();
       focusArea(!panel.hidden);

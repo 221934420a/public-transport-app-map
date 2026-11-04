@@ -1,0 +1,19 @@
+id: pid-service-area
+app_id: pid
+name: PID Lítačka coverage (Prague and Central Bohemia)
+geometry_refs:
+  - /geo/czechia/pid-coverage.geojson
+style:
+  fill_color: '#43b02a'
+  fill_opacity: 0.43
+  outline_color: '#2a6b1a'
+  outline_width: 2.5
+  accent: '#43b02a'
+  accent_strong: '#235a16'
+boundary_description: >-
+  The official boundary of Prague and Central Bohemia, the authority whose zone
+  map sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://pid.cz/
+checked_at: '2026-11-03'
+status: draft

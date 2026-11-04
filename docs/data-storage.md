@@ -70,6 +70,10 @@ GeoJSON is fine. Watch for these signals:
 - many regions need to be queried or filtered by attributes;
 - the number of files makes authoring hard.
 
+Before reaching for tiles, shrink what already ships: `npm run geo:simplify`
+trims vertices and coordinate precision from every file under `public/geo/`
+(see the README), which usually buys an order of magnitude.
+
 At that point, keep YAML as the small index and move geometry to PMTiles/vector
 tiles. The YAML record can store a tile layer ID or URL instead of a GeoJSON path.
 The map component only needs a small adapter that reads that field and calls

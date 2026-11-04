@@ -1,0 +1,24 @@
+id: koszalin
+name: MAM Koszalin
+description: Tickets for buses across Koszalin.
+icon_id: koszalin
+operator: MZK Koszalin
+country_codes:
+  - PL
+website_url: https://www.mzk.koszalin.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.gopay24.mkm.koszalin
+transport_modes:
+  - bus
+tickets_url: https://www.mzk.koszalin.pl/
+marker:
+  coordinates: [16.1814, 54.1943]
+  label: MAM Koszalin
+source_url: https://www.mzk.koszalin.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Koszalin, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  MAM Koszalin app icon from Google Play, stored as public/icons/koszalin.png.

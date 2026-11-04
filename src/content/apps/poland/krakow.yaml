@@ -1,0 +1,25 @@
+id: krakow
+name: mKraków
+description: Tickets for trams and buses across Kraków.
+icon_id: krakow
+operator: ZTP Kraków
+country_codes:
+  - PL
+website_url: https://ztp.krakow.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.krakow.mobi
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://ztp.krakow.pl/
+marker:
+  coordinates: [19.945, 50.0647]
+  label: mKraków
+source_url: https://ztp.krakow.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Kraków, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  mKraków app icon from Google Play, stored as public/icons/krakow.png.

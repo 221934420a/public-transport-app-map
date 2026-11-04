@@ -1,0 +1,19 @@
+id: poznan-service-area
+app_id: poznan
+name: PEKA coverage (Poznań)
+geometry_refs:
+  - /geo/poland/poznan-coverage.geojson
+style:
+  fill_color: '#45484a'
+  fill_opacity: 0.43
+  outline_color: '#2b2d2e'
+  outline_width: 2.5
+  accent: '#45484a'
+  accent_strong: '#262829'
+boundary_description: >-
+  The official boundary of Poznań, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://ztm.poznan.pl/
+checked_at: '2026-11-03'
+status: draft

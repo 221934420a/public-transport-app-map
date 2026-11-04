@@ -1,0 +1,26 @@
+id: iredo
+name: IREDO
+description: Tickets for buses and regional trains across the Hradec Králové and Pardubice regions.
+icon_id: iredo
+operator: IREDO (Královéhradecký and Pardubický kraj)
+country_codes:
+  - CZ
+website_url: https://www.iredo.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.oredo.iredo.app
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.iredo.cz/
+marker:
+  coordinates: [15.8328, 50.2092]
+  label: IREDO
+source_url: https://www.iredo.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Hradec Králové and
+  Pardubice regions, the authority whose zone map sets the fares sold in the
+  app, so the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official IREDO app icon from Google Play,
+  stored as public/icons/iredo.png.

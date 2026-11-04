@@ -1,0 +1,26 @@
+id: idolka
+name: Idolka
+description: Tickets for trams, buses and regional trains across the Liberec region.
+icon_id: idolka
+operator: IDOL (Liberecký kraj)
+country_codes:
+  - CZ
+website_url: https://www.idol.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.oict.idolka
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.idol.cz/
+marker:
+  coordinates: [15.0562, 50.7663]
+  label: Idolka
+source_url: https://www.idol.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Liberec region, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official Idolka app icon from Google Play, stored as public/icons/idolka.png.

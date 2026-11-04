@@ -1,0 +1,19 @@
+id: dpmcb-service-area
+app_id: dpmcb
+name: DPMCB coverage (České Budějovice)
+geometry_refs:
+  - /geo/czechia/dpmcb-coverage.geojson
+style:
+  fill_color: '#d8141a'
+  fill_opacity: 0.43
+  outline_color: '#870c10'
+  outline_width: 2.5
+  accent: '#d8141a'
+  accent_strong: '#710a0d'
+boundary_description: >-
+  The official boundary of České Budějovice, the authority whose zone map sets
+  the fares sold in the app, so the shaded area matches the zone map rather than
+  a stop-density approximation.
+source_url: https://www.dpmcb.cz/
+checked_at: '2026-11-03'
+status: draft

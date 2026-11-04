@@ -1,0 +1,26 @@
+id: mlink
+name: Translink mLink
+description: Tickets for NI Railways, Metro, Glider, Foyle Metro and Ulsterbus across Northern Ireland.
+icon_id: mlink
+operator: Translink (Northern Ireland Transport Holding Company)
+country_codes:
+  - GB
+website_url: https://www.translink.co.uk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=uk.core.translink.mlink
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.translink.co.uk/
+marker:
+  coordinates: [-5.9301, 54.5973]
+  label: Translink mLink
+source_url: https://www.translink.co.uk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Northern Ireland, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official Translink mLink app icon from Google Play, stored as
+  public/icons/mlink.png.

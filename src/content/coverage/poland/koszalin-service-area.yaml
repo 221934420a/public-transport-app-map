@@ -1,0 +1,19 @@
+id: koszalin-service-area
+app_id: koszalin
+name: MAM Koszalin coverage (Koszalin)
+geometry_refs:
+  - /geo/poland/koszalin-coverage.geojson
+style:
+  fill_color: '#e40524'
+  fill_opacity: 0.43
+  outline_color: '#8f0316'
+  outline_width: 2.5
+  accent: '#e40524'
+  accent_strong: '#7a0313'
+boundary_description: >-
+  The official boundary of Koszalin, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.mzk.koszalin.pl/
+checked_at: '2026-11-03'
+status: draft

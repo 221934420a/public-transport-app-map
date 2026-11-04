@@ -1,0 +1,25 @@
+id: wroclaw
+name: UrbanCard
+description: Tickets for trams and buses across Wrocław.
+icon_id: wroclaw
+operator: MPK Wrocław
+country_codes:
+  - PL
+website_url: https://www.urbancard.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.mpsa.urbancardmobile
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.urbancard.pl/
+marker:
+  coordinates: [17.0385, 51.1079]
+  label: UrbanCard
+source_url: https://www.urbancard.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Wrocław, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  UrbanCard app icon from Google Play, stored as public/icons/wroclaw.png.

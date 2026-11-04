@@ -1,0 +1,19 @@
+id: odis-service-area
+app_id: odis
+name: ODISapka coverage (the Moravian-Silesian region)
+geometry_refs:
+  - /geo/czechia/odis-coverage.geojson
+style:
+  fill_color: '#d3190e'
+  fill_opacity: 0.43
+  outline_color: '#840f09'
+  outline_width: 2.5
+  accent: '#d3190e'
+  accent_strong: '#6e0c07'
+boundary_description: >-
+  The official boundary of the Moravian-Silesian region, the authority whose
+  zone map sets the fares sold in the app, so the shaded area matches the zone
+  map rather than a stop-density approximation.
+source_url: https://www.kodis.cz/
+checked_at: '2026-11-03'
+status: draft

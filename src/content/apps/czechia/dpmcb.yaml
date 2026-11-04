@@ -1,0 +1,25 @@
+id: dpmcb
+name: DPMCB
+description: Tickets for trams, buses and trolleybuses across České Budějovice.
+icon_id: dpmcb
+operator: DPMCB
+country_codes:
+  - CZ
+website_url: https://www.dpmcb.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.dpmcb.dpmcb
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.dpmcb.cz/
+marker:
+  coordinates: [14.4747, 48.9745]
+  label: DPMCB
+source_url: https://www.dpmcb.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of České Budějovice, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official DPMCB app icon from Google Play, stored as public/icons/dpmcb.png.

@@ -1,0 +1,25 @@
+id: lodz
+name: MigAppka
+description: Tickets for trams and buses across Łódź.
+icon_id: lodz
+operator: MPK-Łódź
+country_codes:
+  - PL
+website_url: https://www.mpk.lodz.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.lodz.mpk.migappka
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.mpk.lodz.pl/
+marker:
+  coordinates: [19.456, 51.7592]
+  label: MigAppka
+source_url: https://www.mpk.lodz.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Łódź, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official
+  MigAppka app icon from Google Play, stored as public/icons/lodz.png.

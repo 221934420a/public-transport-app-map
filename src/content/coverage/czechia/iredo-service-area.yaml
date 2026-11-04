@@ -1,0 +1,19 @@
+id: iredo-service-area
+app_id: iredo
+name: IREDO coverage (the Hradec Králové and Pardubice regions)
+geometry_refs:
+  - /geo/czechia/iredo-coverage.geojson
+style:
+  fill_color: '#005ca9'
+  fill_opacity: 0.43
+  outline_color: '#003a68'
+  outline_width: 2.5
+  accent: '#005ca9'
+  accent_strong: '#003058'
+boundary_description: >-
+  The official boundary of the Hradec Králové and Pardubice regions, the
+  authority whose zone map sets the fares sold in the app, so the shaded area
+  matches the zone map rather than a stop-density approximation.
+source_url: https://www.iredo.cz/
+checked_at: '2026-11-03'
+status: draft

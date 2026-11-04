@@ -1,0 +1,19 @@
+id: vary-service-area
+app_id: vary
+name: Vary Virtual coverage (Karlovy Vary)
+geometry_refs:
+  - /geo/czechia/vary-coverage.geojson
+style:
+  fill_color: '#009ee2'
+  fill_opacity: 0.43
+  outline_color: '#00638d'
+  outline_width: 2.5
+  accent: '#009ee2'
+  accent_strong: '#005477'
+boundary_description: >-
+  The official boundary of Karlovy Vary, the authority whose zone map sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.dpkv.cz/
+checked_at: '2026-11-03'
+status: draft

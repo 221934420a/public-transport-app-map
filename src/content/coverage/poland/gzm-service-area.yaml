@@ -1,0 +1,19 @@
+id: gzm-service-area
+app_id: gzm
+name: Transport GZM coverage (the Katowice metropolitan area)
+geometry_refs:
+  - /geo/poland/gzm-coverage.geojson
+style:
+  fill_color: '#d9b400'
+  fill_opacity: 0.43
+  outline_color: '#8a7200'
+  outline_width: 2.5
+  accent: '#d9b400'
+  accent_strong: '#755f00'
+boundary_description: >-
+  The official boundary of the Katowice metropolitan area, the authority whose
+  zone map sets the fares sold in the app, so the shaded area matches the zone
+  map rather than a stop-density approximation.
+source_url: https://metropoliagzm.pl/
+checked_at: '2026-11-03'
+status: draft

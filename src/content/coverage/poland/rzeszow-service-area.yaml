@@ -1,0 +1,19 @@
+id: rzeszow-service-area
+app_id: rzeszow
+name: Jadę Rzeszów coverage (Rzeszów)
+geometry_refs:
+  - /geo/poland/rzeszow-coverage.geojson
+style:
+  fill_color: '#e98722'
+  fill_opacity: 0.43
+  outline_color: '#94540f'
+  outline_width: 2.5
+  accent: '#e98722'
+  accent_strong: '#7d470c'
+boundary_description: >-
+  The official boundary of Rzeszów, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.ztm.rzeszow.pl/
+checked_at: '2026-11-03'
+status: draft

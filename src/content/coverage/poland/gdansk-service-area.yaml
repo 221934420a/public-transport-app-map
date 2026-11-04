@@ -1,0 +1,19 @@
+id: gdansk-service-area
+app_id: gdansk
+name: System Fala coverage (the Tricity (Gdańsk, Sopot and Gdynia))
+geometry_refs:
+  - /geo/poland/gdansk-coverage.geojson
+style:
+  fill_color: '#3a7ca5'
+  fill_opacity: 0.43
+  outline_color: '#27546f'
+  outline_width: 2.5
+  accent: '#3a7ca5'
+  accent_strong: '#224a62'
+boundary_description: >-
+  The official boundary of the Tricity (Gdańsk, Sopot and Gdynia), the authority
+  whose zone map sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.systemfala.pl/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,4 @@
+id: lublin
+view_box: '0 0 48 48'
+svg: |
+  <image href="/icons/lublin.png" width="48" height="48" />

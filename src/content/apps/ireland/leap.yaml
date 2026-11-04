@@ -1,0 +1,26 @@
+id: leap
+name: Leap Top-up
+description: Tickets for Dublin Bus, Go-Ahead Ireland, Luas, DART, Commuter Rail and the national Leap network across Ireland.
+icon_id: leap
+operator: National Transport Authority (NTA) / TFI Leap Card
+country_codes:
+  - IE
+website_url: https://www.leapcard.ie/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ie.leapcard.tnfc
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.leapcard.ie/
+marker:
+  coordinates: [-6.2603, 53.3498]
+  label: Leap Top-up
+source_url: https://www.leapcard.ie/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Ireland, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Leap Top-up app icon from Google Play, stored as public/icons/leap.png.

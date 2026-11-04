@@ -1,0 +1,19 @@
+id: lublin-service-area
+app_id: lublin
+name: Lubika coverage (Lublin)
+geometry_refs:
+  - /geo/poland/lublin-coverage.geojson
+style:
+  fill_color: '#c4005b'
+  fill_opacity: 0.43
+  outline_color: '#7a0038'
+  outline_width: 2.5
+  accent: '#c4005b'
+  accent_strong: '#66002f'
+boundary_description: >-
+  The official boundary of Lublin, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.lubika.lublin.pl/
+checked_at: '2026-11-03'
+status: draft

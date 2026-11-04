@@ -1,0 +1,26 @@
+id: szczecin
+name: Mobilna Karta Miejska Szczecin
+description: Tickets for trams and buses across Szczecin.
+icon_id: szczecin
+operator: ZDiTM Szczecin
+country_codes:
+  - PL
+website_url: https://www.zditm.szczecin.pl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pl.gopay24.mkm.szczecin
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.zditm.szczecin.pl/
+marker:
+  coordinates: [14.5528, 53.4285]
+  label: Mobilna Karta Miejska Szczecin
+source_url: https://www.zditm.szczecin.pl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Szczecin, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Mobilna Karta Miejska Szczecin app icon from Google Play, stored as
+  public/icons/szczecin.png.

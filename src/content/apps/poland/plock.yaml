@@ -1,0 +1,25 @@
+id: plock
+name: Płockarta
+description: Tickets for buses across Płock.
+icon_id: plock
+operator: Urząd Miasta Płocka
+country_codes:
+  - PL
+website_url: https://www.plock.eu/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.qbmobile.karty.plock
+transport_modes:
+  - bus
+tickets_url: https://www.plock.eu/
+marker:
+  coordinates: [19.7064, 52.5468]
+  label: Płockarta
+source_url: https://www.plock.eu/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Płock, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official
+  Płockarta app icon from Google Play, stored as public/icons/plock.png. This is
+  the city card app; in-app ticket purchase is not confirmed yet.

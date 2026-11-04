@@ -1,0 +1,25 @@
+id: mojedpo
+name: MojeDPO
+description: Tickets for trams, buses and trolleybuses across Ostrava.
+icon_id: mojedpo
+operator: DPO (Dopravní podnik Ostrava)
+country_codes:
+  - CZ
+website_url: https://www.dpo.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.dpo.app
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.dpo.cz/
+marker:
+  coordinates: [18.2625, 49.8209]
+  label: MojeDPO
+source_url: https://www.dpo.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Ostrava, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  MojeDPO app icon from Google Play, stored as public/icons/mojedpo.png.

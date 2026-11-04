@@ -1,0 +1,19 @@
+id: plzen-service-area
+app_id: plzen
+name: Virtuální Plzeňská karta coverage (the Plzeň region)
+geometry_refs:
+  - /geo/czechia/plzen-coverage.geojson
+style:
+  fill_color: '#ffcc00'
+  fill_opacity: 0.43
+  outline_color: '#9c7c00'
+  outline_width: 2.5
+  accent: '#ffcc00'
+  accent_strong: '#7a6100'
+boundary_description: >-
+  The official boundary of the Plzeň region, the authority whose zone map sets
+  the fares sold in the app, so the shaded area matches the zone map rather than
+  a stop-density approximation.
+source_url: https://www.pmdp.cz/
+checked_at: '2026-11-03'
+status: draft

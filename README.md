@@ -35,6 +35,9 @@ src/content/
     switzerland/
     italy/
     portugal/
+    ireland/
+    poland/
+    czechia/
   coverage/
     united-kingdom/        one service area per YAML file
     denmark/               an app may have several (Rejsebillet City Pass areas)
@@ -49,6 +52,9 @@ src/content/
     switzerland/
     italy/
     portugal/
+    ireland/
+    poland/
+    czechia/
   icons/
     united-kingdom/        one app icon per YAML file
     denmark/
@@ -63,11 +69,14 @@ src/content/
     switzerland/
     italy/
     portugal/
+    ireland/
+    poland/
+    czechia/
   maps/                    one shell per map: all-countries.yaml (the index map),
                            united-kingdom.yaml, denmark.yaml, sweden.yaml,
                            norway.yaml, finland.yaml, germany.yaml,
                            france.yaml, netherlands.yaml, belgium.yaml,
-                           spain.yaml, switzerland.yaml, italy.yaml, portugal.yaml
+                           spain.yaml, switzerland.yaml, italy.yaml, portugal.yaml, ireland.yaml, poland.yaml, czechia.yaml
   tickets/
     united-kingdom/        one ticket per YAML file
     denmark/
@@ -82,6 +91,9 @@ src/content/
     switzerland/
     italy/
     portugal/
+    ireland/
+    poland/
+    czechia/
 public/icons/
   pop.png                  raster icon asset used by the Pop app icon record
   rejsebillet.png          official Rejsebillet app icon
@@ -106,11 +118,14 @@ public/geo/
   switzerland/
   italy/
   portugal/
+  ireland/
+  poland/
+  czechia/
 ```
 
 Data is grouped by country (`united-kingdom/`, `denmark/`, `sweden/`, `norway/`,
 `finland/`, `germany/`, `france/`, `netherlands/`, `belgium/`, `spain/`,
-`switzerland/`, `italy/`, `portugal/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
+`switzerland/`, `italy/`, `portugal/`, `ireland/`, `poland/`, `czechia/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
 `all-countries.yaml` leaves it out and draws **every** app, which is what the
 index page uses, so a new country appears on the home page as soon as its
 records exist. Record IDs remain global, so `app_id` and `geometry_refs` do not
@@ -146,10 +161,27 @@ the Denmark map at `/denmark/`, the Sweden map at `/sweden/`, the Norway map at
 `/norway/`, the Finland map at `/finland/`, the Germany map at `/germany/`, the
 France map at `/france/`, the Netherlands map at `/netherlands/`, the Belgium map
 at `/belgium/`, the Spain map at `/spain/`, the Switzerland map at
-`/switzerland/`, the Italy map at `/italy/` and the Portugal map at `/portugal/`.
+`/switzerland/`, the Italy map at `/italy/`, the Portugal map at `/portugal/`, the Ireland map at `/ireland/`, the Poland map at `/poland/` and the Czechia map at `/czechia/`.
 
 See `docs/data-schema.md` for all fields and `docs/data-storage.md` for guidance
 on YAML versus GeoJSON, PMTiles, or a database.
+
+## Simplifying geometry
+
+The map draws every service area, so `public/geo/**/*.geojson` is simplified in
+place with [mapshaper](https://mapshaper.org/):
+
+```sh
+npm run geo:simplify
+```
+
+The script removes 85% of the vertices, rounds coordinates to five decimals and
+prints the size change; the whole set drops from about 5.9 MB to 0.7 MB. Feature
+ids and properties survive, so `geometry_refs` fragments keep working. It is
+meant for full-resolution sources: running it twice simplifies the file again,
+and islets under roughly a square kilometre can disappear. Keep pristine
+originals outside `public/geo/` (or regenerate them from the sources below) if
+you may need them later, and raise `--percent=25` to keep more detail.
 
 ## Geometry sources
 
@@ -232,6 +264,31 @@ on YAML versus GeoJSON, PMTiles, or a database.
   or counties (OpenStreetMap via the Overpass API, `ISO3166-2=NO-*`), gridded at
   0.02°, dilated, dissolved and smoothed into one outline. Each icon is the official
   Google Play icon, stored as `public/icons/<app>.png`.
+- **Czech coverage** — for the ten city and regional apps (PID Lítačka for Prague
+  and Central Bohemia, ODISapka for the Moravian-Silesian region, MojeDPO for
+  Ostrava, the Plzeň card for the Plzeň region, DPMO for Olomouc, Idolka for the
+  Liberec region, IREDO for the Hradec Králové and Pardubice regions, DPMCB for
+  České Budějovice, Vary Virtual for Karlovy Vary and DÚKapka for the Ústí
+  region) the shaded area is the official boundary of the region or city whose
+  zone map sets the fares, taken from OpenStreetMap administrative relations and
+  dissolved. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Polish coverage** — for the twelve city and metropolitan apps (Transport GZM
+  for the Katowice metropolia, mKraków, PEKA, UrbanCard, System Fala for the
+  Tricity, MigAppka, Lubika, Jadę Rzeszów, Często Plus, the Szczecin city card,
+  MAM Koszalin and Płockarta) the shaded area is the official boundary of the
+  metropolitan area or city whose zone map sets the fares, taken from
+  OpenStreetMap administrative relations and simplified. Translink-style
+  white-label and third-party platforms (Jakdojade, moBILET, mPay, SkyCash,
+  zBiletem, GoPay) are deliberately excluded, and Mint Mobile Bydgoszcz has no
+  app-store listing. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Irish coverage** — for TFI GO and Leap Top-up the shaded area is the Republic
+  of Ireland's national boundary: both sell tickets across the national Bus
+  Éireann / Local Link and Leap networks rather than a single city zone. Translink
+  mLink covers Northern Ireland, so it uses the Northern Ireland boundary and sits
+  on the United Kingdom map (country code GB). Each icon is the official Google
+  Play icon, stored as `public/icons/<app>.png`.
 - **Portuguese coverage** — for the six apps (Anda for the Porto metropolitan
   area, navegante for the Lisbon metropolitan area, CARRISway for Lisbon, TUB
   Mobile for Braga, Vamus Algarve for the Algarve and Carris Metropolitana for
@@ -339,8 +396,8 @@ on YAML versus GeoJSON, PMTiles, or a database.
 A service area may extend beyond administrative boundaries: bee-network's area
 is the Greater Manchester boundary plus the AnyBus outer areas around Preston
 and East Lancashire, and the Saveaway area adds the rail-only extensions beyond
-Merseyside. The Greater Manchester file is detailed (about 750 KB); simplify it
-with a GIS tool before relying on it at scale.
+Merseyside. The Greater Manchester file is the most detailed source (about
+750 KB before `npm run geo:simplify` shrinks it to about 60 KB).
 
 Review OpenFreeMap's current terms and service status before relying on its
 public instance in production.

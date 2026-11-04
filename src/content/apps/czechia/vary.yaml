@@ -1,0 +1,26 @@
+id: vary
+name: Vary Virtual
+description: Tickets for trams, buses and trolleybuses across Karlovy Vary.
+icon_id: vary
+operator: DPKV
+country_codes:
+  - CZ
+website_url: https://www.dpkv.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.odp.varyvirtual
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.dpkv.cz/
+marker:
+  coordinates: [12.871, 50.2306]
+  label: Vary Virtual
+source_url: https://www.dpkv.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Karlovy Vary, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official Vary Virtual app icon from Google Play, stored as
+  public/icons/vary.png.

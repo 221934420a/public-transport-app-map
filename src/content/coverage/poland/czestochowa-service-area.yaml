@@ -1,0 +1,19 @@
+id: czestochowa-service-area
+app_id: czestochowa
+name: Często Plus coverage (Częstochowa)
+geometry_refs:
+  - /geo/poland/czestochowa-coverage.geojson
+style:
+  fill_color: '#01428d'
+  fill_opacity: 0.43
+  outline_color: '#002854'
+  outline_width: 2.5
+  accent: '#01428d'
+  accent_strong: '#002247'
+boundary_description: >-
+  The official boundary of Częstochowa, the authority whose zone map sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.czestochowa.pl/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,19 @@
+id: lodz-service-area
+app_id: lodz
+name: MigAppka coverage (Łódź)
+geometry_refs:
+  - /geo/poland/lodz-coverage.geojson
+style:
+  fill_color: '#fcbf0c'
+  fill_opacity: 0.43
+  outline_color: '#9c7600'
+  outline_width: 2.5
+  accent: '#fcbf0c'
+  accent_strong: '#7a5c00'
+boundary_description: >-
+  The official boundary of Łódź, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.mpk.lodz.pl/
+checked_at: '2026-11-03'
+status: draft

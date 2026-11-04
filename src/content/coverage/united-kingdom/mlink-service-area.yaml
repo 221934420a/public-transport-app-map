@@ -1,0 +1,19 @@
+id: mlink-service-area
+app_id: mlink
+name: Translink mLink coverage (Northern Ireland)
+geometry_refs:
+  - /geo/united-kingdom/mlink-coverage.geojson
+style:
+  fill_color: '#008571'
+  fill_opacity: 0.43
+  outline_color: '#00544a'
+  outline_width: 2.5
+  accent: '#008571'
+  accent_strong: '#00473f'
+boundary_description: >-
+  The official boundary of Northern Ireland, the authority whose zone map sets
+  the fares sold in the app, so the shaded area matches the zone map rather than
+  a stop-density approximation.
+source_url: https://www.translink.co.uk/
+checked_at: '2026-11-03'
+status: draft

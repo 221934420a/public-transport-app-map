@@ -8,11 +8,15 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "geo:simplify": "node scripts/simplify-geo.mjs"
   },
   "dependencies": {
     "@material/web": "^2.5.0",
     "astro": "^7.4.4",
     "maplibre-gl": "^6.16.0"
+  },
+  "devDependencies": {
+    "mapshaper": "^0.7.101"
   }
 }

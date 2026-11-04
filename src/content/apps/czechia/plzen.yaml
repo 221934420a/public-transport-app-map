@@ -1,0 +1,26 @@
+id: plzen
+name: Virtuální Plzeňská karta
+description: Tickets for trams, trolleybuses and buses across the Plzeň region.
+icon_id: plzen
+operator: PMDP / IDPK
+country_codes:
+  - CZ
+website_url: https://www.pmdp.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.odp.vpkng
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.pmdp.cz/
+marker:
+  coordinates: [13.3777, 49.7384]
+  label: Virtuální Plzeňská karta
+source_url: https://www.pmdp.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Plzeň region, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official Virtuální Plzeňská karta app icon from Google Play, stored as
+  public/icons/plzen.png.

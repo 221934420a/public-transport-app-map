@@ -1,0 +1,25 @@
+id: olomouc
+name: DPMO
+description: Tickets for trams and buses across Olomouc.
+icon_id: olomouc
+operator: DPMO / IDSOK
+country_codes:
+  - CZ
+website_url: https://www.dpmo.cz/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cz.globdata.dpmoinfo
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.dpmo.cz/
+marker:
+  coordinates: [17.2509, 49.5938]
+  label: DPMO
+source_url: https://www.dpmo.cz/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Olomouc, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  DPMO app icon from Google Play, stored as public/icons/olomouc.png.

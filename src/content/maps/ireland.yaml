@@ -1,0 +1,30 @@
+id: ireland
+country_code: IE
+title: Public transport apps
+eyebrow: Ireland
+page_title: Public Transport App Map | Ireland
+meta_description: Which public transport apps work where, across Ireland.
+theme_color: '#fef7ff'
+locale: en-IE
+map_aria_label: Ireland public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [-8.0, 53.4]
+  zoom: 6.4
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#00796d'
+  accent_strong: '#004c45'
+  outline: '#00796d'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}
