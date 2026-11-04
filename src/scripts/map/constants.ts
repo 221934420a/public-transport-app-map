@@ -1,0 +1,23 @@
+export const MARKER_ICON_ONLY_ZOOM = 7.5;
+export const MARKER_HIDE_ZOOM = 6;
+/** Markers that share a position are stacked vertically so none is hidden. */
+export const MARKER_STACK_OFFSET = 60;
+
+/**
+ * Every service area is drawn from one source with two layers; each feature
+ * carries its own colours, so the layer count stays constant however many apps
+ * the map shows.
+ */
+export const AREA_SOURCE_ID = 'area-coverages';
+export const AREA_FILL_LAYER_ID = 'area-fill';
+export const AREA_OUTLINE_LAYER_ID = 'area-outline';
+
+export const TICKET_SOURCE_ID = 'ticket-area';
+export const TICKET_FILL_LAYER_ID = 'ticket-fill';
+export const TICKET_OUTLINE_LAYER_ID = 'ticket-outline';
+
+/** Geometry files fetched at the same time. */
+export const GEOMETRY_CONCURRENCY = 8;
+
+/** Newly loaded areas are pushed to the map at most this often. */
+export const AREA_FLUSH_INTERVAL = 150;
