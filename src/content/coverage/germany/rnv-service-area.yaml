@@ -1,0 +1,20 @@
+id: rnv-service-area
+app_id: rnv
+name: rnv/VRN Handy-Ticket coverage (Mannheim and Heidelberg)
+geometry_refs:
+  - /geo/germany/rnv-coverage.geojson
+style:
+  fill_color: '#002b5c'
+  fill_opacity: 0.43
+  outline_color: '#001f42'
+  outline_width: 2.5
+  accent: '#002b5c'
+  accent_strong: '#001a38'
+boundary_description: >-
+  The official administrative boundaries of Mannheim, Heidelberg and the
+  Rhein-Neckar area, the districts and cities that make up the authority's
+  fare-zone area, so the shaded area matches the zone map the app sells tickets
+  for.
+source_url: https://www.rnv-online.de/
+checked_at: '2026-11-03'
+status: draft

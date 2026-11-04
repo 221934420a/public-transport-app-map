@@ -1,0 +1,19 @@
+id: reims-service-area
+app_id: reims
+name: Grand Reims Mobilités coverage (Grand Reims)
+geometry_refs:
+  - /geo/france/reims-coverage.geojson
+style:
+  fill_color: '#e85d1d'
+  fill_opacity: 0.43
+  outline_color: '#943a12'
+  outline_width: 2.5
+  accent: '#e85d1d'
+  accent_strong: '#7a300f'
+boundary_description: >-
+  The official boundary of Grand Reims, the transport authority that sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.citura.fr/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,20 @@
+id: rheinbahn-service-area
+app_id: rheinbahn
+name: Rheinbahn App coverage (Düsseldorf)
+geometry_refs:
+  - /geo/germany/rheinbahn-coverage.geojson
+style:
+  fill_color: '#e10025'
+  fill_opacity: 0.43
+  outline_color: '#8f0017'
+  outline_width: 2.5
+  accent: '#e10025'
+  accent_strong: '#7a0014'
+boundary_description: >-
+  The official administrative boundaries of Düsseldorf, Mettmann and the
+  Rhein-Kreis Neuss, the districts and cities that make up the authority's
+  fare-zone area, so the shaded area matches the zone map the app sells tickets
+  for.
+source_url: https://www.rheinbahn.de/
+checked_at: '2026-11-03'
+status: draft

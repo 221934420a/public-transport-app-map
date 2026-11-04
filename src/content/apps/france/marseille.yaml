@@ -1,0 +1,28 @@
+id: marseille
+name: RTM
+description: Tickets for the métro, trams, buses and ferries across the Aix-Marseille-Provence métropole.
+icon_id: marseille
+operator: Métropole Aix-Marseille-Provence
+country_codes:
+  - FR
+website_url: https://www.rtm.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.c4mprod.rtm
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - ferry
+tickets_url: https://www.rtm.fr/
+marker:
+  coordinates: [5.3698, 43.2965]
+  label: RTM
+source_url: https://www.rtm.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Aix-Marseille-Provence
+  métropole, the authority that sets the fares sold in the app, so the shaded
+  shape follows the network's zone map rather than a stop-density approximation.
+  The icon is the official RTM app icon from Google Play, stored as
+  public/icons/marseille.png.

@@ -1,0 +1,26 @@
+id: ret
+name: RET
+description: Tickets for the metro, trams and buses across Rotterdam.
+icon_id: ret
+operator: RET (Rotterdam)
+country_codes:
+  - NL
+website_url: https://www.ret.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.infoplazamob.ret
+transport_modes:
+  - bus
+  - tram
+  - metro
+tickets_url: https://www.ret.nl/
+marker:
+  coordinates: [4.4777, 51.9244]
+  label: RET
+source_url: https://www.ret.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Rotterdam, the concession
+  or municipality whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official RET app icon from Google Play, stored as public/icons/ret.png.

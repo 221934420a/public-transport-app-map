@@ -1,0 +1,19 @@
+id: rmv-service-area
+app_id: rmv
+name: RMVgo coverage (the Rhine-Main region)
+geometry_refs:
+  - /geo/germany/rmv-coverage.geojson
+style:
+  fill_color: '#192a6b'
+  fill_opacity: 0.43
+  outline_color: '#101b45'
+  outline_width: 2.5
+  accent: '#192a6b'
+  accent_strong: '#0d173b'
+boundary_description: >-
+  The official administrative boundaries of the Rhine-Main districts, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.rmv.de/
+checked_at: '2026-11-03'
+status: draft

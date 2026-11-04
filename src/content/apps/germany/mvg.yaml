@@ -1,0 +1,28 @@
+id: mvg
+name: MVGO
+description: Tickets for buses, trams, the U-Bahn and S-Bahn across Munich.
+icon_id: mvg
+operator: MVG and MVV
+country_codes:
+  - DE
+website_url: https://www.mvg.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.mvg.more
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.mvg.de/
+marker:
+  coordinates: [11.582, 48.1351]
+  label: MVGO
+source_url: https://www.mvg.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Munich and the surrounding
+  MVV districts — the districts and cities that make up the authority's
+  fare-zone area — so the shaded shape follows the zone map rather than a
+  stop-density approximation. The icon is the official MVGO app icon from Google
+  Play, stored as public/icons/mvg.png.

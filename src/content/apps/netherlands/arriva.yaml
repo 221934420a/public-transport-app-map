@@ -1,0 +1,26 @@
+id: arriva
+name: Arriva
+description: Tickets for buses and trains across Limburg.
+icon_id: arriva
+operator: Arriva Nederland (Limburg)
+country_codes:
+  - NL
+website_url: https://www.arriva.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.arriva.planner
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.arriva.nl/
+marker:
+  coordinates: [5.6931, 50.8514]
+  label: Arriva
+source_url: https://www.arriva.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Limburg, the concession or
+  municipality whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official Arriva app icon from Google Play, stored as
+  public/icons/arriva.png.

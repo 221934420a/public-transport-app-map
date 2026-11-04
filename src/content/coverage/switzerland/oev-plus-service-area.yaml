@@ -1,0 +1,18 @@
+id: oev-plus-service-area
+app_id: oev-plus
+name: öV Plus coverage (Switzerland)
+geometry_refs:
+  - /geo/switzerland/oev-plus-coverage.geojson
+style:
+  fill_color: '#1d4050'
+  fill_opacity: 0.43
+  outline_color: '#122a34'
+  outline_width: 2.5
+  accent: '#1d4050'
+  accent_strong: '#0e222a'
+boundary_description: >-
+  All of Switzerland: öV Plus sells the national direct-traffic tickets that every
+  Swiss tariff network accepts, so its zone map is the country itself.
+source_url: https://www.oevplus.ch/
+checked_at: '2026-11-03'
+status: draft

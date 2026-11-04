@@ -1,0 +1,19 @@
+id: gvb-service-area
+app_id: gvb
+name: GVB reis app coverage (Amsterdam)
+geometry_refs:
+  - /geo/netherlands/gvb-coverage.geojson
+style:
+  fill_color: '#0c5aa6'
+  fill_opacity: 0.43
+  outline_color: '#073a6b'
+  outline_width: 2.5
+  accent: '#0c5aa6'
+  accent_strong: '#06315c'
+boundary_description: >-
+  The official boundary of Amsterdam, the concession or municipality whose zone
+  map sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://gvb.nl/
+checked_at: '2026-11-03'
+status: draft

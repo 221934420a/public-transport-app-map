@@ -1,0 +1,26 @@
+id: modalis
+name: Modalis
+description: Tickets for TER trains, coaches and city networks across the Nouvelle-Aquitaine region.
+icon_id: modalis
+operator: Nouvelle-Aquitaine Mobilités
+country_codes:
+  - FR
+website_url: https://modalis.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.is.android.modalis
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://modalis.fr/
+marker:
+  coordinates: [-0.5792, 44.8378]
+  label: Modalis
+source_url: https://modalis.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Nouvelle-Aquitaine
+  region, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official Modalis app icon from Google Play, stored as
+  public/icons/modalis.png.

@@ -1,0 +1,27 @@
+id: grenoble
+name: L'Appli M
+description: Tickets for trams, buses and TER across Grenoble-Alpes Métropole.
+icon_id: grenoble
+operator: SMMAG (Grenoble-Alpes Métropole)
+country_codes:
+  - FR
+website_url: https://www.mobilites-m.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=org.lametro.metromobilite
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.mobilites-m.fr/
+marker:
+  coordinates: [5.7245, 45.1885]
+  label: L'Appli M
+source_url: https://www.mobilites-m.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Grenoble-Alpes Métropole,
+  the authority that sets the fares sold in the app, so the shaded shape follows
+  the network's zone map rather than a stop-density approximation. The icon is
+  the official L'Appli M app icon from Google Play, stored as
+  public/icons/grenoble.png.

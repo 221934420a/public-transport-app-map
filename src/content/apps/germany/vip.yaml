@@ -1,0 +1,27 @@
+id: vip
+name: ViP Potsdam
+description: Tickets for buses, trams and S-Bahn across Potsdam.
+icon_id: vip
+operator: ViP Verkehrsbetrieb Potsdam
+country_codes:
+  - DE
+website_url: https://www.vip-potsdam.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.ivanto.potsdam
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.vip-potsdam.de/
+marker:
+  coordinates: [13.0645, 52.3906]
+  label: ViP Potsdam
+source_url: https://www.vip-potsdam.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Potsdam — the districts
+  and cities that make up the authority's fare-zone area — so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official ViP Potsdam app icon from Google Play, stored as
+  public/icons/vip.png.

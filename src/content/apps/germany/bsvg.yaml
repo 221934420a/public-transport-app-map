@@ -1,0 +1,26 @@
+id: bsvg
+name: Meine BSVG
+description: Tickets for buses and trams across Braunschweig.
+icon_id: bsvg
+operator: Braunschweiger Verkehrs-GmbH (BSVG)
+country_codes:
+  - DE
+website_url: https://www.bsvg.net/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.projektionisten.bsvg
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.bsvg.net/
+marker:
+  coordinates: [10.5268, 52.2689]
+  label: Meine BSVG
+source_url: https://www.bsvg.net/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Braunschweig, Salzgitter,
+  Wolfsburg and their districts — the districts and cities that make up the
+  authority's fare-zone area — so the shaded shape follows the zone map rather
+  than a stop-density approximation. The icon is the official Meine BSVG app
+  icon from Google Play, stored as public/icons/bsvg.png.

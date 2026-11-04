@@ -1,0 +1,19 @@
+id: kvv-service-area
+app_id: kvv
+name: KVV.regiomove coverage (Karlsruhe)
+geometry_refs:
+  - /geo/germany/kvv-coverage.geojson
+style:
+  fill_color: '#cc003a'
+  fill_opacity: 0.43
+  outline_color: '#830025'
+  outline_width: 2.5
+  accent: '#cc003a'
+  accent_strong: '#6e001f'
+boundary_description: >-
+  The official administrative boundaries of Karlsruhe and the surrounding
+  districts, the districts and cities that make up the authority's fare-zone
+  area, so the shaded area matches the zone map the app sells tickets for.
+source_url: https://www.kvv.de/
+checked_at: '2026-11-03'
+status: draft

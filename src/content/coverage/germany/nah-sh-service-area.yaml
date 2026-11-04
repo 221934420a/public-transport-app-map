@@ -1,0 +1,19 @@
+id: nah-sh-service-area
+app_id: nah-sh
+name: NAH SH coverage (Schleswig-Holstein)
+geometry_refs:
+  - /geo/germany/nah-sh-coverage.geojson
+style:
+  fill_color: '#00a2ae'
+  fill_opacity: 0.43
+  outline_color: '#006e76'
+  outline_width: 2.5
+  accent: '#00a2ae'
+  accent_strong: '#005e65'
+boundary_description: >-
+  The official administrative boundaries of Schleswig-Holstein, the districts
+  and cities that make up the authority's fare-zone area, so the shaded area
+  matches the zone map the app sells tickets for.
+source_url: https://www.nah.sh/
+checked_at: '2026-11-03'
+status: draft

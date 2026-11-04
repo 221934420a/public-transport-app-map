@@ -1,0 +1,26 @@
+id: sudtirol
+name: altoadigemobilità
+description: Tickets for buses, regional trains and funiculars across South Tyrol.
+icon_id: sudtirol
+operator: Strutture Trasporto Alto Adige (STA)
+country_codes:
+  - IT
+website_url: https://www.suedtirolmobil.info/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.bz.provincia.altoadigetogo.android
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.suedtirolmobil.info/
+marker:
+  coordinates: [11.3548, 46.4983]
+  label: altoadigemobilità
+source_url: https://www.suedtirolmobil.info/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of South Tyrol, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  altoadigemobilità app icon from Google Play, stored as
+  public/icons/sudtirol.png.

@@ -1,0 +1,19 @@
+id: cagliari-service-area
+app_id: cagliari
+name: CTM BusFinder coverage (Cagliari)
+geometry_refs:
+  - /geo/italy/cagliari-coverage.geojson
+style:
+  fill_color: '#f57c14'
+  fill_opacity: 0.43
+  outline_color: '#9a4c0c'
+  outline_width: 2.5
+  accent: '#f57c14'
+  accent_strong: '#84410a'
+boundary_description: >-
+  The official boundary of Cagliari, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.ctmcagliari.it/
+checked_at: '2026-11-03'
+status: draft

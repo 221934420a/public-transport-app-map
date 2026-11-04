@@ -1,0 +1,19 @@
+id: brescia-service-area
+app_id: brescia
+name: Bresciapp! coverage (Brescia)
+geometry_refs:
+  - /geo/italy/brescia-coverage.geojson
+style:
+  fill_color: '#3ac2ff'
+  fill_opacity: 0.43
+  outline_color: '#24799c'
+  outline_width: 2.5
+  accent: '#3ac2ff'
+  accent_strong: '#1f6b8a'
+boundary_description: >-
+  The official boundary of Brescia, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.bresciamobilita.it/
+checked_at: '2026-11-03'
+status: draft

@@ -29,6 +29,14 @@ public/geo/
   sweden/                        optionally addressed with #feature-id
   norway/
   finland/
+  germany/
+  france/
+  netherlands/
+  belgium/
+  spain/
+  switzerland/
+  italy/
+  portugal/
 ```
 
 Records are grouped by country. The folder is for authoring and review and is not

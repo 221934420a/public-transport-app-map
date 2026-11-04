@@ -1,0 +1,19 @@
+id: vrm-service-area
+app_id: vrm
+name: VRM Fahrplan & Tickets coverage (Koblenz)
+geometry_refs:
+  - /geo/germany/vrm-coverage.geojson
+style:
+  fill_color: '#0a41a2'
+  fill_opacity: 0.43
+  outline_color: '#072c6f'
+  outline_width: 2.5
+  accent: '#0a41a2'
+  accent_strong: '#06255f'
+boundary_description: >-
+  The official administrative boundaries of Koblenz and the surrounding
+  districts, the districts and cities that make up the authority's fare-zone
+  area, so the shaded area matches the zone map the app sells tickets for.
+source_url: https://www.vrminfo.de/
+checked_at: '2026-11-03'
+status: draft

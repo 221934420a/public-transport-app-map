@@ -1,0 +1,19 @@
+id: mugi-service-area
+app_id: mugi
+name: Mugi APP Gipuzkoa coverage (Gipuzkoa)
+geometry_refs:
+  - /geo/spain/mugi-coverage.geojson
+style:
+  fill_color: '#bebf02'
+  fill_opacity: 0.43
+  outline_color: '#6f7001'
+  outline_width: 2.5
+  accent: '#bebf02'
+  accent_strong: '#5c5d01'
+boundary_description: >-
+  The official boundary of Gipuzkoa, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: http://www.mugi.eus/
+checked_at: '2026-11-03'
+status: draft

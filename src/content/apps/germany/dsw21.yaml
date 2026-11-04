@@ -1,0 +1,28 @@
+id: dsw21
+name: DOtick
+description: Tickets for buses, trams, the U-Bahn and S-Bahn across Dortmund.
+icon_id: dsw21
+operator: DSW21
+country_codes:
+  - DE
+website_url: https://www.bus-und-bahn.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.dsw21.app
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.bus-und-bahn.de/
+marker:
+  coordinates: [7.4653, 51.5136]
+  label: DOtick
+source_url: https://www.bus-und-bahn.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Dortmund and Unna — the
+  districts and cities that make up the authority's fare-zone area — so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official DOtick app icon from Google Play, stored as
+  public/icons/dsw21.png.

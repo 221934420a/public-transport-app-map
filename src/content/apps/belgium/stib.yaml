@@ -1,0 +1,27 @@
+id: stib
+name: STIB-MIVB
+description: Tickets for the métro, trams and buses across the Brussels-Capital Region.
+icon_id: stib
+operator: STIB/MIVB (Brussels-Capital Region)
+country_codes:
+  - BE
+website_url: https://www.stib-mivb.be/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=be.stib.mivb.mobile
+transport_modes:
+  - bus
+  - tram
+  - metro
+tickets_url: https://www.stib-mivb.be/
+marker:
+  coordinates: [4.3517, 50.8503]
+  label: STIB-MIVB
+source_url: https://www.stib-mivb.be/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Brussels-Capital
+  Region, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official STIB-MIVB app icon from Google Play, stored as
+  public/icons/stib.png.

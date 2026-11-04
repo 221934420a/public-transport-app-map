@@ -1,0 +1,26 @@
+id: breizhgo
+name: BreizhGo M-Ticket
+description: Tickets for BreizhGo coaches and regional trains across the Bretagne region.
+icon_id: breizhgo
+operator: Région Bretagne
+country_codes:
+  - FR
+website_url: https://www.breizhgo.bzh/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fr.airweb.bretagne2
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.breizhgo.bzh/
+marker:
+  coordinates: [-1.6778, 48.1173]
+  label: BreizhGo M-Ticket
+source_url: https://www.breizhgo.bzh/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Bretagne region, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official BreizhGo M-Ticket app icon from Google Play, stored as
+  public/icons/breizhgo.png.

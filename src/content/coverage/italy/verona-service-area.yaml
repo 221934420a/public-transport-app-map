@@ -1,0 +1,19 @@
+id: verona-service-area
+app_id: verona
+name: Ticket Bus Verona coverage (Verona)
+geometry_refs:
+  - /geo/italy/verona-coverage.geojson
+style:
+  fill_color: '#005ea9'
+  fill_opacity: 0.43
+  outline_color: '#003d6e'
+  outline_width: 2.5
+  accent: '#005ea9'
+  accent_strong: '#00345d'
+boundary_description: >-
+  The official boundary of Verona, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.atv.verona.it/
+checked_at: '2026-11-03'
+status: draft

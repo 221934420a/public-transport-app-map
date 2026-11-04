@@ -1,0 +1,19 @@
+id: lio-occitanie-service-area
+app_id: lio-occitanie
+name: liO Occitanie coverage (the Occitanie region)
+geometry_refs:
+  - /geo/france/lio-occitanie-coverage.geojson
+style:
+  fill_color: '#c10130'
+  fill_opacity: 0.43
+  outline_color: '#76011d'
+  outline_width: 2.5
+  accent: '#c10130'
+  accent_strong: '#600018'
+boundary_description: >-
+  The official boundary of the Occitanie region, the authority whose zone map
+  sets the fares sold in the app, so the shaded area matches the zone map rather
+  than a stop-density approximation.
+source_url: https://www.lio-occitanie.fr/
+checked_at: '2026-11-03'
+status: draft

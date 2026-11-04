@@ -1,0 +1,26 @@
+id: keolis
+name: RRReis (Keolis)
+description: Tickets for buses and regional trains across Overijssel and Flevoland.
+icon_id: keolis
+operator: Keolis Nederland (Overijssel and Flevoland)
+country_codes:
+  - NL
+website_url: https://www.rrreis.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.rrreis.reisinfo
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.rrreis.nl/
+marker:
+  coordinates: [6.083, 52.2215]
+  label: RRReis (Keolis)
+source_url: https://www.rrreis.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Overijssel and Flevoland,
+  the concession or municipality whose zone map sets the fares sold in the app,
+  so the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official RRReis (Keolis) app icon from Google
+  Play, stored as public/icons/keolis.png.

@@ -1,0 +1,25 @@
+id: mugi
+name: Mugi APP Gipuzkoa
+description: Tickets for Dbus, Lurraldebus, Euskotren and Renfe across Gipuzkoa.
+icon_id: mugi
+operator: Mugi / Lurraldebus (Gipuzkoa)
+country_codes:
+  - ES
+website_url: http://www.mugi.eus/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.merkatu.attgmugi
+transport_modes:
+  - bus
+  - rail
+tickets_url: http://www.mugi.eus/
+marker:
+  coordinates: [-2.6724, 43.3183]
+  label: Mugi APP Gipuzkoa
+source_url: http://www.mugi.eus/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Gipuzkoa, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Mugi APP Gipuzkoa app icon from Google Play, stored as public/icons/mugi.png.

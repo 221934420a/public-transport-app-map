@@ -1,0 +1,19 @@
+id: lille-service-area
+app_id: lille
+name: ilévia coverage (the Métropole Européenne de Lille)
+geometry_refs:
+  - /geo/france/lille-coverage.geojson
+style:
+  fill_color: '#00abe7'
+  fill_opacity: 0.43
+  outline_color: '#006c92'
+  outline_width: 2.5
+  accent: '#00abe7'
+  accent_strong: '#005a79'
+boundary_description: >-
+  The official boundary of the Métropole Européenne de Lille, the transport
+  authority that sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.ilevia.fr/
+checked_at: '2026-11-03'
+status: draft

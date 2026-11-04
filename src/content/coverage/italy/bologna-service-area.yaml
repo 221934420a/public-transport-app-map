@@ -1,0 +1,19 @@
+id: bologna-service-area
+app_id: bologna
+name: Roger coverage (Bologna)
+geometry_refs:
+  - /geo/italy/bologna-coverage.geojson
+style:
+  fill_color: '#fffa00'
+  fill_opacity: 0.43
+  outline_color: '#9c9800'
+  outline_width: 2.5
+  accent: '#fffa00'
+  accent_strong: '#7a7600'
+boundary_description: >-
+  The official boundary of Bologna, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.tper.it/
+checked_at: '2026-11-03'
+status: draft

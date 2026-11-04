@@ -1,0 +1,26 @@
+id: genova
+name: AMT Genova
+description: Tickets for buses, the metro and funiculars across Genoa.
+icon_id: genova
+operator: AMT S.p.A.
+country_codes:
+  - IT
+website_url: https://www.amt.genova.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.genova.amt.app
+transport_modes:
+  - bus
+  - metro
+  - rail
+tickets_url: https://www.amt.genova.it/
+marker:
+  coordinates: [8.9463, 44.4056]
+  label: AMT Genova
+source_url: https://www.amt.genova.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Genoa, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official AMT
+  Genova app icon from Google Play, stored as public/icons/genova.png.

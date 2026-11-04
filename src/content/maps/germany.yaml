@@ -1,0 +1,30 @@
+id: germany
+country_code: DE
+title: Public transport apps
+eyebrow: Germany
+page_title: Public Transport App Map | Germany
+meta_description: Which public transport apps work where, across Germany.
+theme_color: '#fef7ff'
+locale: de-DE
+map_aria_label: Germany public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [10.4, 51.2]
+  zoom: 5.5
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#00538a'
+  accent_strong: '#003a61'
+  outline: '#00538a'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

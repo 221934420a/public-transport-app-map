@@ -1,0 +1,27 @@
+id: nah-sh
+name: NAH SH
+description: Tickets for buses, regional trains and ferries across Schleswig-Holstein.
+icon_id: nah-sh
+operator: NAH.SH GmbH
+country_codes:
+  - DE
+website_url: https://www.nah.sh/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.hafas.android.nahsh
+transport_modes:
+  - bus
+  - rail
+  - ferry
+tickets_url: https://www.nah.sh/
+marker:
+  coordinates: [10.1228, 54.3233]
+  label: NAH SH
+source_url: https://www.nah.sh/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Schleswig-Holstein — the
+  districts and cities that make up the authority's fare-zone area — so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official NAH SH app icon from Google Play, stored as
+  public/icons/nah-sh.png.

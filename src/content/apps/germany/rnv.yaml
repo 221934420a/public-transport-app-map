@@ -1,0 +1,27 @@
+id: rnv
+name: rnv/VRN Handy-Ticket
+description: Tickets for buses, trams and S-Bahn across Mannheim and Heidelberg.
+icon_id: rnv
+operator: RNV and VRN
+country_codes:
+  - DE
+website_url: https://www.rnv-online.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.eos.uptrade.android.fahrinfo.rnv
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.rnv-online.de/
+marker:
+  coordinates: [8.466, 49.4875]
+  label: rnv/VRN Handy-Ticket
+source_url: https://www.rnv-online.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Mannheim, Heidelberg and
+  the Rhein-Neckar area — the districts and cities that make up the authority's
+  fare-zone area — so the shaded shape follows the zone map rather than a
+  stop-density approximation. The icon is the official rnv/VRN Handy-Ticket app
+  icon from Google Play, stored as public/icons/rnv.png.

@@ -1,0 +1,19 @@
+id: modalis-service-area
+app_id: modalis
+name: Modalis coverage (the Nouvelle-Aquitaine region)
+geometry_refs:
+  - /geo/france/modalis-coverage.geojson
+style:
+  fill_color: '#312783'
+  fill_opacity: 0.43
+  outline_color: '#1f1853'
+  outline_width: 2.5
+  accent: '#312783'
+  accent_strong: '#1a1445'
+boundary_description: >-
+  The official boundary of the Nouvelle-Aquitaine region, the authority whose
+  zone map sets the fares sold in the app, so the shaded area matches the zone
+  map rather than a stop-density approximation.
+source_url: https://modalis.fr/
+checked_at: '2026-11-03'
+status: draft

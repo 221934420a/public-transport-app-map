@@ -1,0 +1,27 @@
+id: rrreis
+name: RRReis
+description: Tickets for buses, trolleybuses and regional trains across Gelderland.
+icon_id: rrreis
+operator: Transdev Nederland (Gelderland)
+country_codes:
+  - NL
+website_url: https://www.rrreis.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.rrreis.reisinfo
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.rrreis.nl/
+marker:
+  coordinates: [5.8987, 51.9851]
+  label: RRReis
+source_url: https://www.rrreis.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Gelderland, the concession
+  or municipality whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official RRReis app icon from Google Play, stored as
+  public/icons/rrreis.png.

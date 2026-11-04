@@ -1,0 +1,28 @@
+id: campania
+name: Unico Campania
+description: Tickets for the metro, funiculars, buses, Circumvesuviana and ferries across Campania.
+icon_id: campania
+operator: UnicoCampania (Regione Campania)
+country_codes:
+  - IT
+website_url: https://www.unicocampania.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.pluservice.unicoc
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+  - ferry
+tickets_url: https://www.unicocampania.it/
+marker:
+  coordinates: [14.2681, 40.8518]
+  label: Unico Campania
+source_url: https://www.unicocampania.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Campania, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Unico Campania app icon from Google Play, stored as public/icons/campania.png.

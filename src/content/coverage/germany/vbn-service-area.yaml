@@ -1,0 +1,20 @@
+id: vbn-service-area
+app_id: vbn
+name: FahrPlaner coverage (Bremen and Lower Saxony)
+geometry_refs:
+  - /geo/germany/vbn-coverage.geojson
+style:
+  fill_color: '#ce1719'
+  fill_opacity: 0.43
+  outline_color: '#821011'
+  outline_width: 2.5
+  accent: '#ce1719'
+  accent_strong: '#6e0d0e'
+boundary_description: >-
+  The official administrative boundaries of Bremen, Bremerhaven and the
+  surrounding Lower Saxony districts, the districts and cities that make up the
+  authority's fare-zone area, so the shaded area matches the zone map the app
+  sells tickets for.
+source_url: https://www.fahrplaner.info/
+checked_at: '2026-11-03'
+status: draft

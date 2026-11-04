@@ -1,0 +1,19 @@
+id: catania-service-area
+app_id: catania
+name: AMTS Smart Ticketing coverage (Catania)
+geometry_refs:
+  - /geo/italy/catania-coverage.geojson
+style:
+  fill_color: '#e50017'
+  fill_opacity: 0.43
+  outline_color: '#8f000e'
+  outline_width: 2.5
+  accent: '#e50017'
+  accent_strong: '#7a000c'
+boundary_description: >-
+  The official boundary of Catania, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.amtscatania.com/
+checked_at: '2026-11-03'
+status: draft

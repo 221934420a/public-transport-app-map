@@ -1,0 +1,19 @@
+id: remi-service-area
+app_id: remi
+name: Rémi coverage (the Centre-Val de Loire region)
+geometry_refs:
+  - /geo/france/remi-coverage.geojson
+style:
+  fill_color: '#29255c'
+  fill_opacity: 0.43
+  outline_color: '#1a173a'
+  outline_width: 2.5
+  accent: '#29255c'
+  accent_strong: '#15122f'
+boundary_description: >-
+  The official boundary of the Centre-Val de Loire region, the authority whose
+  zone map sets the fares sold in the app, so the shaded area matches the zone
+  map rather than a stop-density approximation.
+source_url: https://www.remi-centrevaldeloire.fr/
+checked_at: '2026-11-03'
+status: draft

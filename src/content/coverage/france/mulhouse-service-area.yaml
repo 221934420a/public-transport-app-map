@@ -1,0 +1,19 @@
+id: mulhouse-service-area
+app_id: mulhouse
+name: Soléa coverage (Mulhouse Alsace Agglomération)
+geometry_refs:
+  - /geo/france/mulhouse-coverage.geojson
+style:
+  fill_color: '#fdca00'
+  fill_opacity: 0.43
+  outline_color: '#9c7c00'
+  outline_width: 2.5
+  accent: '#fdca00'
+  accent_strong: '#7a6100'
+boundary_description: >-
+  The official boundary of Mulhouse Alsace Agglomération, the transport
+  authority that sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.solea.info/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,28 @@
+id: uestra
+name: ÜSTRA
+description: Tickets for buses, the Stadtbahn and S-Bahn across Hannover.
+icon_id: uestra
+operator: ÜSTRA and GVH
+country_codes:
+  - DE
+website_url: https://www.uestra.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.hafas.android.gvh
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.uestra.de/
+marker:
+  coordinates: [9.732, 52.3759]
+  label: ÜSTRA
+source_url: https://www.uestra.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Region Hannover — the
+  districts and cities that make up the authority's fare-zone area — so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official ÜSTRA app icon from Google Play, stored as
+  public/icons/uestra.png.

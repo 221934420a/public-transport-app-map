@@ -1,0 +1,19 @@
+id: dvb-service-area
+app_id: dvb
+name: DVB mobil coverage (Dresden)
+geometry_refs:
+  - /geo/germany/dvb-coverage.geojson
+style:
+  fill_color: '#fdc300'
+  fill_opacity: 0.43
+  outline_color: '#9c7800'
+  outline_width: 2.5
+  accent: '#fdc300'
+  accent_strong: '#7a5e00'
+boundary_description: >-
+  The official administrative boundaries of Dresden, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.dvb.de/
+checked_at: '2026-11-03'
+status: draft

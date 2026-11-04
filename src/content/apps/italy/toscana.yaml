@@ -1,0 +1,25 @@
+id: toscana
+name: at bus
+description: Tickets for buses and trams across Tuscany.
+icon_id: toscana
+operator: Autolinee Toscane
+country_codes:
+  - IT
+website_url: https://www.at-bus.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.ratp.toscane
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.at-bus.it/
+marker:
+  coordinates: [11.2558, 43.7696]
+  label: at bus
+source_url: https://www.at-bus.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Tuscany, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official at
+  bus app icon from Google Play, stored as public/icons/toscana.png.

@@ -1,0 +1,19 @@
+id: vrr-service-area
+app_id: vrr
+name: VRR App coverage (the Ruhr region and Rhineland)
+geometry_refs:
+  - /geo/germany/vrr-coverage.geojson
+style:
+  fill_color: '#008337'
+  fill_opacity: 0.43
+  outline_color: '#005a26'
+  outline_width: 2.5
+  accent: '#008337'
+  accent_strong: '#004c20'
+boundary_description: >-
+  The official administrative boundaries of North Rhine-Westphalia, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.vrr.de/
+checked_at: '2026-11-03'
+status: draft

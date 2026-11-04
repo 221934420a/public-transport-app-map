@@ -1,0 +1,27 @@
+id: vvm
+name: VVM App
+description: Tickets for buses, trams and regional trains across Würzburg.
+icon_id: vvm
+operator: Verkehrsverbund Mainfranken (VVM)
+country_codes:
+  - DE
+website_url: https://www.vvm-info.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.mdv.VVMCompanion
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.vvm-info.de/
+marker:
+  coordinates: [9.9294, 49.7913]
+  label: VVM App
+source_url: https://www.vvm-info.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Würzburg, Kitzingen and
+  Main-Spessart — the districts and cities that make up the authority's
+  fare-zone area — so the shaded shape follows the zone map rather than a
+  stop-density approximation. The icon is the official VVM App app icon from
+  Google Play, stored as public/icons/vvm.png.

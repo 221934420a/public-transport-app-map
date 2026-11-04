@@ -1,0 +1,19 @@
+id: nice-service-area
+app_id: nice
+name: Lignes d'Azur coverage (Nice and the Côte d’Azur)
+geometry_refs:
+  - /geo/france/nice-coverage.geojson
+style:
+  fill_color: '#e63348'
+  fill_opacity: 0.43
+  outline_color: '#8f202d'
+  outline_width: 2.5
+  accent: '#e63348'
+  accent_strong: '#7a1b26'
+boundary_description: >-
+  The official boundary of Nice and the Côte d’Azur, the transport authority
+  that sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://www.lignesdazur.com/
+checked_at: '2026-11-03'
+status: draft

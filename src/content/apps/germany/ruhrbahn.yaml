@@ -1,0 +1,28 @@
+id: ruhrbahn
+name: ZÄPP
+description: Tickets for buses, trams, the U-Bahn and S-Bahn across Essen and Mülheim.
+icon_id: ruhrbahn
+operator: Ruhrbahn GmbH
+country_codes:
+  - DE
+website_url: https://www.ruhrbahn.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.mentz.ruhrbahn_essen_cibo_app
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.ruhrbahn.de/
+marker:
+  coordinates: [7.0116, 51.4556]
+  label: ZÄPP
+source_url: https://www.ruhrbahn.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Essen and Mülheim — the
+  districts and cities that make up the authority's fare-zone area — so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official ZÄPP app icon from Google Play, stored as
+  public/icons/ruhrbahn.png.

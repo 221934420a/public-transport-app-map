@@ -1,0 +1,19 @@
+id: kvb-service-area
+app_id: kvb
+name: KVB-App coverage (Cologne)
+geometry_refs:
+  - /geo/germany/kvb-coverage.geojson
+style:
+  fill_color: '#e10023'
+  fill_opacity: 0.43
+  outline_color: '#8f0016'
+  outline_width: 2.5
+  accent: '#e10023'
+  accent_strong: '#7a0013'
+boundary_description: >-
+  The official administrative boundaries of Cologne, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.kvb.koeln/
+checked_at: '2026-11-03'
+status: draft

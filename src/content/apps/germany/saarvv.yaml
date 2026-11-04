@@ -1,0 +1,27 @@
+id: saarvv
+name: Saarfahrplan
+description: Tickets for buses, the Saarbahn and regional trains across Saarland.
+icon_id: saarvv
+operator: Saarländischer Verkehrsverbund (saarVV)
+country_codes:
+  - DE
+website_url: https://www.saarvv.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.hafas.android.vgs
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.saarvv.de/
+marker:
+  coordinates: [6.9969, 49.2402]
+  label: Saarfahrplan
+source_url: https://www.saarvv.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Saarland — the districts
+  and cities that make up the authority's fare-zone area — so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official Saarfahrplan app icon from Google Play, stored as
+  public/icons/saarvv.png.

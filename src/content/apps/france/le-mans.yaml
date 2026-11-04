@@ -1,0 +1,25 @@
+id: le-mans
+name: Setram
+description: Tickets for trams and buses across Le Mans Métropole.
+icon_id: le-mans
+operator: Le Mans Métropole
+country_codes:
+  - FR
+website_url: https://www.setram.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.kisiodigital.setram
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.setram.fr/
+marker:
+  coordinates: [0.1996, 48.0061]
+  label: Setram
+source_url: https://www.setram.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Le Mans Métropole, the
+  authority that sets the fares sold in the app, so the shaded shape follows the
+  network's zone map rather than a stop-density approximation. The icon is the
+  official Setram app icon from Google Play, stored as public/icons/le-mans.png.

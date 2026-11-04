@@ -1,0 +1,19 @@
+id: tub-service-area
+app_id: tub
+name: TUB Mobile coverage (Braga)
+geometry_refs:
+  - /geo/portugal/tub-coverage.geojson
+style:
+  fill_color: '#047cb4'
+  fill_opacity: 0.43
+  outline_color: '#024b6d'
+  outline_width: 2.5
+  accent: '#047cb4'
+  accent_strong: '#02405e'
+boundary_description: >-
+  The official boundary of Braga, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.tub.pt/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,19 @@
+id: swt-service-area
+app_id: swt
+name: VRT mobil coverage (Trier)
+geometry_refs:
+  - /geo/germany/swt-coverage.geojson
+style:
+  fill_color: '#0382be'
+  fill_opacity: 0.43
+  outline_color: '#025b85'
+  outline_width: 2.5
+  accent: '#0382be'
+  accent_strong: '#024e72'
+boundary_description: >-
+  The official administrative boundaries of Trier and the surrounding districts,
+  the districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.vrt-info.de/
+checked_at: '2026-11-03'
+status: draft

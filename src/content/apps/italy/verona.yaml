@@ -1,0 +1,25 @@
+id: verona
+name: Ticket Bus Verona
+description: Tickets for buses across Verona.
+icon_id: verona
+operator: ATV
+country_codes:
+  - IT
+website_url: https://www.atv.verona.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.pluservice.ticketbv
+transport_modes:
+  - bus
+tickets_url: https://www.atv.verona.it/
+marker:
+  coordinates: [10.9916, 45.4384]
+  label: Ticket Bus Verona
+source_url: https://www.atv.verona.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Verona, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Ticket Bus Verona app icon from Google Play, stored as
+  public/icons/verona.png.

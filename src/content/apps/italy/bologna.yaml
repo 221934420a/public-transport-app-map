@@ -1,0 +1,26 @@
+id: bologna
+name: Roger
+description: Tickets for buses, the tram and regional trains across Bologna.
+icon_id: bologna
+operator: TPER
+country_codes:
+  - IT
+website_url: https://www.tper.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.pluservice.roger
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.tper.it/
+marker:
+  coordinates: [11.3426, 44.4949]
+  label: Roger
+source_url: https://www.tper.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Bologna, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Roger app icon from Google Play, stored as public/icons/bologna.png.

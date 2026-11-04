@@ -1,0 +1,27 @@
+id: kvv
+name: KVV.regiomove
+description: Tickets for buses, the Stadtbahn, trams and S-Bahn across Karlsruhe.
+icon_id: kvv
+operator: Karlsruher Verkehrsverbund (KVV)
+country_codes:
+  - DE
+website_url: https://www.kvv.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.raumobil.smartmobilitymap.regiomove
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.kvv.de/
+marker:
+  coordinates: [8.4037, 49.0069]
+  label: KVV.regiomove
+source_url: https://www.kvv.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Karlsruhe and the
+  surrounding districts — the districts and cities that make up the authority's
+  fare-zone area — so the shaded shape follows the zone map rather than a
+  stop-density approximation. The icon is the official KVV.regiomove app icon
+  from Google Play, stored as public/icons/kvv.png.

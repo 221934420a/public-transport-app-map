@@ -1,0 +1,19 @@
+id: stib-service-area
+app_id: stib
+name: STIB-MIVB coverage (the Brussels-Capital Region)
+geometry_refs:
+  - /geo/belgium/stib-coverage.geojson
+style:
+  fill_color: '#037ec3'
+  fill_opacity: 0.43
+  outline_color: '#02517d'
+  outline_width: 2.5
+  accent: '#037ec3'
+  accent_strong: '#02446a'
+boundary_description: >-
+  The official boundary of the Brussels-Capital Region, the authority whose zone
+  map sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://www.stib-mivb.be/
+checked_at: '2026-11-03'
+status: draft

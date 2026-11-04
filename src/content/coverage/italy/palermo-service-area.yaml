@@ -1,0 +1,19 @@
+id: palermo-service-area
+app_id: palermo
+name: MyAMAT coverage (Palermo)
+geometry_refs:
+  - /geo/italy/palermo-coverage.geojson
+style:
+  fill_color: '#009fc6'
+  fill_opacity: 0.43
+  outline_color: '#00677f'
+  outline_width: 2.5
+  accent: '#009fc6'
+  accent_strong: '#005a6e'
+boundary_description: >-
+  The official boundary of Palermo, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.amat.pa.it/
+checked_at: '2026-11-03'
+status: draft

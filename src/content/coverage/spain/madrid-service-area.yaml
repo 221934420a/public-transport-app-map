@@ -1,0 +1,19 @@
+id: madrid-service-area
+app_id: madrid
+name: Mi Tarjeta Transporte coverage (the Comunidad de Madrid)
+geometry_refs:
+  - /geo/spain/madrid-coverage.geojson
+style:
+  fill_color: '#d01317'
+  fill_opacity: 0.43
+  outline_color: '#7e0b0e'
+  outline_width: 2.5
+  accent: '#d01317'
+  accent_strong: '#69090c'
+boundary_description: >-
+  The official boundary of the Comunidad de Madrid, the authority whose zone map
+  sets the fares sold in the app, so the shaded area matches the zone map rather
+  than a stop-density approximation.
+source_url: https://www.crtm.es/
+checked_at: '2026-11-03'
+status: draft

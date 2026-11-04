@@ -1,0 +1,19 @@
+id: milano-service-area
+app_id: milano
+name: ATM Milano coverage (Milan)
+geometry_refs:
+  - /geo/italy/milano-coverage.geojson
+style:
+  fill_color: '#f38230'
+  fill_opacity: 0.43
+  outline_color: '#98511e'
+  outline_width: 2.5
+  accent: '#f38230'
+  accent_strong: '#84461a'
+boundary_description: >-
+  The official boundary of Milan, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.atm.it/
+checked_at: '2026-11-03'
+status: draft

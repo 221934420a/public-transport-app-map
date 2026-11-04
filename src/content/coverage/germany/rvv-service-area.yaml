@@ -1,0 +1,19 @@
+id: rvv-service-area
+app_id: rvv
+name: RVV coverage (Regensburg)
+geometry_refs:
+  - /geo/germany/rvv-coverage.geojson
+style:
+  fill_color: '#69b756'
+  fill_opacity: 0.43
+  outline_color: '#4a803c'
+  outline_width: 2.5
+  accent: '#69b756'
+  accent_strong: '#3f6d33'
+boundary_description: >-
+  The official administrative boundaries of Regensburg, Kelheim and Cham, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.rvv.de/
+checked_at: '2026-11-03'
+status: draft

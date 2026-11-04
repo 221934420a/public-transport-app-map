@@ -1,0 +1,19 @@
+id: strasbourg-service-area
+app_id: strasbourg
+name: CTS Strasbourg coverage (the Eurométropole de Strasbourg)
+geometry_refs:
+  - /geo/france/strasbourg-coverage.geojson
+style:
+  fill_color: '#c93236'
+  fill_opacity: 0.43
+  outline_color: '#802023'
+  outline_width: 2.5
+  accent: '#c93236'
+  accent_strong: '#6a1a1d'
+boundary_description: >-
+  The official boundary of the Eurométropole de Strasbourg, the transport
+  authority that sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.cts-strasbourg.eu/
+checked_at: '2026-11-03'
+status: draft

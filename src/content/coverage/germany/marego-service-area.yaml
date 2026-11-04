@@ -1,0 +1,19 @@
+id: marego-service-area
+app_id: marego
+name: MVB App coverage (Magdeburg)
+geometry_refs:
+  - /geo/germany/marego-coverage.geojson
+style:
+  fill_color: '#498349'
+  fill_opacity: 0.43
+  outline_color: '#355f35'
+  outline_width: 2.5
+  accent: '#498349'
+  accent_strong: '#2d512d'
+boundary_description: >-
+  The official administrative boundaries of Magdeburg, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.marego.de/
+checked_at: '2026-11-03'
+status: draft

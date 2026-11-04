@@ -1,0 +1,19 @@
+id: atoumod-service-area
+app_id: atoumod
+name: Atoumod coverage (the Normandie region)
+geometry_refs:
+  - /geo/france/atoumod-coverage.geojson
+style:
+  fill_color: '#297faf'
+  fill_opacity: 0.43
+  outline_color: '#194f6d'
+  outline_width: 2.5
+  accent: '#297faf'
+  accent_strong: '#15445e'
+boundary_description: >-
+  The official boundary of the Normandie region, the authority whose zone map
+  sets the fares sold in the app, so the shaded area matches the zone map rather
+  than a stop-density approximation.
+source_url: https://www.atoumod.fr/
+checked_at: '2026-11-03'
+status: draft

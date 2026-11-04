@@ -1,0 +1,19 @@
+id: evag-service-area
+app_id: evag
+name: Erfurt mobil coverage (Erfurt)
+geometry_refs:
+  - /geo/germany/evag-coverage.geojson
+style:
+  fill_color: '#d0103a'
+  fill_opacity: 0.43
+  outline_color: '#8a0b27'
+  outline_width: 2.5
+  accent: '#d0103a'
+  accent_strong: '#760921'
+boundary_description: >-
+  The official administrative boundaries of Erfurt, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.evag.de/
+checked_at: '2026-11-03'
+status: draft

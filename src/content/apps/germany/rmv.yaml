@@ -1,0 +1,28 @@
+id: rmv
+name: RMVgo
+description: Tickets for buses, trams, the U-Bahn and S-Bahn across the Rhine-Main region.
+icon_id: rmv
+operator: Rhein-Main-Verkehrsverbund (RMV)
+country_codes:
+  - DE
+website_url: https://www.rmv.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.cubic.rmvgo
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.rmv.de/
+marker:
+  coordinates: [8.6821, 50.1109]
+  label: RMVgo
+source_url: https://www.rmv.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Rhine-Main districts —
+  the districts and cities that make up the authority's fare-zone area — so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official RMVgo app icon from Google Play, stored as
+  public/icons/rmv.png.

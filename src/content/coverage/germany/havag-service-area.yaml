@@ -1,0 +1,19 @@
+id: havag-service-area
+app_id: havag
+name: movemix coverage (Halle)
+geometry_refs:
+  - /geo/germany/havag-coverage.geojson
+style:
+  fill_color: '#8ac4e4'
+  fill_opacity: 0.43
+  outline_color: '#5a8399'
+  outline_width: 2.5
+  accent: '#8ac4e4'
+  accent_strong: '#4c6f82'
+boundary_description: >-
+  The official administrative boundaries of Halle (Saale), the districts and
+  cities that make up the authority's fare-zone area, so the shaded area matches
+  the zone map the app sells tickets for.
+source_url: https://www.havag.com/
+checked_at: '2026-11-03'
+status: draft

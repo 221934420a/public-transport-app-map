@@ -1,0 +1,19 @@
+id: mvg-service-area
+app_id: mvg
+name: MVGO coverage (Munich)
+geometry_refs:
+  - /geo/germany/mvg-coverage.geojson
+style:
+  fill_color: '#27569a'
+  fill_opacity: 0.43
+  outline_color: '#1a3a66'
+  outline_width: 2.5
+  accent: '#27569a'
+  accent_strong: '#16325a'
+boundary_description: >-
+  The official administrative boundaries of Munich and the surrounding MVV
+  districts, the districts and cities that make up the authority's fare-zone
+  area, so the shaded area matches the zone map the app sells tickets for.
+source_url: https://www.mvg.de/
+checked_at: '2026-11-03'
+status: draft

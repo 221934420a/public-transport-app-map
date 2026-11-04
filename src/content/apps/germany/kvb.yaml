@@ -1,0 +1,26 @@
+id: kvb
+name: KVB-App
+description: Tickets for buses, the Stadtbahn, trams and S-Bahn across Cologne.
+icon_id: kvb
+operator: Kölner Verkehrs-Betriebe (KVB)
+country_codes:
+  - DE
+website_url: https://www.kvb.koeln/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=koeln.kvb.ticket.app
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.kvb.koeln/
+marker:
+  coordinates: [6.9603, 50.9375]
+  label: KVB-App
+source_url: https://www.kvb.koeln/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Cologne — the districts
+  and cities that make up the authority's fare-zone area — so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official KVB-App app icon from Google Play, stored as public/icons/kvb.png.

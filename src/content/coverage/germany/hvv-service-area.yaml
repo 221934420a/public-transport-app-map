@@ -1,0 +1,19 @@
+id: hvv-service-area
+app_id: hvv
+name: hvv switch coverage (Hamburg)
+geometry_refs:
+  - /geo/germany/hvv-coverage.geojson
+style:
+  fill_color: '#fa1e41'
+  fill_opacity: 0.43
+  outline_color: '#9f1329'
+  outline_width: 2.5
+  accent: '#fa1e41'
+  accent_strong: '#871023'
+boundary_description: >-
+  The official administrative boundaries of Hamburg, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.hvv.de/
+checked_at: '2026-11-03'
+status: draft

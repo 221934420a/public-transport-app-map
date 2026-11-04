@@ -1,0 +1,26 @@
+id: trentino
+name: Muoversi in Trentino
+description: Tickets for urban and extraurban buses and regional trains across Trentino.
+icon_id: trentino
+operator: Trentino trasporti
+country_codes:
+  - IT
+website_url: https://www.trentinotrasporti.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.tndigit.mit
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.trentinotrasporti.it/
+marker:
+  coordinates: [11.1217, 46.0679]
+  label: Muoversi in Trentino
+source_url: https://www.trentinotrasporti.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Trentino, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Muoversi in Trentino app icon from Google Play, stored as
+  public/icons/trentino.png.

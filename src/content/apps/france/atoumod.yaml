@@ -1,0 +1,26 @@
+id: atoumod
+name: Atoumod
+description: Tickets for NOMAD trains, coaches and city networks across the Normandie region.
+icon_id: atoumod
+operator: Région Normandie
+country_codes:
+  - FR
+website_url: https://www.atoumod.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.nomad.atoumod
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.atoumod.fr/
+marker:
+  coordinates: [1.0993, 49.4432]
+  label: Atoumod
+source_url: https://www.atoumod.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Normandie region, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official Atoumod app icon from Google Play, stored as
+  public/icons/atoumod.png.

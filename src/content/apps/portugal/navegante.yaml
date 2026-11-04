@@ -1,0 +1,29 @@
+id: navegante
+name: navegante®
+description: Tickets for the metro, Carris buses and trams, CP urbanos, Fertagus, Transtejo ferries and Carris Metropolitana across the Lisbon metropolitan area.
+icon_id: navegante
+operator: TML (Transportes Metropolitanos de Lisboa)
+country_codes:
+  - PT
+website_url: https://www.navegante.pt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pt.card4b.navegante
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+  - ferry
+tickets_url: https://www.navegante.pt/
+marker:
+  coordinates: [-9.1393, 38.7223]
+  label: navegante®
+source_url: https://www.navegante.pt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Lisbon metropolitan
+  area, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official navegante® app icon from Google Play, stored as
+  public/icons/navegante.png.

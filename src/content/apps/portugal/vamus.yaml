@@ -1,0 +1,24 @@
+id: vamus
+name: Vamus Algarve
+description: Tickets for the regional bus network across the Algarve.
+icon_id: vamus
+operator: Vamus (AMAL / Região do Algarve)
+country_codes:
+  - PT
+website_url: https://www.vamus.pt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pt.algarveAmi.move_me3
+transport_modes:
+  - bus
+tickets_url: https://www.vamus.pt/
+marker:
+  coordinates: [-7.9304, 37.0194]
+  label: Vamus Algarve
+source_url: https://www.vamus.pt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Algarve, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Vamus Algarve app icon from Google Play, stored as public/icons/vamus.png.

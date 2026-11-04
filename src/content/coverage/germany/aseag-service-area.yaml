@@ -1,0 +1,19 @@
+id: aseag-service-area
+app_id: aseag
+name: movA coverage (Aachen)
+geometry_refs:
+  - /geo/germany/aseag-coverage.geojson
+style:
+  fill_color: '#8b0c22'
+  fill_opacity: 0.43
+  outline_color: '#5e0817'
+  outline_width: 2.5
+  accent: '#8b0c22'
+  accent_strong: '#500714'
+boundary_description: >-
+  The official administrative boundaries of the Städteregion Aachen, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.mova.de/
+checked_at: '2026-11-03'
+status: draft

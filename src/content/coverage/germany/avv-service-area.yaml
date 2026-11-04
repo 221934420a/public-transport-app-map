@@ -1,0 +1,19 @@
+id: avv-service-area
+app_id: avv
+name: naveo coverage (Augsburg)
+geometry_refs:
+  - /geo/germany/avv-coverage.geojson
+style:
+  fill_color: '#3c4fa9'
+  fill_opacity: 0.43
+  outline_color: '#2a3873'
+  outline_width: 2.5
+  accent: '#3c4fa9'
+  accent_strong: '#243061'
+boundary_description: >-
+  The official administrative boundaries of Augsburg and Aichach-Friedberg, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.avv.de/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,19 @@
+id: ret-service-area
+app_id: ret
+name: RET coverage (Rotterdam)
+geometry_refs:
+  - /geo/netherlands/ret-coverage.geojson
+style:
+  fill_color: '#d82331'
+  fill_opacity: 0.43
+  outline_color: '#8a1620'
+  outline_width: 2.5
+  accent: '#d82331'
+  accent_strong: '#75131b'
+boundary_description: >-
+  The official boundary of Rotterdam, the concession or municipality whose zone
+  map sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://www.ret.nl/
+checked_at: '2026-11-03'
+status: draft

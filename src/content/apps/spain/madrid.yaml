@@ -1,0 +1,27 @@
+id: madrid
+name: Mi Tarjeta Transporte
+description: Tickets for the metro, EMT buses, Cercanías and Metro Ligero across the Comunidad de Madrid.
+icon_id: madrid
+operator: CRTM (Consorcio Regional de Transportes de Madrid)
+country_codes:
+  - ES
+website_url: https://www.crtm.es/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.crtm.integrated
+transport_modes:
+  - bus
+  - metro
+  - rail
+tickets_url: https://www.crtm.es/
+marker:
+  coordinates: [-3.7038, 40.4168]
+  label: Mi Tarjeta Transporte
+source_url: https://www.crtm.es/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Comunidad de Madrid,
+  the authority whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official Mi Tarjeta Transporte app icon from Google Play, stored as
+  public/icons/madrid.png.

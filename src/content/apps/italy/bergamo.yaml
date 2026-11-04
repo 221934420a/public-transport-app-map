@@ -1,0 +1,25 @@
+id: bergamo
+name: ATB Mobile
+description: Tickets for buses and funiculars across Bergamo.
+icon_id: bergamo
+operator: ATB
+country_codes:
+  - IT
+website_url: https://www.atb.bergamo.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.soluzione1.tplmobile
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.atb.bergamo.it/
+marker:
+  coordinates: [9.6699, 45.6983]
+  label: ATB Mobile
+source_url: https://www.atb.bergamo.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Bergamo, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  ATB Mobile app icon from Google Play, stored as public/icons/bergamo.png.

@@ -1,0 +1,27 @@
+id: tpg
+name: tpg
+description: Tickets for trams, buses, CFF trains and Mouettes ferries across the canton of Geneva.
+icon_id: tpg
+operator: TPG / Unireso (Genève)
+country_codes:
+  - CH
+website_url: https://tpg.ch/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ch.tpg.android
+transport_modes:
+  - bus
+  - tram
+  - rail
+  - ferry
+tickets_url: https://tpg.ch/
+marker:
+  coordinates: [6.1432, 46.2044]
+  label: tpg
+source_url: https://tpg.ch/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the canton of Geneva, the
+  tariff area whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official tpg app icon from Google Play, stored as public/icons/tpg.png.

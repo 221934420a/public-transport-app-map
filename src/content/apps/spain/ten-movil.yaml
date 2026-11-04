@@ -1,0 +1,25 @@
+id: ten-movil
+name: ten+móvil
+description: Tickets for the tram and TITSA buses across Tenerife.
+icon_id: ten-movil
+operator: Metrotenerife and TITSA
+country_codes:
+  - ES
+website_url: http://tenmasmovil.es/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.metrotenerife.viamovil
+transport_modes:
+  - bus
+  - tram
+tickets_url: http://tenmasmovil.es/
+marker:
+  coordinates: [-16.2546, 28.4636]
+  label: ten+móvil
+source_url: http://tenmasmovil.es/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Tenerife, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  ten+móvil app icon from Google Play, stored as public/icons/ten-movil.png.

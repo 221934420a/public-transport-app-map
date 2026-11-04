@@ -1,0 +1,19 @@
+id: venezia-service-area
+app_id: venezia
+name: AVM Venezia coverage (Venice)
+geometry_refs:
+  - /geo/italy/venezia-coverage.geojson
+style:
+  fill_color: '#0067b2'
+  fill_opacity: 0.43
+  outline_color: '#004375'
+  outline_width: 2.5
+  accent: '#0067b2'
+  accent_strong: '#00385f'
+boundary_description: >-
+  The official boundary of Venice, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://avmvenezia.it/
+checked_at: '2026-11-03'
+status: draft

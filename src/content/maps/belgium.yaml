@@ -1,0 +1,30 @@
+id: belgium
+country_code: BE
+title: Public transport apps
+eyebrow: Belgium
+page_title: Public Transport App Map | Belgium
+meta_description: Which public transport apps work where, across Belgium.
+theme_color: '#fef7ff'
+locale: nl-BE
+map_aria_label: Belgium public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [4.6, 50.65]
+  zoom: 7.4
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#037ec3'
+  accent_strong: '#02517d'
+  outline: '#037ec3'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

@@ -1,0 +1,19 @@
+id: toulon-service-area
+app_id: toulon
+name: Réseau Mistral coverage (the Toulon Provence Méditerranée métropole)
+geometry_refs:
+  - /geo/france/toulon-coverage.geojson
+style:
+  fill_color: '#1f21ab'
+  fill_opacity: 0.43
+  outline_color: '#141573'
+  outline_width: 2.5
+  accent: '#1f21ab'
+  accent_strong: '#10115e'
+boundary_description: >-
+  The official boundary of the Toulon Provence Méditerranée métropole, the
+  transport authority that sets the fares sold in the app, so the shaded area
+  matches the zone map rather than a stop-density approximation.
+source_url: https://www.reseaumistral.com/
+checked_at: '2026-11-03'
+status: draft

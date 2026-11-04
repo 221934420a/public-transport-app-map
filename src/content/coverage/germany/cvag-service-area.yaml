@@ -1,0 +1,19 @@
+id: cvag-service-area
+app_id: cvag
+name: CVAGapp coverage (Chemnitz)
+geometry_refs:
+  - /geo/germany/cvag-coverage.geojson
+style:
+  fill_color: '#007bc3'
+  fill_opacity: 0.43
+  outline_color: '#00548a'
+  outline_width: 2.5
+  accent: '#007bc3'
+  accent_strong: '#004776'
+boundary_description: >-
+  The official administrative boundaries of Chemnitz, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.cvag.de/
+checked_at: '2026-11-03'
+status: draft

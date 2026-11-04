@@ -1,0 +1,25 @@
+id: catania
+name: AMTS Smart Ticketing
+description: Tickets for buses across Catania.
+icon_id: catania
+operator: AMTS Catania
+country_codes:
+  - IT
+website_url: https://www.amtscatania.com/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.amts.mobile.customer
+transport_modes:
+  - bus
+tickets_url: https://www.amtscatania.com/
+marker:
+  coordinates: [15.0873, 37.5079]
+  label: AMTS Smart Ticketing
+source_url: https://www.amtscatania.com/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Catania, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  AMTS Smart Ticketing app icon from Google Play, stored as
+  public/icons/catania.png.

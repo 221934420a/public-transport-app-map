@@ -1,0 +1,19 @@
+id: lyon-service-area
+app_id: lyon
+name: TCL E-Ticket coverage (the Métropole de Lyon)
+geometry_refs:
+  - /geo/france/lyon-coverage.geojson
+style:
+  fill_color: '#e10a17'
+  fill_opacity: 0.43
+  outline_color: '#8f0610'
+  outline_width: 2.5
+  accent: '#e10a17'
+  accent_strong: '#7a050e'
+boundary_description: >-
+  The official boundary of the Métropole de Lyon, the transport authority that
+  sets the fares sold in the app, so the shaded area matches the zone map rather
+  than a stop-density approximation.
+source_url: https://www.tcl.fr/
+checked_at: '2026-11-03'
+status: draft

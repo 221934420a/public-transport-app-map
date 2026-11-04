@@ -1,0 +1,25 @@
+id: meerplus
+name: MeerPlus
+description: Tickets for buses across Zaanstreek-Waterland.
+icon_id: meerplus
+operator: EBS (Zaanstreek-Waterland)
+country_codes:
+  - NL
+website_url: https://www.meerplus.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.negentwee.ebs.meerplus
+transport_modes:
+  - bus
+tickets_url: https://www.meerplus.nl/
+marker:
+  coordinates: [4.8295, 52.438]
+  label: MeerPlus
+source_url: https://www.meerplus.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Zaanstreek-Waterland, the
+  concession or municipality whose zone map sets the fares sold in the app, so
+  the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official MeerPlus app icon from Google Play,
+  stored as public/icons/meerplus.png.

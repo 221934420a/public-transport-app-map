@@ -1,0 +1,28 @@
+id: anda
+name: Anda
+description: Tickets for the metro, buses, trams and commuter trains across the Porto metropolitan area.
+icon_id: anda
+operator: Andante / Transportes Metropolitanos do Porto (TMP)
+country_codes:
+  - PT
+website_url: https://www.andante.pt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pt.opt.anda
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.andante.pt/
+marker:
+  coordinates: [-8.6291, 41.1579]
+  label: Anda
+source_url: https://www.andante.pt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Porto metropolitan
+  area, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official Anda app icon from Google Play, stored as
+  public/icons/anda.png.

@@ -1,0 +1,19 @@
+id: u-ov-service-area
+app_id: u-ov
+name: U-OV coverage (the province of Utrecht)
+geometry_refs:
+  - /geo/netherlands/u-ov-coverage.geojson
+style:
+  fill_color: '#fcd900'
+  fill_opacity: 0.43
+  outline_color: '#9c8600'
+  outline_width: 2.5
+  accent: '#fcd900'
+  accent_strong: '#7a6900'
+boundary_description: >-
+  The official boundary of the province of Utrecht, the concession or
+  municipality whose zone map sets the fares sold in the app, so the shaded area
+  matches the zone map rather than a stop-density approximation.
+source_url: https://www.u-ov.nl/
+checked_at: '2026-11-03'
+status: draft

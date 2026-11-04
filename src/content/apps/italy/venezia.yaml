@@ -1,0 +1,26 @@
+id: venezia
+name: AVM Venezia
+description: Tickets for vaporetti, buses and trams across Venice.
+icon_id: venezia
+operator: AVM S.p.A.
+country_codes:
+  - IT
+website_url: https://avmvenezia.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.pluservice.Actv
+transport_modes:
+  - bus
+  - tram
+  - ferry
+tickets_url: https://avmvenezia.it/
+marker:
+  coordinates: [12.3155, 45.4408]
+  label: AVM Venezia
+source_url: https://avmvenezia.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Venice, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  AVM Venezia app icon from Google Play, stored as public/icons/venezia.png.

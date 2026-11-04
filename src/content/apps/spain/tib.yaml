@@ -1,0 +1,26 @@
+id: tib
+name: TIB Mallorca
+description: Tickets for buses, the Palma metro and SFM trains across Mallorca.
+icon_id: tib
+operator: CTM / TIB (Consorci de Transports de Mallorca)
+country_codes:
+  - ES
+website_url: https://www.tib.org/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.tibmallorca.android
+transport_modes:
+  - bus
+  - metro
+  - rail
+tickets_url: https://www.tib.org/
+marker:
+  coordinates: [2.6502, 39.5696]
+  label: TIB Mallorca
+source_url: https://www.tib.org/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Mallorca, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  TIB Mallorca app icon from Google Play, stored as public/icons/tib.png.

@@ -1,0 +1,19 @@
+id: rrreis-service-area
+app_id: rrreis
+name: RRReis coverage (Gelderland)
+geometry_refs:
+  - /geo/netherlands/rrreis-coverage.geojson
+style:
+  fill_color: '#5a237e'
+  fill_opacity: 0.43
+  outline_color: '#38164f'
+  outline_width: 2.5
+  accent: '#5a237e'
+  accent_strong: '#2e1242'
+boundary_description: >-
+  The official boundary of Gelderland, the concession or municipality whose zone
+  map sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://www.rrreis.nl/
+checked_at: '2026-11-03'
+status: draft

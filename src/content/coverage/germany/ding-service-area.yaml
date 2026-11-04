@@ -1,0 +1,19 @@
+id: ding-service-area
+app_id: ding
+name: unser-DING coverage (Ulm)
+geometry_refs:
+  - /geo/germany/ding-coverage.geojson
+style:
+  fill_color: '#005f6a'
+  fill_opacity: 0.43
+  outline_color: '#00434a'
+  outline_width: 2.5
+  accent: '#005f6a'
+  accent_strong: '#00393f'
+boundary_description: >-
+  The official administrative boundaries of Ulm, Alb-Donau and Neu-Ulm, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.ding.eu/
+checked_at: '2026-11-03'
+status: draft

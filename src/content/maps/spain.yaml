@@ -1,0 +1,30 @@
+id: spain
+country_code: ES
+title: Public transport apps
+eyebrow: Spain
+page_title: Public Transport App Map | Spain
+meta_description: Which public transport apps work where, across Spain.
+theme_color: '#fef7ff'
+locale: es-ES
+map_aria_label: Spain public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [-3.2, 40.2]
+  zoom: 5
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#b3121a'
+  accent_strong: '#7d0c12'
+  outline: '#b3121a'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

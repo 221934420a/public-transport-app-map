@@ -1,0 +1,26 @@
+id: metz
+name: LE MET' mobilités
+description: Tickets for buses and regional trains across the Eurométropole de Metz.
+icon_id: metz
+operator: Eurométropole de Metz / Le Met'
+country_codes:
+  - FR
+website_url: https://lemet.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fr.lemet.android
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://lemet.fr/
+marker:
+  coordinates: [6.1757, 49.1193]
+  label: LE MET' mobilités
+source_url: https://lemet.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Eurométropole de Metz,
+  the authority whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official LE MET' mobilités app icon from Google Play, stored as
+  public/icons/metz.png.

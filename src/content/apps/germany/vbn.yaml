@@ -1,0 +1,27 @@
+id: vbn
+name: FahrPlaner
+description: Tickets for buses, trams and regional trains across Bremen and Lower Saxony.
+icon_id: vbn
+operator: Verkehrsverbund Bremen/Niedersachsen (VBN)
+country_codes:
+  - DE
+website_url: https://www.fahrplaner.info/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.hafas.android.vbn
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.fahrplaner.info/
+marker:
+  coordinates: [8.8017, 53.0793]
+  label: FahrPlaner
+source_url: https://www.fahrplaner.info/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Bremen, Bremerhaven and
+  the surrounding Lower Saxony districts — the districts and cities that make up
+  the authority's fare-zone area — so the shaded shape follows the zone map
+  rather than a stop-density approximation. The icon is the official FahrPlaner
+  app icon from Google Play, stored as public/icons/vbn.png.

@@ -1,0 +1,26 @@
+id: tec
+name: TEC
+description: Tickets for trams, the métro léger and buses across Wallonia.
+icon_id: tec
+operator: TEC / OTW (Wallonia)
+country_codes:
+  - BE
+website_url: https://www.letec.be/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=be.otw.tecmobile
+transport_modes:
+  - bus
+  - tram
+  - metro
+tickets_url: https://www.letec.be/
+marker:
+  coordinates: [5.5734, 50.6326]
+  label: TEC
+source_url: https://www.letec.be/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Wallonia, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  TEC app icon from Google Play, stored as public/icons/tec.png.

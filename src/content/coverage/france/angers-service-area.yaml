@@ -1,0 +1,19 @@
+id: angers-service-area
+app_id: angers
+name: Irigo coverage (Angers Loire Métropole)
+geometry_refs:
+  - /geo/france/angers-coverage.geojson
+style:
+  fill_color: '#eb0f2c'
+  fill_opacity: 0.43
+  outline_color: '#940a1c'
+  outline_width: 2.5
+  accent: '#eb0f2c'
+  accent_strong: '#7a0817'
+boundary_description: >-
+  The official boundary of Angers Loire Métropole, the transport authority that
+  sets the fares sold in the app, so the shaded area matches the zone map rather
+  than a stop-density approximation.
+source_url: https://www.irigo.fr/
+checked_at: '2026-11-03'
+status: draft

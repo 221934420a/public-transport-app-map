@@ -1,0 +1,19 @@
+id: bonn-service-area
+app_id: bonn
+name: BONNmobil coverage (Bonn)
+geometry_refs:
+  - /geo/germany/bonn-coverage.geojson
+style:
+  fill_color: '#e20613'
+  fill_opacity: 0.43
+  outline_color: '#8f040c'
+  outline_width: 2.5
+  accent: '#e20613'
+  accent_strong: '#7a030a'
+boundary_description: >-
+  The official administrative boundaries of Bonn and the Rhein-Sieg district,
+  the districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.swb-busundbahn.de/
+checked_at: '2026-11-03'
+status: draft

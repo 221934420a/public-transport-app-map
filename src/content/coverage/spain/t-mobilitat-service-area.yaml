@@ -1,0 +1,19 @@
+id: t-mobilitat-service-area
+app_id: t-mobilitat
+name: T-mobilitat coverage (the Barcelona metropolitan area)
+geometry_refs:
+  - /geo/spain/t-mobilitat-coverage.geojson
+style:
+  fill_color: '#87c548'
+  fill_opacity: 0.43
+  outline_color: '#517726'
+  outline_width: 2.5
+  accent: '#87c548'
+  accent_strong: '#43611f'
+boundary_description: >-
+  The official boundary of the Barcelona metropolitan area, the authority whose
+  zone map sets the fares sold in the app, so the shaded area matches the zone
+  map rather than a stop-density approximation.
+source_url: https://t-mobilitat.atm.cat/
+checked_at: '2026-11-03'
+status: draft

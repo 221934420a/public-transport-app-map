@@ -1,0 +1,20 @@
+id: vgn-service-area
+app_id: vgn
+name: VGN Fahrplan & Tickets coverage (Nuremberg)
+geometry_refs:
+  - /geo/germany/vgn-coverage.geojson
+style:
+  fill_color: '#006654'
+  fill_opacity: 0.43
+  outline_color: '#004036'
+  outline_width: 2.5
+  accent: '#006654'
+  accent_strong: '#00362e'
+boundary_description: >-
+  The official administrative boundaries of Nuremberg, Fürth, Erlangen,
+  Schwabach and their districts, the districts and cities that make up the
+  authority's fare-zone area, so the shaded area matches the zone map the app
+  sells tickets for.
+source_url: https://www.vgn.de/
+checked_at: '2026-11-03'
+status: draft

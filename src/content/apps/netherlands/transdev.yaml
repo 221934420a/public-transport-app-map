@@ -1,0 +1,26 @@
+id: transdev
+name: '@Transdev'
+description: Tickets for buses and regional trains across Zeeland.
+icon_id: transdev
+operator: Connexxion / Transdev Nederland (Zeeland)
+country_codes:
+  - NL
+website_url: https://www.connexxion.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.infoplazamobility.transdev
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.connexxion.nl/
+marker:
+  coordinates: [3.61, 51.5008]
+  label: '@Transdev'
+source_url: https://www.connexxion.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Zeeland, the concession
+  area whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official @Transdev app icon from Google Play, stored as
+  public/icons/transdev.png.

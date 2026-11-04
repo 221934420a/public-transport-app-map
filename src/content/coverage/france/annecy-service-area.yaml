@@ -1,0 +1,19 @@
+id: annecy-service-area
+app_id: annecy
+name: Sibra coverage (Grand Annecy)
+geometry_refs:
+  - /geo/france/annecy-coverage.geojson
+style:
+  fill_color: '#00a4de'
+  fill_opacity: 0.43
+  outline_color: '#00698f'
+  outline_width: 2.5
+  accent: '#00a4de'
+  accent_strong: '#00567a'
+boundary_description: >-
+  The official boundary of Grand Annecy, the transport authority that sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.sibra.fr/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,25 @@
+id: brescia
+name: Bresciapp!
+description: Tickets for the metro and buses across Brescia.
+icon_id: brescia
+operator: Brescia Mobilità
+country_codes:
+  - IT
+website_url: https://www.bresciamobilita.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.mobc3.bresciamobilita.bsm
+transport_modes:
+  - bus
+  - metro
+tickets_url: https://www.bresciamobilita.it/
+marker:
+  coordinates: [10.2195, 45.5416]
+  label: Bresciapp!
+source_url: https://www.bresciamobilita.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Brescia, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Bresciapp! app icon from Google Play, stored as public/icons/brescia.png.

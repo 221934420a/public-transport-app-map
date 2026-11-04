@@ -1,0 +1,19 @@
+id: nantes-service-area
+app_id: nantes
+name: Naolib coverage (Nantes Métropole)
+geometry_refs:
+  - /geo/france/nantes-coverage.geojson
+style:
+  fill_color: '#4e9b00'
+  fill_opacity: 0.43
+  outline_color: '#2f5e00'
+  outline_width: 2.5
+  accent: '#4e9b00'
+  accent_strong: '#274d00'
+boundary_description: >-
+  The official boundary of Nantes Métropole, the transport authority that sets
+  the fares sold in the app, so the shaded area matches the zone map rather than
+  a stop-density approximation.
+source_url: https://naolib.fr/
+checked_at: '2026-11-03'
+status: draft

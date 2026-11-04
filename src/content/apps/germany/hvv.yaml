@@ -1,0 +1,27 @@
+id: hvv
+name: hvv switch
+description: Tickets for buses, the U-Bahn, S-Bahn and ferries across Hamburg.
+icon_id: hvv
+operator: Hamburger Verkehrsverbund (HVV)
+country_codes:
+  - DE
+website_url: https://www.hvv.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.hochbahn.hvvswitch
+transport_modes:
+  - bus
+  - metro
+  - rail
+  - ferry
+tickets_url: https://www.hvv.de/
+marker:
+  coordinates: [9.9937, 53.5511]
+  label: hvv switch
+source_url: https://www.hvv.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Hamburg — the districts
+  and cities that make up the authority's fare-zone area — so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official hvv switch app icon from Google Play, stored as public/icons/hvv.png.

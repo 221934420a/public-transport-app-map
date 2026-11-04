@@ -1,0 +1,4 @@
+id: suma
+view_box: '0 0 48 48'
+svg: |
+  <image href="/icons/suma.png" width="48" height="48" />

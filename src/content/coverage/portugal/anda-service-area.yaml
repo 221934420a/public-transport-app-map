@@ -1,0 +1,19 @@
+id: anda-service-area
+app_id: anda
+name: Anda coverage (the Porto metropolitan area)
+geometry_refs:
+  - /geo/portugal/anda-coverage.geojson
+style:
+  fill_color: '#13377e'
+  fill_opacity: 0.43
+  outline_color: '#0c2250'
+  outline_width: 2.5
+  accent: '#13377e'
+  accent_strong: '#0a1d45'
+boundary_description: >-
+  The official boundary of the Porto metropolitan area, the authority whose zone
+  map sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://www.andante.pt/
+checked_at: '2026-11-03'
+status: draft

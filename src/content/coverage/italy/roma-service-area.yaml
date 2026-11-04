@@ -1,0 +1,19 @@
+id: roma-service-area
+app_id: roma
+name: Atac Roma coverage (Rome)
+geometry_refs:
+  - /geo/italy/roma-coverage.geojson
+style:
+  fill_color: '#830d28'
+  fill_opacity: 0.43
+  outline_color: '#52081a'
+  outline_width: 2.5
+  accent: '#830d28'
+  accent_strong: '#470715'
+boundary_description: >-
+  The official boundary of Rome, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.atac.roma.it/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,27 @@
+id: htm
+name: HTM info & tickets
+description: Tickets for trams, buses and RandstadRail across The Hague.
+icon_id: htm
+operator: HTM (The Hague)
+country_codes:
+  - NL
+website_url: https://www.htm.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.infoplazamob.htm
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.htm.nl/
+marker:
+  coordinates: [4.3007, 52.0705]
+  label: HTM info & tickets
+source_url: https://www.htm.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of The Hague, the concession
+  or municipality whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official HTM info & tickets app icon from Google Play, stored as
+  public/icons/htm.png.

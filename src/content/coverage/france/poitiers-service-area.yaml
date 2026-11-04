@@ -1,0 +1,19 @@
+id: poitiers-service-area
+app_id: poitiers
+name: Vitalis coverage (Grand Poitiers)
+geometry_refs:
+  - /geo/france/poitiers-coverage.geojson
+style:
+  fill_color: '#327baf'
+  fill_opacity: 0.43
+  outline_color: '#205072'
+  outline_width: 2.5
+  accent: '#327baf'
+  accent_strong: '#1a435e'
+boundary_description: >-
+  The official boundary of Grand Poitiers, the transport authority that sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.vitalis-poitiers.fr/
+checked_at: '2026-11-03'
+status: draft

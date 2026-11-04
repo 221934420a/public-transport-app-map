@@ -1,0 +1,27 @@
+id: avv
+name: naveo
+description: Tickets for buses, trams and regional trains across Augsburg.
+icon_id: avv
+operator: Augsburger Verkehrs- und Tarifverbund (AVV)
+country_codes:
+  - DE
+website_url: https://www.avv.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.fluidtime.android.avv
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.avv.de/
+marker:
+  coordinates: [10.8978, 48.3705]
+  label: naveo
+source_url: https://www.avv.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Augsburg and
+  Aichach-Friedberg — the districts and cities that make up the authority's
+  fare-zone area — so the shaded shape follows the zone map rather than a
+  stop-density approximation. The icon is the official naveo app icon from
+  Google Play, stored as public/icons/avv.png.

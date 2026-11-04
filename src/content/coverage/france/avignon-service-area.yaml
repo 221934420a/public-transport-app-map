@@ -1,0 +1,19 @@
+id: avignon-service-area
+app_id: avignon
+name: Orizo coverage (Grand Avignon)
+geometry_refs:
+  - /geo/france/avignon-coverage.geojson
+style:
+  fill_color: '#007b79'
+  fill_opacity: 0.43
+  outline_color: '#004f4e'
+  outline_width: 2.5
+  accent: '#007b79'
+  accent_strong: '#004241'
+boundary_description: >-
+  The official boundary of Grand Avignon, the transport authority that sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.orizo.fr/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,19 @@
+id: nvv-service-area
+app_id: nvv
+name: NVV Mobil coverage (Kassel)
+geometry_refs:
+  - /geo/germany/nvv-coverage.geojson
+style:
+  fill_color: '#00a34f'
+  fill_opacity: 0.43
+  outline_color: '#006f36'
+  outline_width: 2.5
+  accent: '#00a34f'
+  accent_strong: '#005e2e'
+boundary_description: >-
+  The official administrative boundaries of Kassel and northern Hesse, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.nvv.de/
+checked_at: '2026-11-03'
+status: draft

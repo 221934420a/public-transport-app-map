@@ -1,0 +1,27 @@
+id: u-ov
+name: U-OV
+description: Tickets for trams, buses and regional trains across the province of Utrecht.
+icon_id: u-ov
+operator: U-OV and Keolis (Provincie Utrecht)
+country_codes:
+  - NL
+website_url: https://www.u-ov.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.infoplazamobility.app.uov
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.u-ov.nl/
+marker:
+  coordinates: [5.1214, 52.0907]
+  label: U-OV
+source_url: https://www.u-ov.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the province of Utrecht,
+  the concession or municipality whose zone map sets the fares sold in the app,
+  so the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official U-OV app icon from Google Play, stored
+  as public/icons/u-ov.png.

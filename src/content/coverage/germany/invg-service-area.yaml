@@ -1,0 +1,19 @@
+id: invg-service-area
+app_id: invg
+name: VGI App Ingolstadt coverage (Ingolstadt)
+geometry_refs:
+  - /geo/germany/invg-coverage.geojson
+style:
+  fill_color: '#008bd1'
+  fill_opacity: 0.43
+  outline_color: '#005f8f'
+  outline_width: 2.5
+  accent: '#008bd1'
+  accent_strong: '#00517a'
+boundary_description: >-
+  The official administrative boundaries of Ingolstadt and Eichstätt, the
+  districts and cities that make up the authority's fare-zone area, so the
+  shaded area matches the zone map the app sells tickets for.
+source_url: https://www.invg.de/
+checked_at: '2026-11-03'
+status: draft

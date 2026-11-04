@@ -1,0 +1,19 @@
+id: caen-service-area
+app_id: caen
+name: Twisto coverage (Caen la mer)
+geometry_refs:
+  - /geo/france/caen-coverage.geojson
+style:
+  fill_color: '#0669b2'
+  fill_opacity: 0.43
+  outline_color: '#044371'
+  outline_width: 2.5
+  accent: '#0669b2'
+  accent_strong: '#03385e'
+boundary_description: >-
+  The official boundary of Caen la mer, the transport authority that sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://twisto.fr/
+checked_at: '2026-11-03'
+status: draft

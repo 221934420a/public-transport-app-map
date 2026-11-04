@@ -1,0 +1,19 @@
+id: paris-service-area
+app_id: paris
+name: Bonjour RATP coverage (the Île-de-France region)
+geometry_refs:
+  - /geo/france/paris-coverage.geojson
+style:
+  fill_color: '#0a0082'
+  fill_opacity: 0.43
+  outline_color: '#07005c'
+  outline_width: 2.5
+  accent: '#0a0082'
+  accent_strong: '#06004d'
+boundary_description: >-
+  The official boundary of the Île-de-France region, the transport authority
+  that sets the fares sold in the app, so the shaded area matches the zone map
+  rather than a stop-density approximation.
+source_url: https://www.iledefrance-mobilites.fr/
+checked_at: '2026-11-03'
+status: draft

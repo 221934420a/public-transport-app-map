@@ -1,0 +1,19 @@
+id: meerplus-service-area
+app_id: meerplus
+name: MeerPlus coverage (Zaanstreek-Waterland)
+geometry_refs:
+  - /geo/netherlands/meerplus-coverage.geojson
+style:
+  fill_color: '#0c4454'
+  fill_opacity: 0.43
+  outline_color: '#082b35'
+  outline_width: 2.5
+  accent: '#0c4454'
+  accent_strong: '#06242c'
+boundary_description: >-
+  The official boundary of Zaanstreek-Waterland, the concession or municipality
+  whose zone map sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.meerplus.nl/
+checked_at: '2026-11-03'
+status: draft

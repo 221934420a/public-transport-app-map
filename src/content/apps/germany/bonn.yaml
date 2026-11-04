@@ -1,0 +1,27 @@
+id: bonn
+name: BONNmobil
+description: Tickets for buses, the Stadtbahn, trams and S-Bahn across Bonn.
+icon_id: bonn
+operator: SWB Bus und Bahn
+country_codes:
+  - DE
+website_url: https://www.swb-busundbahn.de/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.baumgardt.bonnmobil
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.swb-busundbahn.de/
+marker:
+  coordinates: [7.0982, 50.7374]
+  label: BONNmobil
+source_url: https://www.swb-busundbahn.de/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Bonn and the Rhein-Sieg
+  district — the districts and cities that make up the authority's fare-zone
+  area — so the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official BONNmobil app icon from Google Play,
+  stored as public/icons/bonn.png.

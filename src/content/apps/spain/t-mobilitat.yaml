@@ -1,0 +1,28 @@
+id: t-mobilitat
+name: T-mobilitat
+description: Tickets for the metro, buses, trams, FGC and Rodalies across the Barcelona metropolitan area.
+icon_id: t-mobilitat
+operator: ATM Barcelona (Autoritat del Transport Metropolità)
+country_codes:
+  - ES
+website_url: https://t-mobilitat.atm.cat/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=cat.atm.tmobilitat
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://t-mobilitat.atm.cat/
+marker:
+  coordinates: [2.1734, 41.3851]
+  label: T-mobilitat
+source_url: https://t-mobilitat.atm.cat/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Barcelona metropolitan
+  area, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official T-mobilitat app icon from Google Play, stored as
+  public/icons/t-mobilitat.png.

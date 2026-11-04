@@ -1,0 +1,19 @@
+id: montpellier-service-area
+app_id: montpellier
+name: M'Ticket coverage (Montpellier Méditerranée Métropole)
+geometry_refs:
+  - /geo/france/montpellier-coverage.geojson
+style:
+  fill_color: '#6d3e91'
+  fill_opacity: 0.43
+  outline_color: '#45275b'
+  outline_width: 2.5
+  accent: '#6d3e91'
+  accent_strong: '#3a214d'
+boundary_description: >-
+  The official boundary of Montpellier Méditerranée Métropole, the transport
+  authority that sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.tam-voyages.com/
+checked_at: '2026-11-03'
+status: draft

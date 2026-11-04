@@ -1,0 +1,19 @@
+id: bordeaux-service-area
+app_id: bordeaux
+name: TBM coverage (Bordeaux Métropole)
+geometry_refs:
+  - /geo/france/bordeaux-coverage.geojson
+style:
+  fill_color: '#b92c7b'
+  fill_opacity: 0.43
+  outline_color: '#751c4e'
+  outline_width: 2.5
+  accent: '#b92c7b'
+  accent_strong: '#611741'
+boundary_description: >-
+  The official boundary of Bordeaux Métropole, the transport authority that sets
+  the fares sold in the app, so the shaded area matches the zone map rather than
+  a stop-density approximation.
+source_url: https://www.infotbm.com/
+checked_at: '2026-11-03'
+status: draft

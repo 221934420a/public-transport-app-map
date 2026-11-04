@@ -1,0 +1,4 @@
+id: saint-etienne
+view_box: '0 0 48 48'
+svg: |
+  <image href="/icons/saint-etienne.png" width="48" height="48" />

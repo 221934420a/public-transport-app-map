@@ -1,0 +1,25 @@
+id: de-lijn
+name: De Lijn
+description: Tickets for trams, premetro and buses across Flanders.
+icon_id: de-lijn
+operator: De Lijn (Flanders)
+country_codes:
+  - BE
+website_url: https://www.delijn.be/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.themobilecompany.delijn
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.delijn.be/
+marker:
+  coordinates: [4.4025, 51.2194]
+  label: De Lijn
+source_url: https://www.delijn.be/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Flanders, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official De
+  Lijn app icon from Google Play, stored as public/icons/de-lijn.png.

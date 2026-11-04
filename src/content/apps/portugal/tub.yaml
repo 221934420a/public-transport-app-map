@@ -1,0 +1,24 @@
+id: tub
+name: TUB Mobile
+description: Tickets for buses across Braga.
+icon_id: tub
+operator: TUB (Transportes Urbanos de Braga)
+country_codes:
+  - PT
+website_url: https://www.tub.pt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=pt.tub.smartapp
+transport_modes:
+  - bus
+tickets_url: https://www.tub.pt/
+marker:
+  coordinates: [-8.4265, 41.5454]
+  label: TUB Mobile
+source_url: https://www.tub.pt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Braga, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official TUB
+  Mobile app icon from Google Play, stored as public/icons/tub.png.

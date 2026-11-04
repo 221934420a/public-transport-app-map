@@ -1,0 +1,26 @@
+id: glimble
+name: Glimble
+description: Tickets for buses, trains and shared mobility across its Arriva concessions (Limburg, Friesland, Groningen and Noord-Brabant).
+icon_id: glimble
+operator: Arriva Nederland
+country_codes:
+  - NL
+website_url: https://www.glimble.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.arriva.glimble
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.glimble.nl/
+marker:
+  coordinates: [5.6931, 50.8514]
+  label: Glimble
+source_url: https://www.glimble.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of its Arriva concessions
+  (Limburg, Friesland, Groningen and Noord-Brabant), the concession area whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official Glimble
+  app icon from Google Play, stored as public/icons/glimble.png.

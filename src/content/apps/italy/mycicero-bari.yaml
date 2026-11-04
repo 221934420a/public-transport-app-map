@@ -1,0 +1,25 @@
+id: mycicero-bari
+name: MooneyGo (myCicero)
+description: Tickets for buses across Bari.
+icon_id: mycicero-bari
+operator: AMTAB (Bari)
+country_codes:
+  - IT
+website_url: https://www.mooneygo.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=net.pluservice.myCicero
+transport_modes:
+  - bus
+tickets_url: https://www.mooneygo.it/
+marker:
+  coordinates: [16.8719, 41.1171]
+  label: MooneyGo (myCicero)
+source_url: https://www.mooneygo.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Bari, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official
+  MooneyGo (myCicero) app icon from Google Play, stored as
+  public/icons/mycicero-bari.png.

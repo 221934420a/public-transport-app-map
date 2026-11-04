@@ -1,0 +1,19 @@
+id: ten-movil-service-area
+app_id: ten-movil
+name: ten+móvil coverage (Tenerife)
+geometry_refs:
+  - /geo/spain/ten-movil-coverage.geojson
+style:
+  fill_color: '#5199bc'
+  fill_opacity: 0.43
+  outline_color: '#31607a'
+  outline_width: 2.5
+  accent: '#5199bc'
+  accent_strong: '#2a5267'
+boundary_description: >-
+  The official boundary of Tenerife, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: http://tenmasmovil.es/
+checked_at: '2026-11-03'
+status: draft

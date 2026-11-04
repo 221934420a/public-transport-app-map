@@ -1,0 +1,19 @@
+id: uestra-service-area
+app_id: uestra
+name: ÜSTRA coverage (Hannover)
+geometry_refs:
+  - /geo/germany/uestra-coverage.geojson
+style:
+  fill_color: '#003c3c'
+  fill_opacity: 0.43
+  outline_color: '#002828'
+  outline_width: 2.5
+  accent: '#003c3c'
+  accent_strong: '#002222'
+boundary_description: >-
+  The official administrative boundaries of the Region Hannover, the districts
+  and cities that make up the authority's fare-zone area, so the shaded area
+  matches the zone map the app sells tickets for.
+source_url: https://www.uestra.de/
+checked_at: '2026-11-03'
+status: draft

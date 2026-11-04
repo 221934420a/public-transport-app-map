@@ -1,0 +1,27 @@
+id: havag
+name: movemix
+description: Tickets for buses, trams and S-Bahn across Halle.
+icon_id: havag
+operator: Hallesche Verkehrs-AG (HAVAG)
+country_codes:
+  - DE
+website_url: https://www.havag.com/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.tafmobile.mobility.movemix
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.havag.com/
+marker:
+  coordinates: [11.9699, 51.4825]
+  label: movemix
+source_url: https://www.havag.com/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Halle (Saale) — the
+  districts and cities that make up the authority's fare-zone area — so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official movemix app icon from Google Play, stored as
+  public/icons/havag.png.

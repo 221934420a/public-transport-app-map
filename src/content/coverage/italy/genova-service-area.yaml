@@ -1,0 +1,19 @@
+id: genova-service-area
+app_id: genova
+name: AMT Genova coverage (Genoa)
+geometry_refs:
+  - /geo/italy/genova-coverage.geojson
+style:
+  fill_color: '#f5831f'
+  fill_opacity: 0.43
+  outline_color: '#995215'
+  outline_width: 2.5
+  accent: '#f5831f'
+  accent_strong: '#844713'
+boundary_description: >-
+  The official boundary of Genoa, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.amt.genova.it/
+checked_at: '2026-11-03'
+status: draft

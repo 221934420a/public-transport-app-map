@@ -1,0 +1,19 @@
+id: saarvv-service-area
+app_id: saarvv
+name: Saarfahrplan coverage (Saarland)
+geometry_refs:
+  - /geo/germany/saarvv-coverage.geojson
+style:
+  fill_color: '#014e9e'
+  fill_opacity: 0.43
+  outline_color: '#00386f'
+  outline_width: 2.5
+  accent: '#014e9e'
+  accent_strong: '#002f5f'
+boundary_description: >-
+  The official administrative boundaries of Saarland, the districts and cities
+  that make up the authority's fare-zone area, so the shaded area matches the
+  zone map the app sells tickets for.
+source_url: https://www.saarvv.de/
+checked_at: '2026-11-03'
+status: draft

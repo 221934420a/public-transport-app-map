@@ -27,27 +27,61 @@ src/content/
     sweden/
     norway/
     finland/
+    germany/
+    france/
+    netherlands/
+    belgium/
+    spain/
+    switzerland/
+    italy/
+    portugal/
   coverage/
     united-kingdom/        one service area per YAML file
     denmark/               an app may have several (Rejsebillet City Pass areas)
     sweden/
     norway/
     finland/
+    germany/
+    france/
+    netherlands/
+    belgium/
+    spain/
+    switzerland/
+    italy/
+    portugal/
   icons/
     united-kingdom/        one app icon per YAML file
     denmark/
     sweden/
     norway/
     finland/
+    germany/
+    france/
+    netherlands/
+    belgium/
+    spain/
+    switzerland/
+    italy/
+    portugal/
   maps/                    one shell per map: all-countries.yaml (the index map),
                            united-kingdom.yaml, denmark.yaml, sweden.yaml,
-                           norway.yaml, finland.yaml
+                           norway.yaml, finland.yaml, germany.yaml,
+                           france.yaml, netherlands.yaml, belgium.yaml,
+                           spain.yaml, switzerland.yaml, italy.yaml, portugal.yaml
   tickets/
     united-kingdom/        one ticket per YAML file
     denmark/
     sweden/
     norway/
     finland/
+    germany/
+    france/
+    netherlands/
+    belgium/
+    spain/
+    switzerland/
+    italy/
+    portugal/
 public/icons/
   pop.png                  raster icon asset used by the Pop app icon record
   rejsebillet.png          official Rejsebillet app icon
@@ -55,18 +89,28 @@ public/icons/
   skanetrafiken.png        official Skånetrafiken app icon
   vasttrafik.png           official Västtrafik To Go app icon
   <app>.png                one official app icon per icon record; the Swedish,
-                           Norwegian and Finnish regional operators each have
-                           their own file
+                           Norwegian, Finnish, German, French, Dutch, Belgian,
+                           Spanish, Swiss and Italian operators each have their
+                           own file
 public/geo/
   united-kingdom/          one folder per country; geometry is referenced as
   denmark/                 /geo/<country>/<file>.geojson
   sweden/
   norway/
   finland/
+  germany/
+  france/
+  netherlands/
+  belgium/
+  spain/
+  switzerland/
+  italy/
+  portugal/
 ```
 
 Data is grouped by country (`united-kingdom/`, `denmark/`, `sweden/`, `norway/`,
-`finland/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
+`finland/`, `germany/`, `france/`, `netherlands/`, `belgium/`, `spain/`,
+`switzerland/`, `italy/`, `portugal/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
 `all-countries.yaml` leaves it out and draws **every** app, which is what the
 index page uses, so a new country appears on the home page as soon as its
 records exist. Record IDs remain global, so `app_id` and `geometry_refs` do not
@@ -99,7 +143,10 @@ An app with no ticket records links its "Ticket prices" heading straight to its
 tickets for a map. The index page renders the all-countries shell; each country
 also has its own path, for example the United Kingdom map at `/united-kingdom/`,
 the Denmark map at `/denmark/`, the Sweden map at `/sweden/`, the Norway map at
-`/norway/` and the Finland map at `/finland/`.
+`/norway/`, the Finland map at `/finland/`, the Germany map at `/germany/`, the
+France map at `/france/`, the Netherlands map at `/netherlands/`, the Belgium map
+at `/belgium/`, the Spain map at `/spain/`, the Switzerland map at
+`/switzerland/`, the Italy map at `/italy/` and the Portugal map at `/portugal/`.
 
 See `docs/data-schema.md` for all fields and `docs/data-storage.md` for guidance
 on YAML versus GeoJSON, PMTiles, or a database.
@@ -185,6 +232,87 @@ on YAML versus GeoJSON, PMTiles, or a database.
   or counties (OpenStreetMap via the Overpass API, `ISO3166-2=NO-*`), gridded at
   0.02°, dilated, dissolved and smoothed into one outline. Each icon is the official
   Google Play icon, stored as `public/icons/<app>.png`.
+- **Portuguese coverage** — for the six apps (Anda for the Porto metropolitan
+  area, navegante for the Lisbon metropolitan area, CARRISway for Lisbon, TUB
+  Mobile for Braga, Vamus Algarve for the Algarve and Carris Metropolitana for
+  the Lisbon metropolitan area) the shaded area is the official boundary of the
+  metropolitan area, city or region whose zone map sets the fares, taken from
+  OpenStreetMap administrative relations and simplified. SIGA and GIROBUS are not
+  mapped: neither has an official app listing yet (mobile ticketing is only being
+  introduced), and the app-store results are third-party apps. Carris
+  Metropolitana is mapped for completeness even though its app is
+  information-first — tickets on those suburban buses are still bought on board.
+  Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Italian coverage** — for the 19 city and regional apps (ATM Milano, Atac  Roma, GTT TO Move, Unico Campania, Roger, at bus, AVM Venezia, AMT Genova,
+  Bresciapp!, ATB Mobile, CTM BusFinder, MyAMAT, AMTS Smart Ticketing, Ticket Bus
+  Verona, MooneyGo for Bari and for Ancona, altoadigemobilità, Muoversi in
+  Trentino and glimble FVG) the shaded area is the official boundary of the
+  authority's zone — the city for the urban operators, the province for South
+  Tyrol and Trentino, and the region for Campania, Tuscany and
+  Friuli-Venezia Giulia — taken from OpenStreetMap administrative relations and
+  simplified. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Swiss coverage** — for the three networks with their own ticket app (ZVV for
+  the canton of Zürich, TNW Tickets for Basel-Stadt and Basel-Landschaft, and tpg
+  for the canton of Geneva) the shaded area is the official cantonal boundary,
+  which is the tariff area their zone maps cover. **öV Plus**, the cross-network
+  app that sells the national direct-traffic tickets, covers the whole country,
+  so its shaded area is the Swiss national boundary — which also covers the
+  tariff networks that have no app of their own (Libero, Ostwind, Tarifverbund
+  Zug, Passepartout, A-Welle, Mobilis, Frimobil, Arcobaleno and Onde Verte). Each
+  icon is the official Google Play icon, stored as `public/icons/<app>.png`.
+- **Spanish coverage** — for the eight regional apps (T-mobilitat for the
+  Barcelona metropolitan area, Mi Tarjeta Transporte for the Comunidad de Madrid,
+  RecargaSUMA for the Valencia metropolitan area, TIB Mallorca for Mallorca,
+  ten+móvil for Tenerife, CTA CONECTA for Asturias, Mugi APP Gipuzkoa for
+  Gipuzkoa and Avanza Zaragoza for Zaragoza) the shaded area is the official
+  boundary of the authority's zone — the metropolitan area, island, province or
+  region — taken from OpenStreetMap administrative relations and simplified.
+  Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Belgian coverage** — for the three regional apps (STIB-MIVB for the
+  Brussels-Capital Region, De Lijn for Flanders and TEC for Wallonia) the shaded
+  area is the official boundary of that region, the fare-zone area the apps sell
+  for, taken from OpenStreetMap administrative relations. Floya, the STIB-led
+  Brussels MaaS app, is not mapped: it has been withdrawn from the app stores
+  ahead of its shutdown on 31 December 2026, so there is no app icon to use. Each
+  icon is the official Google Play icon, stored as `public/icons/<app>.png`.
+- **Dutch coverage** — for the ten regional operators (GVB for Amsterdam, RET
+  for Rotterdam, HTM for The Hague, U-OV for the province of Utrecht, RRReis for
+  Gelderland, RRReis/Keolis for Overijssel and Flevoland, Arriva for Limburg,
+  MeerPlus/EBS for Zaanstreek-Waterland, @Transdev for Zeeland and Glimble for
+  Arriva's concessions) the shaded area is the **official boundary of the
+  concession area** — the city for the municipal operators, the province (or the
+  union of provinces for Glimble) for the provincial concessions, and the seven
+  member municipalities for MeerPlus — taken from OpenStreetMap administrative
+  relations and dissolved into one outline. Each icon is the official Google Play
+  icon, stored as `public/icons/<app>.png`. allGo (Keolis, Almere) is not mapped:
+  it has no app-store listing, only a webshop.
+- **French metropolitan and regional coverage** — for the 34 networks in scope
+  (Bonjour RATP for Île-de-France, TCL E-Ticket, RTM, Tisséo, Lignes d'Azur,
+  M'Ticket, Naolib, STAR, TBM, Irigo, Setram, TAO Orléans, Divia Mobilités, CTS
+  Strasbourg, ilévia, My Astuce, Twisto, Grand Reims Mobilités, L'Appli M,
+  Moovizy, Réseau Mistral, Orizo, Soléa, Sibra, Transvilles, Vitalis, LE MET'
+  mobilités, liO Occitanie, Atoumod, Modalis, Rémi, Wop m-ticket/Aléop, Allez
+  ZOU! and BreizhGo) the shaded area is the **official boundary of the AOM that
+  sets the fares** — the région for the regional apps and Île-de-France, the
+  métropole / agglomération for the metropolitan ones — taken from OpenStreetMap
+  administrative relations and simplified. Each icon is the official Google Play
+  icon, stored as `public/icons/<app>.png`.
+- **German city and regional coverage** — for the 39 German operators and
+  associations (BVG, VBB, hvv, MVGO, VGN, VVS, RMVgo, KVB, BONNmobil, Rheinbahn,
+  ZÄPP, DOtick, ÜSTRA, FahrPlaner, LeipzigMOVE, DVB, KVV, naveo, rnv, VAG mobil,
+  Saarfahrplan, NAH SH, ViP, MVB, Erfurt mobil, movemix, NVV, Meine BSVG, movA,
+  moBiel YOU, CVAGapp, VRM, VVM, RVV, VOSpilot, VRT mobil, VGI and unser-DING) the
+  shaded area is the **official boundary of the districts and cities that make up
+  that authority's fare-zone area** — the city itself for the municipal operators,
+  the member Kreise for the Verbünde, and the Bundesland where the association
+  covers it (Berlin + Brandenburg, North Rhine-Westphalia, Schleswig-Holstein,
+  Saarland). Boundaries come from OpenStreetMap administrative relations and the
+  German district dataset, dissolved into one outline per app, so the shapes match
+  the zone maps the apps sell tickets for. Each icon is the official Google Play
+  icon, stored as `public/icons/<app>.png`.
 - **Finnish regional coverage** — for the seven regional operators and cities in
   scope (HSL for the nine Helsinki-region municipalities, Waltti Mobiili for the
   Waltti cities, Föli for the Turku region, OSL for the Oulu region, CityApp for

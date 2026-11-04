@@ -1,0 +1,26 @@
+id: vos
+name: VOSpilot
+description: Tickets for buses and regional trains across Osnabrück.
+icon_id: vos
+operator: Verkehrsgemeinschaft Osnabrück (VOS)
+country_codes:
+  - DE
+website_url: https://www.vos.info/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.hafas.android.vos
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.vos.info/
+marker:
+  coordinates: [8.0496, 52.2799]
+  label: VOSpilot
+source_url: https://www.vos.info/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Osnabrück city and
+  district — the districts and cities that make up the authority's fare-zone
+  area — so the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official VOSpilot app icon from Google Play,
+  stored as public/icons/vos.png.

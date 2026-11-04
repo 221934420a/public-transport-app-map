@@ -1,0 +1,19 @@
+id: bergamo-service-area
+app_id: bergamo
+name: ATB Mobile coverage (Bergamo)
+geometry_refs:
+  - /geo/italy/bergamo-coverage.geojson
+style:
+  fill_color: '#e30613'
+  fill_opacity: 0.43
+  outline_color: '#8f040c'
+  outline_width: 2.5
+  accent: '#e30613'
+  accent_strong: '#7a030a'
+boundary_description: >-
+  The official boundary of Bergamo, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.atb.bergamo.it/
+checked_at: '2026-11-03'
+status: draft

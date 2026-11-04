@@ -1,0 +1,27 @@
+id: oev-plus
+name: öV Plus
+description: Tickets for trains, trams, buses and boats nationwide across Switzerland.
+icon_id: oev-plus
+operator: öV Plus alliance (operated by Bernmobil AG)
+country_codes:
+  - CH
+website_url: https://www.oevplus.ch/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ch.glue.android.mezi
+transport_modes:
+  - bus
+  - tram
+  - rail
+  - ferry
+tickets_url: https://www.oevplus.ch/
+marker:
+  coordinates: [7.4474, 46.948]
+  label: öV Plus
+source_url: https://www.oevplus.ch/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is all of Switzerland: öV Plus sells the national
+  direct-traffic tickets that every Swiss tariff network accepts, so its zone map
+  is the country itself. The icon is the official öV Plus app icon from Google
+  Play, stored as public/icons/oev-plus.png.

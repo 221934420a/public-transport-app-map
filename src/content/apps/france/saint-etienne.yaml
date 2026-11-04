@@ -1,0 +1,26 @@
+id: saint-etienne
+name: Moovizy
+description: Tickets for trams, trolleybuses and buses across Saint-Étienne Métropole.
+icon_id: saint-etienne
+operator: Saint-Étienne Métropole
+country_codes:
+  - FR
+website_url: https://www.reseau-stas.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fr.cityway.android_v2.stas
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.reseau-stas.fr/
+marker:
+  coordinates: [4.3872, 45.4397]
+  label: Moovizy
+source_url: https://www.reseau-stas.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Saint-Étienne Métropole,
+  the authority that sets the fares sold in the app, so the shaded shape follows
+  the network's zone map rather than a stop-density approximation. The icon is
+  the official Moovizy app icon from Google Play, stored as
+  public/icons/saint-etienne.png.

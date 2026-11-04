@@ -1,0 +1,26 @@
+id: remi
+name: Rémi
+description: Tickets for Rémi trains and coaches across the Centre-Val de Loire region.
+icon_id: remi
+operator: Région Centre-Val de Loire
+country_codes:
+  - FR
+website_url: https://www.remi-centrevaldeloire.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fr.remicentrevaldeloire.app
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.remi-centrevaldeloire.fr/
+marker:
+  coordinates: [1.9099, 47.9029]
+  label: Rémi
+source_url: https://www.remi-centrevaldeloire.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Centre-Val de Loire
+  region, the authority whose zone map sets the fares sold in the app, so the
+  shaded shape follows the zone map rather than a stop-density approximation.
+  The icon is the official Rémi app icon from Google Play, stored as
+  public/icons/remi.png.

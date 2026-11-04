@@ -1,0 +1,27 @@
+id: ding
+name: unser-DING
+description: Tickets for buses, trams and regional trains across Ulm.
+icon_id: ding
+operator: DING and SWU Ulm
+country_codes:
+  - DE
+website_url: https://www.ding.eu/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.ding.unserding
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.ding.eu/
+marker:
+  coordinates: [9.9937, 48.4011]
+  label: unser-DING
+source_url: https://www.ding.eu/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Ulm, Alb-Donau and Neu-Ulm
+  — the districts and cities that make up the authority's fare-zone area — so
+  the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official unser-DING app icon from Google Play,
+  stored as public/icons/ding.png.

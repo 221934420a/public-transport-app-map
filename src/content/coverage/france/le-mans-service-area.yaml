@@ -1,0 +1,19 @@
+id: le-mans-service-area
+app_id: le-mans
+name: Setram coverage (Le Mans Métropole)
+geometry_refs:
+  - /geo/france/le-mans-coverage.geojson
+style:
+  fill_color: '#00558d'
+  fill_opacity: 0.43
+  outline_color: '#003a60'
+  outline_width: 2.5
+  accent: '#00558d'
+  accent_strong: '#003152'
+boundary_description: >-
+  The official boundary of Le Mans Métropole, the transport authority that sets
+  the fares sold in the app, so the shaded area matches the zone map rather than
+  a stop-density approximation.
+source_url: https://www.setram.fr/
+checked_at: '2026-11-03'
+status: draft

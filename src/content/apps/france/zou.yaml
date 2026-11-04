@@ -1,0 +1,25 @@
+id: zou
+name: Allez ZOU !
+description: Tickets for Zou! coaches across the Provence-Alpes-Côte d’Azur region.
+icon_id: zou
+operator: Région Sud – Provence-Alpes-Côte d’Azur
+country_codes:
+  - FR
+website_url: https://zou.maregionsud.fr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=fr.maregionsud.zousibr
+transport_modes:
+  - bus
+tickets_url: https://zou.maregionsud.fr/
+marker:
+  coordinates: [5.3698, 43.2965]
+  label: Allez ZOU !
+source_url: https://zou.maregionsud.fr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the Provence-Alpes-Côte
+  d’Azur region, the authority whose zone map sets the fares sold in the app, so
+  the shaded shape follows the zone map rather than a stop-density
+  approximation. The icon is the official Allez ZOU ! app icon from Google Play,
+  stored as public/icons/zou.png.

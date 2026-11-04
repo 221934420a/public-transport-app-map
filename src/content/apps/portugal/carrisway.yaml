@@ -1,0 +1,25 @@
+id: carrisway
+name: CARRISway
+description: Tickets for buses, trams and funiculars across Lisbon.
+icon_id: carrisway
+operator: Carris (Companhia Carris de Ferro de Lisboa)
+country_codes:
+  - PT
+website_url: https://www.carris.pt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.carris.passcard
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.carris.pt/
+marker:
+  coordinates: [-9.1393, 38.7223]
+  label: CARRISway
+source_url: https://www.carris.pt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Lisbon, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  CARRISway app icon from Google Play, stored as public/icons/carrisway.png.

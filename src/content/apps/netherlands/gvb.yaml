@@ -1,0 +1,28 @@
+id: gvb
+name: GVB reis app
+description: Tickets for the metro, trams, buses and ferries across Amsterdam.
+icon_id: gvb
+operator: GVB (Amsterdam)
+country_codes:
+  - NL
+website_url: https://gvb.nl/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=nl.gvb.reizigersapp
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - ferry
+tickets_url: https://gvb.nl/
+marker:
+  coordinates: [4.8952, 52.3702]
+  label: GVB reis app
+source_url: https://gvb.nl/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Amsterdam, the concession
+  or municipality whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official GVB reis app app icon from Google Play, stored as
+  public/icons/gvb.png.

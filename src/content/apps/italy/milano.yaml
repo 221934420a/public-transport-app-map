@@ -1,0 +1,27 @@
+id: milano
+name: ATM Milano
+description: Tickets for the metro, trams, buses and STIBM trains across Milan.
+icon_id: milano
+operator: ATM S.p.A.
+country_codes:
+  - IT
+website_url: https://www.atm.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.atm.appmobile
+transport_modes:
+  - bus
+  - tram
+  - metro
+  - rail
+tickets_url: https://www.atm.it/
+marker:
+  coordinates: [9.19, 45.4642]
+  label: ATM Milano
+source_url: https://www.atm.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Milan, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official ATM
+  Milano app icon from Google Play, stored as public/icons/milano.png.

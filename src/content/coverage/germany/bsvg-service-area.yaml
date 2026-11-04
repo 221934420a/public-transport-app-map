@@ -1,0 +1,20 @@
+id: bsvg-service-area
+app_id: bsvg
+name: Meine BSVG coverage (Braunschweig)
+geometry_refs:
+  - /geo/germany/bsvg-coverage.geojson
+style:
+  fill_color: '#e40d2a'
+  fill_opacity: 0.43
+  outline_color: '#8f081b'
+  outline_width: 2.5
+  accent: '#e40d2a'
+  accent_strong: '#7a0717'
+boundary_description: >-
+  The official administrative boundaries of Braunschweig, Salzgitter, Wolfsburg
+  and their districts, the districts and cities that make up the authority's
+  fare-zone area, so the shaded area matches the zone map the app sells tickets
+  for.
+source_url: https://www.bsvg.net/
+checked_at: '2026-11-03'
+status: draft

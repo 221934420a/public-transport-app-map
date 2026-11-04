@@ -1,0 +1,19 @@
+id: marseille-service-area
+app_id: marseille
+name: RTM coverage (the Aix-Marseille-Provence métropole)
+geometry_refs:
+  - /geo/france/marseille-coverage.geojson
+style:
+  fill_color: '#e94c16'
+  fill_opacity: 0.43
+  outline_color: '#94300e'
+  outline_width: 2.5
+  accent: '#e94c16'
+  accent_strong: '#7a280c'
+boundary_description: >-
+  The official boundary of the Aix-Marseille-Provence métropole, the transport
+  authority that sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.rtm.fr/
+checked_at: '2026-11-03'
+status: draft

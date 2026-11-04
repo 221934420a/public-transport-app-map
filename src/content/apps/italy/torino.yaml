@@ -1,0 +1,26 @@
+id: torino
+name: GTT - TO Move
+description: Tickets for the metro, trams and buses across Turin.
+icon_id: torino
+operator: GTT
+country_codes:
+  - IT
+website_url: https://www.gtt.to.it/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=it.to.gtt.tomove
+transport_modes:
+  - bus
+  - tram
+  - metro
+tickets_url: https://www.gtt.to.it/
+marker:
+  coordinates: [7.6869, 45.0703]
+  label: GTT - TO Move
+source_url: https://www.gtt.to.it/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Turin, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official GTT -
+  TO Move app icon from Google Play, stored as public/icons/torino.png.
