@@ -1,0 +1,30 @@
+id: hungary
+country_code: HU
+title: Public transport apps
+eyebrow: Hungary
+page_title: Public Transport App Map | Hungary
+meta_description: Which public transport apps work where, across Hungary.
+theme_color: '#fef7ff'
+locale: hu-HU
+map_aria_label: Hungary public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [19.0, 47.2]
+  zoom: 6.6
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#4c0e5f'
+  accent_strong: '#2f0840'
+  outline: '#4c0e5f'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

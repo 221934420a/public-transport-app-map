@@ -1,0 +1,27 @@
+id: tallinn
+name: Pilet.ee Tallinn
+description: Tickets for Tallinn trams, trolleybuses and buses plus Harjumaa county buses across Tallinn and Harjumaa.
+icon_id: pilet
+operator: Tallinna Transpordiamet / North Estonia ticketing system
+country_codes:
+  - EE
+website_url: https://tallinn.pilet.ee/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.pilet.ee.live
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - rail
+tickets_url: https://tallinn.pilet.ee/
+marker:
+  coordinates: [24.7536, 59.437]
+  label: Pilet.ee Tallinn
+source_url: https://pilet.ee/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  This is the tallinn.pilet.ee entry point, which sells Tallinn city tickets and
+  North Estonia (Harjumaa) county tickets, so the mapped area is the official
+  Harju maakond boundary. It shares the Pilet.ee app and icon with the parent
+  record because it is the same app with a narrower ticket scope.

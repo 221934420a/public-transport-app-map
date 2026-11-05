@@ -1,0 +1,21 @@
+id: pula-service-area
+app_id: pula
+name: Mobility Plus (Pulapromet) coverage (Pula)
+geometry_refs:
+  - /geo/croatia/pula-coverage.geojson
+style:
+  fill_color: '#efd400'
+  fill_opacity: 0.43
+  outline_color: '#8a7a00'
+  outline_width: 2.5
+  accent: '#efd400'
+  accent_strong: '#756800'
+boundary_description: >-
+  The mapped service area is the official boundary of Pula, the city Pulapromet
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. The operator publishes the app as Mobility Plus,
+  which sells QR singles for fare zones 1 to 3 alongside timetables and journey
+  planning.
+source_url: https://www.pulapromet.hr/
+checked_at: '2026-11-03'
+status: draft

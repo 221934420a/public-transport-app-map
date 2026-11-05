@@ -1,0 +1,30 @@
+id: sofia
+name: Sofia2Go
+description: Tickets for the metro, trams, trolleybuses and buses in Sofia.
+icon_id: sofia
+operator: ЦГМ – Център за градска мобилност (Sofia Urban Mobility Centre)
+country_codes:
+  - BG
+website_url: https://www.sofiatraffic.bg/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.sofiatraffic.sofiago
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - metro
+tickets_url: https://www.sofiatraffic.bg/
+marker:
+  coordinates: [23.3219, 42.6977]
+  label: Sofia2Go
+source_url: https://www.sofiatraffic.bg/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Столична община boundary, the
+  municipality the urban mobility centre covers, so the shaded shape follows the
+  municipal boundary rather than a stop-density approximation. The app issues a
+  virtual Sofia City Card into Google Wallet and sells single, 24 and 72 hour,
+  monthly and annual fares, plus Pay-As-You-Go contactless with a daily cap. The
+  icon is the official Sofia2Go app icon from Google Play, stored as
+  public/icons/sofia.png.

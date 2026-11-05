@@ -37,6 +37,21 @@ public/geo/
   switzerland/
   italy/
   portugal/
+  ireland/
+  poland/
+  czechia/
+  austria/
+  iceland/
+  lithuania/
+  latvia/
+  estonia/
+  hungary/
+  slovakia/
+  slovenia/
+  romania/
+  croatia/
+  greece/
+  bulgaria/
 ```
 
 Records are grouped by country. The folder is for authoring and review and is not

@@ -1,0 +1,21 @@
+id: patras-service-area
+app_id: patras
+name: Αστικές Συγκοινωνίες Πατρών coverage (Patras)
+geometry_refs:
+  - /geo/greece/patras-coverage.geojson
+style:
+  fill_color: '#213a8f'
+  fill_opacity: 0.43
+  outline_color: '#132254'
+  outline_width: 2.5
+  accent: '#213a8f'
+  accent_strong: '#101d48'
+boundary_description: >-
+  The mapped service area is the official Δήμος Πατρέων boundary, the
+  municipality the urban operator serves, so the shaded shape follows the
+  municipal boundary rather than a stop-density approximation. The app sells
+  singles and monthly smartcard passes across fare zones A and B and shows live
+  vehicle positions.
+source_url: https://www.citybus.gr/
+checked_at: '2026-11-03'
+status: draft

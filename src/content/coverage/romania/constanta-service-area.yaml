@@ -1,0 +1,20 @@
+id: constanta-service-area
+app_id: constanta
+name: CT Bus coverage (Constanța)
+geometry_refs:
+  - /geo/romania/constanta-coverage.geojson
+style:
+  fill_color: '#51a9db'
+  fill_opacity: 0.43
+  outline_color: '#2e6585'
+  outline_width: 2.5
+  accent: '#51a9db'
+  accent_strong: '#275671'
+boundary_description: >-
+  The mapped service area is the official boundary of Constanța, the city CTBUS
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. CTBUS became a regional operator in November 2026,
+  adding four metropolitan routes, which will extend beyond this boundary.
+source_url: https://www.ctbus.ro/
+checked_at: '2026-11-03'
+status: draft

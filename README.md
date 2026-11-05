@@ -38,6 +38,18 @@ src/content/
     ireland/
     poland/
     czechia/
+    austria/
+    iceland/
+    lithuania/
+    latvia/
+    estonia/
+    hungary/
+    slovakia/
+    slovenia/
+    romania/
+    croatia/
+    greece/
+    bulgaria/
   coverage/
     united-kingdom/        one service area per YAML file
     denmark/               an app may have several (Rejsebillet City Pass areas)
@@ -55,6 +67,18 @@ src/content/
     ireland/
     poland/
     czechia/
+    austria/
+    iceland/
+    lithuania/
+    latvia/
+    estonia/
+    hungary/
+    slovakia/
+    slovenia/
+    romania/
+    croatia/
+    greece/
+    bulgaria/
   icons/
     united-kingdom/        one app icon per YAML file
     denmark/
@@ -72,11 +96,23 @@ src/content/
     ireland/
     poland/
     czechia/
+    austria/
+    iceland/
+    lithuania/
+    latvia/
+    estonia/
+    hungary/
+    slovakia/
+    slovenia/
+    romania/
+    croatia/
+    greece/
+    bulgaria/
   maps/                    one shell per map: all-countries.yaml (the index map),
                            united-kingdom.yaml, denmark.yaml, sweden.yaml,
                            norway.yaml, finland.yaml, germany.yaml,
                            france.yaml, netherlands.yaml, belgium.yaml,
-                           spain.yaml, switzerland.yaml, italy.yaml, portugal.yaml, ireland.yaml, poland.yaml, czechia.yaml
+                           spain.yaml, switzerland.yaml, italy.yaml, portugal.yaml, ireland.yaml, poland.yaml, czechia.yaml, austria.yaml, iceland.yaml, lithuania.yaml, latvia.yaml, estonia.yaml, hungary.yaml, slovakia.yaml, slovenia.yaml, romania.yaml, croatia.yaml, greece.yaml, bulgaria.yaml
   tickets/
     united-kingdom/        one ticket per YAML file
     denmark/
@@ -94,6 +130,18 @@ src/content/
     ireland/
     poland/
     czechia/
+    austria/
+    iceland/
+    lithuania/
+    latvia/
+    estonia/
+    hungary/
+    slovakia/
+    slovenia/
+    romania/
+    croatia/
+    greece/
+    bulgaria/
 public/icons/
   pop.png                  raster icon asset used by the Pop app icon record
   rejsebillet.png          official Rejsebillet app icon
@@ -121,11 +169,23 @@ public/geo/
   ireland/
   poland/
   czechia/
+  austria/
+  iceland/
+  lithuania/
+  latvia/
+  estonia/
+  hungary/
+  slovakia/
+  slovenia/
+  romania/
+  croatia/
+  greece/
+  bulgaria/
 ```
 
 Data is grouped by country (`united-kingdom/`, `denmark/`, `sweden/`, `norway/`,
 `finland/`, `germany/`, `france/`, `netherlands/`, `belgium/`, `spain/`,
-`switzerland/`, `italy/`, `portugal/`, `ireland/`, `poland/`, `czechia/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
+`switzerland/`, `italy/`, `portugal/`, `ireland/`, `poland/`, `czechia/`, `austria/`, `iceland/`, `lithuania/`, `latvia/`, `estonia/`, `hungary/`, `slovakia/`, `slovenia/`, `romania/`, `croatia/`, `greece/`, `bulgaria/`, and later other countries). A map shell with a `country_code` draws that country's apps only;
 `all-countries.yaml` leaves it out and draws **every** app, which is what the
 index page uses, so a new country appears on the home page as soon as its
 records exist. Record IDs remain global, so `app_id` and `geometry_refs` do not
@@ -161,7 +221,7 @@ the Denmark map at `/denmark/`, the Sweden map at `/sweden/`, the Norway map at
 `/norway/`, the Finland map at `/finland/`, the Germany map at `/germany/`, the
 France map at `/france/`, the Netherlands map at `/netherlands/`, the Belgium map
 at `/belgium/`, the Spain map at `/spain/`, the Switzerland map at
-`/switzerland/`, the Italy map at `/italy/`, the Portugal map at `/portugal/`, the Ireland map at `/ireland/`, the Poland map at `/poland/` and the Czechia map at `/czechia/`.
+`/switzerland/`, the Italy map at `/italy/`, the Portugal map at `/portugal/`, the Ireland map at `/ireland/`, the Poland map at `/poland/`, the Czechia map at `/czechia/`, the Austria map at `/austria/`, the Iceland map at `/iceland/`, the Lithuania map at `/lithuania/`, the Latvia map at `/latvia/`, the Estonia map at `/estonia/`, the Hungary map at `/hungary/`, the Slovakia map at `/slovakia/`, the Slovenia map at `/slovenia/`, the Romania map at `/romania/`, the Croatia map at `/croatia/`, the Greece map at `/greece/` and the Bulgaria map at `/bulgaria/`.
 
 See `docs/data-schema.md` for all fields and `docs/data-storage.md` for guidance
 on YAML versus GeoJSON, PMTiles, or a database.
@@ -264,6 +324,85 @@ you may need them later, and raise `--percent=25` to keep more detail.
   or counties (OpenStreetMap via the Overpass API, `ISO3166-2=NO-*`), gridded at
   0.02°, dilated, dissolved and smoothed into one outline. Each icon is the official
   Google Play icon, stored as `public/icons/<app>.png`.
+- **Bulgarian coverage** — Sofia2Go (Столична община), Градски Транспорт
+  Пловдив, TTickets Varna, Градски Транспорт Бургас and Градски транспорт Стара
+  Загора each use their own municipal boundary, which is the area the operator
+  serves and the basis of its zone map. Each icon is the official Google Play
+  icon, stored as `public/icons/<app>.png`.
+- **Greek coverage** — ATH.ENA Card (Athens), TheTA (Thessaloniki), Patras and
+  Kavala all use the official municipal boundary of their city. Athens is the
+  core of a fare zone that extends across the wider urban area, and the record
+  says so rather than overstating the shape. Each icon is the official Google Play
+  icon, stored as `public/icons/<app>.png`.
+- **Croatian coverage** — Moj ZET (Zagreb), Promet Split, RCC Mobility (Rijeka)
+  and Mobility Plus (Pula) each use their own city boundary; SmartCity Zadar uses
+  the Zadarska županija boundary because Liburnija runs both the city and the
+  county island routes. Pulapromet publishes its app under the name Mobility
+  Plus, which the operator's own site links, so the record carries both names.
+  Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Romanian coverage** — eleven city operators use their own boundaries, with
+  Bilet TB covering the union of Bucharest and Ilfov since STB runs the
+  metropolitan surface network. 24pay is a commercial wallet, not an operator, so
+  its shape is the union of the seven city boundaries it serves (Brașov, Sibiu,
+  Ploiești, Iași, Galați, Constanța and Craiova). Timișoara (STPT) is not recorded
+  because it has no ticketing app of its own — its e-ticketing was still under
+  construction. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Slovenian coverage** — Urbana (Ljubljana), Marprom Shop (Maribor), SITIUM
+  (Novo mesto), Centralka (Celje) and Pametni Kranj all use their own municipal
+  boundary. Kranj is provisional: contactless payment runs through the CeKR card
+  and bank cards, but whether the app itself sells bus tickets could not be
+  confirmed, and the record says so. Koper is not recorded because it has no
+  municipal app — tickets there go through Arriva and the IJPP online shop. Each
+  icon is the official Google Play icon, stored as `public/icons/<app>.png`.
+- **Slovak coverage** — IDS BK uses the official Bratislavský kraj boundary and
+  IDS PLUS the union of Žilinský kraj and Trenčiansky kraj, since both are
+  regional integrated systems. Ubian is a shared platform serving Košice, Prešov
+  and Trnava, so those three records share one icon and one store link and each
+  carries its own municipal boundary. MHD Banská Bystrica uses the
+  Banskobystrický kraj boundary because IDS BBSK coordinates the region; the
+  municipal app handles city SMS tickets while the regional app is still listed
+  as in preparation. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Hungarian coverage** — BudapestGO (BKK) uses the official Budapest boundary.
+  The other twelve cities are local ticket scopes of Közlekedési Mobiljegy, the
+  national platform run by Nemzeti Mobilfizetési Zrt., so they are recorded as
+  twelve linked apps sharing one icon and one store link, each with its own
+  municipal boundary: Szeged, Miskolc, Pécs, Kecskemét, Szombathely,
+  Székesfehérvár, Eger, Tatabánya, Paks, Veszprém and Várpalota. Debrecen is the
+  exception — DKV publishes its own MyDKV app, so it has its own icon and link.
+- **Estonian coverage** — Pilet.ee is one Ridango system with per-city entry
+  points that have different ticket scopes, so it is recorded as five linked apps
+  that share one icon: the parent Pilet.ee (national boundary, since it sells for
+  Tallinn, Harjumaa and the county bus networks), tallinn.pilet.ee (Harju maakond),
+  tartu.pilet.ee (Tartu linn), parnu.pilet.ee (Pärnu linn) and iil.pilet.ee (Lääne
+  and Lääne-Viru counties). Each icon is the official Google Play icon, stored as
+  `public/icons/pilet.png`.
+- **Latvian coverage** — for the three city apps (Rīgas satiksme for Riga,
+  Liepājas pilsēta for Liepāja and JAP.LV for Jelgava) the shaded area is the
+  official municipal boundary. Mobilly is a commercial app selling Riga tickets
+  alongside regional trains and buses, so its shaded area is the national boundary
+  of Latvia. Each icon is the official Google Play icon, stored as
+  `public/icons/<app>.png`.
+- **Lithuanian coverage** — for the six apps (JUDU and Trafi for Vilnius, Žiogas
+  for Kaunas, e.Ticket for Klaipėda, ŠR bilietas for Šiauliai and e.bilietas for
+  Panevėžys) the shaded area is the official municipal boundary, which is the zone
+  their fares cover, taken from OpenStreetMap administrative relations and
+  simplified. ŠiauliaiBUS has no separate store listing. Each icon is the official
+  Google Play icon, stored as `public/icons/<app>.png`.
+- **Icelandic coverage** — Klappið uses the official Greater Reykjavík
+  capital-region boundary (Höfuðborgarsvæðið), the area served by Strætó routes
+  1–36. It is published by Strætó bs but distributed only through the App Store,
+  so its icon comes from the official App Store listing. There is no separate
+  "Strætó bs" app — Klappið is it.
+- **Austrian coverage** — for the seven apps (WienMobil for Vienna, VOR AnachB
+  for Vienna, Lower Austria and Burgenland, GrazMobil for Graz, LinzMobil for
+  Linz, SalzburgMobil for the city of Salzburg, VVT Tickets for Tyrol and
+  KlagenfurtMobil for Klagenfurt) the shaded area is the official boundary of the
+  federal province or city whose zone map sets the fares, taken from OpenStreetMap
+  administrative relations and dissolved. Each icon is the official Google Play
+  icon, stored as `public/icons/<app>.png`.
 - **Czech coverage** — for the ten city and regional apps (PID Lítačka for Prague
   and Central Bohemia, ODISapka for the Moravian-Silesian region, MojeDPO for
   Ostrava, the Plzeň card for the Plzeň region, DPMO for Olomouc, Idolka for the

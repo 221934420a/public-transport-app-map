@@ -1,0 +1,26 @@
+id: galati
+name: Transport Galați
+description: Tickets for trams, trolleybuses and buses in Galați.
+icon_id: galati
+operator: Transurb Galați
+country_codes:
+  - RO
+website_url: https://www.transurbgalati.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ro.transurbgalati.mobile
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+tickets_url: https://www.transurbgalati.ro/
+marker:
+  coordinates: [28.05, 45.4353]
+  label: Transport Galați
+source_url: https://www.transurbgalati.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Galați, the city Transurb
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. The icon is the official Transport Galați app icon
+  from Google Play, stored as public/icons/galati.png.

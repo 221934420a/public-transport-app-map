@@ -1,0 +1,30 @@
+id: greece
+country_code: GR
+title: Public transport apps
+eyebrow: Greece
+page_title: Public Transport App Map | Greece
+meta_description: Which public transport apps work where, across Greece.
+theme_color: '#fef7ff'
+locale: el-GR
+map_aria_label: Greece public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [23.7, 38.5]
+  zoom: 6.6
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#0079ea'
+  accent_strong: '#00488c'
+  outline: '#0079ea'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

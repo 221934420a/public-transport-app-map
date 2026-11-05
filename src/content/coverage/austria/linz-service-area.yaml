@@ -1,0 +1,19 @@
+id: linz-service-area
+app_id: linz
+name: LinzMobil coverage (Linz)
+geometry_refs:
+  - /geo/austria/linz-coverage.geojson
+style:
+  fill_color: '#ee7600'
+  fill_opacity: 0.43
+  outline_color: '#954900'
+  outline_width: 2.5
+  accent: '#ee7600'
+  accent_strong: '#7d3d00'
+boundary_description: >-
+  The official boundary of Linz, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.linzag.at/
+checked_at: '2026-11-03'
+status: draft

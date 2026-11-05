@@ -1,0 +1,28 @@
+id: zagreb
+name: Moj ZET
+description: Tickets for trams, buses and the funicular in Zagreb.
+icon_id: zagreb
+operator: ZET (Zagrebački električni tramvaj)
+country_codes:
+  - HR
+website_url: https://www.zet.hr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.zetmobile
+transport_modes:
+  - bus
+  - tram
+  - funicular
+tickets_url: https://www.zet.hr/
+marker:
+  coordinates: [15.9819, 45.815]
+  label: Moj ZET
+source_url: https://www.zet.hr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the City of Zagreb, the
+  area ZET serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. The app sells singles, 24 and 72 hour day
+  tickets and monthly and annual passes, and also handles the joint ZET-HŽPP
+  ticket. The icon is the official Moj ZET app icon from Google Play, stored as
+  public/icons/zagreb.png.

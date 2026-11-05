@@ -1,0 +1,21 @@
+id: thessaloniki-service-area
+app_id: thessaloniki
+name: TheTA App (OSETH) coverage (Thessaloniki)
+geometry_refs:
+  - /geo/greece/thessaloniki-coverage.geojson
+style:
+  fill_color: '#be212e'
+  fill_opacity: 0.43
+  outline_color: '#761520'
+  outline_width: 2.5
+  accent: '#be212e'
+  accent_strong: '#64121b'
+boundary_description: >-
+  The mapped service area is the official Δήμος Θεσσαλονίκης boundary, the city
+  the transport authority serves, so the shaded shape follows the municipal
+  boundary rather than a stop-density approximation. Paper tickets were
+  abolished from 1 January 2026 in favour of the ThessTicket electronic ticket
+  bought in the app.
+source_url: https://www.theta.gr/
+checked_at: '2026-11-03'
+status: draft

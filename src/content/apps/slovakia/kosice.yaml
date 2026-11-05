@@ -1,0 +1,27 @@
+id: kosice
+name: Ubian (Košice)
+description: Tickets for trams and buses across Košice.
+icon_id: ubian
+operator: DPMK (Dopravný podnik mesta Košice)
+country_codes:
+  - SK
+website_url: https://dpmk.ubian.sk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=eu.ubian
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://dpmk.ubian.sk/
+marker:
+  coordinates: [21.2611, 48.7164]
+  label: Ubian (Košice)
+source_url: https://dpmk.ubian.sk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Košice, the city DPMK
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. Ubian is a shared platform, so this record shows
+  the Košice front end and shares the Ubian app and icon with the Prešov and
+  Trnava records. The icon is the official Ubian app icon from Google Play,
+  stored as public/icons/ubian.png.

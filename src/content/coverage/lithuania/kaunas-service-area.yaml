@@ -1,0 +1,19 @@
+id: kaunas-service-area
+app_id: kaunas
+name: Žiogas coverage (Kaunas)
+geometry_refs:
+  - /geo/lithuania/kaunas-coverage.geojson
+style:
+  fill_color: '#28cd57'
+  fill_opacity: 0.43
+  outline_color: '#1a8539'
+  outline_width: 2.5
+  accent: '#28cd57'
+  accent_strong: '#16742f'
+boundary_description: >-
+  The official boundary of Kaunas, the municipality whose zone map sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.kaunas.lt/
+checked_at: '2026-11-03'
+status: draft

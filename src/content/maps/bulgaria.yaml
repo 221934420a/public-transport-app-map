@@ -1,0 +1,30 @@
+id: bulgaria
+country_code: BG
+title: Public transport apps
+eyebrow: Bulgaria
+page_title: Public Transport App Map | Bulgaria
+meta_description: Which public transport apps work where, across Bulgaria.
+theme_color: '#fef7ff'
+locale: bg-BG
+map_aria_label: Bulgaria public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [25.2, 42.8]
+  zoom: 6.8
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#494ef1'
+  accent_strong: '#2b2f91'
+  outline: '#494ef1'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

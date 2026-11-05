@@ -1,0 +1,21 @@
+id: rijeka-service-area
+app_id: rijeka
+name: RCC Mobility coverage (Rijeka)
+geometry_refs:
+  - /geo/croatia/rijeka-coverage.geojson
+style:
+  fill_color: '#2b9249'
+  fill_opacity: 0.43
+  outline_color: '#1a572c'
+  outline_width: 2.5
+  accent: '#2b9249'
+  accent_strong: '#164926'
+boundary_description: >-
+  The mapped service area is the official boundary of Rijeka, the city
+  Autotrolej serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. Digital tickets went live on 1 April 2026
+  and are valid across the whole fare area, activated before boarding, while day
+  and week tickets are still bought at ticket booths.
+source_url: https://www.rijekacitycard.hr/
+checked_at: '2026-11-03'
+status: draft

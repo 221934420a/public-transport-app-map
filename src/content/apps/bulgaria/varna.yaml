@@ -1,0 +1,26 @@
+id: varna
+name: TTickets Varna
+description: Tickets for trolleybuses and buses in Varna.
+icon_id: varna
+operator: Varna municipality / Градски Транспорт ЕАД / ТАСРУД
+country_codes:
+  - BG
+website_url: https://www.varnastransport.bg/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.busvarnanew.ticket
+transport_modes:
+  - bus
+  - trolleybus
+tickets_url: https://www.varnastransport.bg/
+marker:
+  coordinates: [27.9147, 43.2141]
+  label: TTickets Varna
+source_url: https://www.varnastransport.bg/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Варна municipal boundary, the area the
+  operator serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. The official app replaced the earlier
+  TicketVarna and busVarna apps. The icon is the official TTickets Varna app
+  icon from Google Play, stored as public/icons/varna.png.

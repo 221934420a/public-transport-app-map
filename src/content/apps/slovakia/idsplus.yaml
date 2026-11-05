@@ -1,0 +1,27 @@
+id: idsplus
+name: IDS PLUS
+description: Tickets for trolleybuses, buses and regional trains across Žilina and Trenčín regions.
+icon_id: idsplus
+operator: IDS PLUS / DPMŽ with SAD Žilina, DPMM, Arriva Liorbus and ZSSK
+country_codes:
+  - SK
+website_url: https://www.idsplus.sk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=sk.idzk
+transport_modes:
+  - bus
+  - trolleybus
+  - rail
+tickets_url: https://www.idsplus.sk/
+marker:
+  coordinates: [18.7394, 49.2231]
+  label: IDS PLUS
+source_url: https://www.idsplus.sk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the union of the official Žilinský kraj and
+  Trenčiansky kraj boundaries, the two regions the IDS PLUS integrated system
+  covers, so the shaded shape follows the regional boundaries rather than a
+  stop-density approximation. The icon is the official IDS PLUS app icon from
+  Google Play, stored as public/icons/idsplus.png.

@@ -1,0 +1,26 @@
+id: wien
+name: WienMobil
+description: Tickets for the U-Bahn, trams and buses across Vienna.
+icon_id: wien
+operator: Wiener Linien GmbH & Co KG
+country_codes:
+  - AT
+website_url: https://www.wienerlinien.at/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=at.wienerlinien.wienmobillab
+transport_modes:
+  - bus
+  - tram
+  - metro
+tickets_url: https://www.wienerlinien.at/
+marker:
+  coordinates: [16.3738, 48.2082]
+  label: WienMobil
+source_url: https://www.wienerlinien.at/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Vienna, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  WienMobil app icon from Google Play, stored as public/icons/wien.png.

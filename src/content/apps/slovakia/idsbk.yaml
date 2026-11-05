@@ -1,0 +1,28 @@
+id: idsbk
+name: IDS BK (Cestujeme jednoduchšie)
+description: Tickets for trams, trolleybuses, buses, ZSSK suburban trains and Arriva regional buses across Bratislava region.
+icon_id: idsbk
+operator: BID, a.s. / Dopravný podnik Bratislava
+country_codes:
+  - SK
+website_url: https://www.bid.sk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.casperise.urbi.online.bid
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - rail
+tickets_url: https://www.bid.sk/
+marker:
+  coordinates: [17.1077, 48.1486]
+  label: IDS BK (Cestujeme jednoduchšie)
+source_url: https://www.bid.sk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Bratislavský kraj boundary, the region
+  the IDS BK integrated system covers, so the shaded shape follows the regional
+  boundary rather than a stop-density approximation. The icon is the official
+  IDS BK (Cestujeme jednoduchšie) app icon from Google Play, stored as
+  public/icons/idsbk.png.

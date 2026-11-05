@@ -1,0 +1,30 @@
+id: estonia
+country_code: EE
+title: Public transport apps
+eyebrow: Estonia
+page_title: Public Transport App Map | Estonia
+meta_description: Which public transport apps work where, across Estonia.
+theme_color: '#fef7ff'
+locale: et-EE
+map_aria_label: Estonia public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [25.6, 58.8]
+  zoom: 6.6
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#f16c51'
+  accent_strong: '#9c3f2f'
+  outline: '#f16c51'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

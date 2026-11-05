@@ -1,0 +1,21 @@
+id: 24pay-service-area
+app_id: 24pay
+name: 24pay coverage (Brașov, Sibiu, Ploiești, Iași, Galați, Constanța and Craiova)
+geometry_refs:
+  - /geo/romania/24pay-coverage.geojson
+style:
+  fill_color: '#e8d433'
+  fill_opacity: 0.43
+  outline_color: '#8b7f1f'
+  outline_width: 2.5
+  accent: '#e8d433'
+  accent_strong: '#766b1a'
+boundary_description: >-
+  24pay is a commercial wallet rather than a city operator, covering the local
+  networks of Brașov, Sibiu, Ploiești, Iași, Galați, Constanța and Craiova, so
+  the mapped area is the union of those official city boundaries rather than a
+  single municipal shape. Tickets sold through it are single, day and monthly
+  fares for each network.
+source_url: https://24pay.ro/
+checked_at: '2026-11-03'
+status: draft

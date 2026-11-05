@@ -1,0 +1,21 @@
+id: sofia-service-area
+app_id: sofia
+name: Sofia2Go coverage (Sofia)
+geometry_refs:
+  - /geo/bulgaria/sofia-coverage.geojson
+style:
+  fill_color: '#494ef1'
+  fill_opacity: 0.43
+  outline_color: '#2b2f91'
+  outline_width: 2.5
+  accent: '#494ef1'
+  accent_strong: '#25287d'
+boundary_description: >-
+  The mapped service area is the official Столична община boundary, the
+  municipality the urban mobility centre covers, so the shaded shape follows the
+  municipal boundary rather than a stop-density approximation. The app issues a
+  virtual Sofia City Card into Google Wallet and sells single, 24 and 72 hour,
+  monthly and annual fares, plus Pay-As-You-Go contactless with a daily cap.
+source_url: https://www.sofiatraffic.bg/
+checked_at: '2026-11-03'
+status: draft

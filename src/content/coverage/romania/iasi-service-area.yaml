@@ -1,0 +1,20 @@
+id: iasi-service-area
+app_id: iasi
+name: IA'ȘI BILET coverage (Iași)
+geometry_refs:
+  - /geo/romania/iasi-coverage.geojson
+style:
+  fill_color: '#00a650'
+  fill_opacity: 0.43
+  outline_color: '#006430'
+  outline_width: 2.5
+  accent: '#00a650'
+  accent_strong: '#005529'
+boundary_description: >-
+  The mapped service area is the official boundary of Iași, the city CTP serves,
+  so the shaded shape follows the municipal boundary rather than a stop-density
+  approximation. Single tickets run from the IA'ȘI BILET app, which also appears
+  inside the 24pay wallet.
+source_url: https://www.ctpiasi.ro/
+checked_at: '2026-11-03'
+status: draft

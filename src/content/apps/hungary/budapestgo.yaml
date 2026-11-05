@@ -1,0 +1,29 @@
+id: budapestgo
+name: BudapestGO
+description: Tickets for the metro, trams, trolleybuses, buses, HÉV suburban trains and ferries across Budapest.
+icon_id: budapestgo
+operator: BKK (Budapesti Közlekedési Központ)
+country_codes:
+  - HU
+website_url: https://bkk.hu/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=hu.webvalto.bkkfutar
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - metro
+  - rail
+  - ferry
+tickets_url: https://bkk.hu/
+marker:
+  coordinates: [19.0402, 47.4979]
+  label: BudapestGO
+source_url: https://bkk.hu/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Budapest, the city BKK
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. The icon is the official BudapestGO app icon from
+  Google Play, stored as public/icons/budapestgo.png.

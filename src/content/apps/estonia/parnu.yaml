@@ -1,0 +1,24 @@
+id: parnu
+name: Pilet.ee Pärnu
+description: Tickets for Pärnu city buses across Pärnu.
+icon_id: pilet
+operator: Pärnu city
+country_codes:
+  - EE
+website_url: https://parnu.pilet.ee/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.pilet.ee.live
+transport_modes:
+  - bus
+tickets_url: https://parnu.pilet.ee/
+marker:
+  coordinates: [24.4971, 58.3859]
+  label: Pilet.ee Pärnu
+source_url: https://pilet.ee/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  This is the parnu.pilet.ee entry point, which sells Pärnu city tickets, so the
+  mapped area is the official Pärnu linn boundary. It shares the Pilet.ee app
+  and icon with the parent record because it is the same app with a narrower
+  ticket scope.

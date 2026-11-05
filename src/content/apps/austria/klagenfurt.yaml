@@ -1,0 +1,26 @@
+id: klagenfurt
+name: KlagenfurtMobil 2.0
+description: Tickets for buses and regional trains across Klagenfurt.
+icon_id: klagenfurt
+operator: KMG Klagenfurt Mobil / Kärntner Linien
+country_codes:
+  - AT
+website_url: https://www.klagenfurtmobil.at/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=de.amcon.ticketingapp.kmg
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.klagenfurtmobil.at/
+marker:
+  coordinates: [14.3053, 46.6247]
+  label: KlagenfurtMobil 2.0
+source_url: https://www.klagenfurtmobil.at/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Klagenfurt, the authority
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  KlagenfurtMobil 2.0 app icon from Google Play, stored as
+  public/icons/klagenfurt.png.

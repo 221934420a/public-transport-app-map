@@ -1,0 +1,27 @@
+id: debrecen
+name: MyDKV (Mobiljegy Debrecen)
+description: Tickets for trams, trolleybuses and buses across Debrecen.
+icon_id: mydkv
+operator: DKV Debreceni Közlekedési Zrt.
+country_codes:
+  - HU
+website_url: https://www.dkv.hu/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.hclinear.dkv.dkv
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+tickets_url: https://www.dkv.hu/
+marker:
+  coordinates: [21.6273, 47.5316]
+  label: MyDKV
+source_url: https://www.dkv.hu/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Debrecen, the city DKV
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. Debrecen's tickets are also sold through the
+  national Közlekedési Mobiljegy platform, but DKV publishes its own MyDKV app,
+  so this record uses that app and its own icon, stored as public/icons/mydkv.png.

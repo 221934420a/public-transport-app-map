@@ -1,0 +1,26 @@
+id: presov
+name: Ubian (Prešov)
+description: Tickets for buses across Prešov.
+icon_id: ubian
+operator: DPMP (Dopravný podnik mesta Prešov)
+country_codes:
+  - SK
+website_url: https://www.dpmp.sk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=eu.ubian
+transport_modes:
+  - bus
+tickets_url: https://www.dpmp.sk/
+marker:
+  coordinates: [21.24, 48.9975]
+  label: Ubian (Prešov)
+source_url: https://www.dpmp.sk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Prešov, the city DPMP
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. Ubian is a shared platform, so this record shows
+  the Prešov front end and shares the Ubian app and icon with the Košice and
+  Trnava records. The icon is the official Ubian app icon from Google Play,
+  stored as public/icons/ubian.png.

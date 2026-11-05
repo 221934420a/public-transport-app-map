@@ -1,0 +1,26 @@
+id: iasi
+name: IA'ȘI BILET
+description: Tickets for trams and buses in Iași.
+icon_id: iasi
+operator: CTP Iași
+country_codes:
+  - RO
+website_url: https://www.ctpiasi.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ro.iasi.ctp
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.ctpiasi.ro/
+marker:
+  coordinates: [27.5877, 47.1585]
+  label: IA'ȘI BILET
+source_url: https://www.ctpiasi.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Iași, the city CTP serves,
+  so the shaded shape follows the municipal boundary rather than a stop-density
+  approximation. Single tickets run from the IA'ȘI BILET app, which also appears
+  inside the 24pay wallet. The icon is the official IA'ȘI BILET app icon from
+  Google Play, stored as public/icons/iasi.png.

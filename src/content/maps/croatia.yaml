@@ -1,0 +1,30 @@
+id: croatia
+country_code: HR
+title: Public transport apps
+eyebrow: Croatia
+page_title: Public Transport App Map | Croatia
+meta_description: Which public transport apps work where, across Croatia.
+theme_color: '#fef7ff'
+locale: hr-HR
+map_aria_label: Croatia public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [16.4, 44.6]
+  zoom: 6.8
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#00379f'
+  accent_strong: '#001f5c'
+  outline: '#00379f'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

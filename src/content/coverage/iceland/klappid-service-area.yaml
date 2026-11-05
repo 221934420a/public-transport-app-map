@@ -1,0 +1,19 @@
+id: klappid-service-area
+app_id: klappid
+name: Klappið coverage (Greater Reykjavík)
+geometry_refs:
+  - /geo/iceland/klappid-coverage.geojson
+style:
+  fill_color: '#f57921'
+  fill_opacity: 0.43
+  outline_color: '#99490f'
+  outline_width: 2.5
+  accent: '#f57921'
+  accent_strong: '#853f0d'
+boundary_description: >-
+  The official Greater Reykjavík capital-region boundary (Höfuðborgarsvæðið),
+  the area served by Strætó routes 1-36, so the shaded area matches the zone the
+  app sells tickets for.
+source_url: https://www.straeto.is/
+checked_at: '2026-11-03'
+status: draft

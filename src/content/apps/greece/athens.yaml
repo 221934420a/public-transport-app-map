@@ -1,0 +1,32 @@
+id: athens
+name: ATH.ENA Card
+description: Tickets for the metro, tram, trolleybuses, buses and suburban rail in Athens.
+icon_id: athens
+operator: OASA (ΟΑΣΑ)
+country_codes:
+  - GR
+website_url: https://www.oasa.gr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=gr.oasa.athenago.user
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - metro
+  - rail
+tickets_url: https://www.oasa.gr/
+marker:
+  coordinates: [23.7275, 37.9838]
+  label: ATH.ENA Card
+source_url: https://www.oasa.gr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Δήμος Αθηναίων boundary, the core of
+  the Athens fare zone, so the shaded shape follows the municipal boundary
+  rather than a stop-density approximation; OASA services and the same fare zone
+  extend across the wider urban area beyond this shape. The app loads tickets
+  onto the ATH.ENA card over NFC and also supports Tap2Ride contactless payment
+  with a daily cap, and it is Android-only because it needs NFC. The icon is the
+  official ATH.ENA Card app icon from Google Play, stored as
+  public/icons/athens.png.

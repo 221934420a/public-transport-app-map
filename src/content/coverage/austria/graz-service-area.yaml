@@ -1,0 +1,19 @@
+id: graz-service-area
+app_id: graz
+name: GrazMobil coverage (Graz)
+geometry_refs:
+  - /geo/austria/graz-coverage.geojson
+style:
+  fill_color: '#5ea329'
+  fill_opacity: 0.43
+  outline_color: '#3b6719'
+  outline_width: 2.5
+  accent: '#5ea329'
+  accent_strong: '#325716'
+boundary_description: >-
+  The official boundary of Graz, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.holding-graz.at/
+checked_at: '2026-11-03'
+status: draft

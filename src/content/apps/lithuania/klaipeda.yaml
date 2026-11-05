@@ -1,0 +1,25 @@
+id: klaipeda
+name: e.Ticket Klaipėda
+description: Tickets for buses and ferries across Klaipėda.
+icon_id: klaipeda
+operator: Klaipėdos keleivinis transportas
+country_codes:
+  - LT
+website_url: https://www.klaipeda.lt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.klaipeda.app
+transport_modes:
+  - bus
+tickets_url: https://www.klaipeda.lt/
+marker:
+  coordinates: [21.1284, 55.7033]
+  label: e.Ticket Klaipėda
+source_url: https://www.klaipeda.lt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Klaipėda, the municipality
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  e.Ticket Klaipėda app icon from Google Play, stored as
+  public/icons/klaipeda.png.

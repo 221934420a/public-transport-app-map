@@ -1,0 +1,19 @@
+id: trafi-service-area
+app_id: trafi
+name: Trafi coverage (Vilnius)
+geometry_refs:
+  - /geo/lithuania/trafi-coverage.geojson
+style:
+  fill_color: '#ff1499'
+  fill_opacity: 0.43
+  outline_color: '#9c0c5e'
+  outline_width: 2.5
+  accent: '#ff1499'
+  accent_strong: '#840a4f'
+boundary_description: >-
+  The official boundary of Vilnius, the municipality whose zone map sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.trafi.com/
+checked_at: '2026-11-03'
+status: draft

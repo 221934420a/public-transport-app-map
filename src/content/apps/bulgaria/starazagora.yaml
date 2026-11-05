@@ -1,0 +1,26 @@
+id: starazagora
+name: Градски транспорт Стара Загора
+description: Tickets for trolleybuses and buses in Stara Zagora.
+icon_id: starazagora
+operator: Stara Zagora municipality
+country_codes:
+  - BG
+website_url: https://www.starazagora.bg/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.modeshift.starazagora
+transport_modes:
+  - bus
+  - trolleybus
+tickets_url: https://www.starazagora.bg/
+marker:
+  coordinates: [25.6286, 42.4259]
+  label: Градски транспорт Стара Загора
+source_url: https://www.starazagora.bg/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Стара Загора municipal boundary, the
+  area the operator serves, so the shaded shape follows the municipal boundary
+  rather than a stop-density approximation. A 120 minute ticket costs 1.40 EUR
+  and a single 0.80 EUR. The icon is the official Градски транспорт Стара Загора
+  app icon from Google Play, stored as public/icons/starazagora.png.

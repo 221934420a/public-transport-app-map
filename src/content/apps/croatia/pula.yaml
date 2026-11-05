@@ -1,0 +1,26 @@
+id: pula
+name: Mobility Plus (Pulapromet)
+description: Tickets for buses in Pula.
+icon_id: pula
+operator: Pulapromet d.o.o.
+country_codes:
+  - HR
+website_url: https://www.pulapromet.hr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=mobility.plus.app
+transport_modes:
+  - bus
+tickets_url: https://www.pulapromet.hr/
+marker:
+  coordinates: [13.8496, 44.8666]
+  label: Mobility Plus (Pulapromet)
+source_url: https://www.pulapromet.hr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Pula, the city Pulapromet
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. The operator publishes the app as Mobility Plus,
+  which sells QR singles for fare zones 1 to 3 alongside timetables and journey
+  planning. The icon is the official Mobility Plus (Pulapromet) app icon from
+  Google Play, stored as public/icons/pula.png.

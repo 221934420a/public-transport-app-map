@@ -1,0 +1,25 @@
+id: panevezys
+name: e.bilietas Panevėžys
+description: Tickets for buses across Panevėžys.
+icon_id: panevezys
+operator: Panevėžio keleivinis transportas
+country_codes:
+  - LT
+website_url: https://www.panevezys.lt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.ridango.panevezys.app
+transport_modes:
+  - bus
+tickets_url: https://www.panevezys.lt/
+marker:
+  coordinates: [24.3575, 55.7339]
+  label: e.bilietas Panevėžys
+source_url: https://www.panevezys.lt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Panevėžys, the
+  municipality whose zone map sets the fares sold in the app, so the shaded
+  shape follows the zone map rather than a stop-density approximation. The icon
+  is the official e.bilietas Panevėžys app icon from Google Play, stored as
+  public/icons/panevezys.png.

@@ -1,0 +1,26 @@
+id: salzburg
+name: SalzburgMobil
+description: Tickets for trolleybuses, buses and S-Bahn across the city of Salzburg.
+icon_id: salzburg
+operator: Salzburg AG / SVV
+country_codes:
+  - AT
+website_url: https://www.salzburg-ag.at/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=at.upstream.salzburgmobil
+transport_modes:
+  - bus
+  - rail
+tickets_url: https://www.salzburg-ag.at/
+marker:
+  coordinates: [13.055, 47.8095]
+  label: SalzburgMobil
+source_url: https://www.salzburg-ag.at/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of the city of Salzburg, the
+  authority whose zone map sets the fares sold in the app, so the shaded shape
+  follows the zone map rather than a stop-density approximation. The icon is the
+  official SalzburgMobil app icon from Google Play, stored as
+  public/icons/salzburg.png.

@@ -1,0 +1,26 @@
+id: rijeka
+name: RCC Mobility
+description: Tickets for buses in Rijeka.
+icon_id: rijeka
+operator: KD Autotrolej / Rijeka CityCard (RCC)
+country_codes:
+  - HR
+website_url: https://www.rijekacitycard.hr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.rijekacitycard.mobility
+transport_modes:
+  - bus
+tickets_url: https://www.rijekacitycard.hr/
+marker:
+  coordinates: [14.4422, 45.3271]
+  label: RCC Mobility
+source_url: https://www.rijekacitycard.hr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Rijeka, the city
+  Autotrolej serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. Digital tickets went live on 1 April 2026
+  and are valid across the whole fare area, activated before boarding, while day
+  and week tickets are still bought at ticket booths. The icon is the official
+  RCC Mobility app icon from Google Play, stored as public/icons/rijeka.png.

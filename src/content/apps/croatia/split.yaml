@@ -1,0 +1,25 @@
+id: split
+name: Promet Split
+description: Tickets for buses in Split.
+icon_id: split
+operator: Promet d.o.o. Split
+country_codes:
+  - HR
+website_url: https://www.promet-split.hr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=hr.prometsplit.mobile
+transport_modes:
+  - bus
+tickets_url: https://www.promet-split.hr/
+marker:
+  coordinates: [16.4402, 43.5081]
+  label: Promet Split
+source_url: https://www.promet-split.hr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Split, the city and
+  metropolitan operator serves, so the shaded shape follows the municipal
+  boundary rather than a stop-density approximation. The network is buses only;
+  Split has no tram. The icon is the official Promet Split app icon from Google
+  Play, stored as public/icons/split.png.

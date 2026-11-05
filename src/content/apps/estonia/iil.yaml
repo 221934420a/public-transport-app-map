@@ -1,0 +1,26 @@
+id: iil
+name: Pilet.ee IIL
+description: Tickets for county and municipal buses across the three counties across Harjumaa, Läänemaa and Lääne-Virumaa.
+icon_id: pilet
+operator: Harjumaa/Läänemaa/Lääne-Virumaa Ühistranspordikeskus
+country_codes:
+  - EE
+website_url: https://iil.pilet.ee/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.pilet.ee.live
+transport_modes:
+  - bus
+tickets_url: https://iil.pilet.ee/
+marker:
+  coordinates: [26.3555, 58.7467]
+  label: Pilet.ee IIL
+source_url: https://pilet.ee/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  This is the iil.pilet.ee entry point run by the Harjumaa, Läänemaa and
+  Lääne-Virumaa county public-transport centre, so the mapped area is the union
+  of the official Lääne maakond and Lääne-Viru maakond boundaries plus Harjumaa,
+  which is also the Tallinn entry point scope. It shares the Pilet.ee app and
+  icon with the parent record because it is the same app with a narrower ticket
+  scope.

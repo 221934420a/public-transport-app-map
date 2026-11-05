@@ -1,0 +1,21 @@
+id: bucuresti-service-area
+app_id: bucuresti
+name: Bilet TB coverage (Bucharest and Ilfov)
+geometry_refs:
+  - /geo/romania/bucuresti-coverage.geojson
+style:
+  fill_color: '#3ea94a'
+  fill_opacity: 0.43
+  outline_color: '#276b2f'
+  outline_width: 2.5
+  accent: '#3ea94a'
+  accent_strong: '#215e29'
+boundary_description: >-
+  The mapped service area is the union of the official Bucharest and Ilfov
+  county boundaries, the metropolitan area STB serves on the surface, so the
+  shaded shape follows the administrative boundaries rather than a stop-density
+  approximation. The app does not sell metro tickets, which are handled
+  separately by Metrorex.
+source_url: https://www.stb.ro/
+checked_at: '2026-11-03'
+status: draft

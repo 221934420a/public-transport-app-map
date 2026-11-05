@@ -1,0 +1,22 @@
+id: athens-service-area
+app_id: athens
+name: ATH.ENA Card coverage (Athens)
+geometry_refs:
+  - /geo/greece/athens-coverage.geojson
+style:
+  fill_color: '#0079ea'
+  fill_opacity: 0.43
+  outline_color: '#00488c'
+  outline_width: 2.5
+  accent: '#0079ea'
+  accent_strong: '#003d78'
+boundary_description: >-
+  The mapped service area is the official Δήμος Αθηναίων boundary, the core of
+  the Athens fare zone, so the shaded shape follows the municipal boundary
+  rather than a stop-density approximation; OASA services and the same fare zone
+  extend across the wider urban area beyond this shape. The app loads tickets
+  onto the ATH.ENA card over NFC and also supports Tap2Ride contactless payment
+  with a daily cap, and it is Android-only because it needs NFC.
+source_url: https://www.oasa.gr/
+checked_at: '2026-11-03'
+status: draft

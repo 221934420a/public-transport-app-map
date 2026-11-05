@@ -1,0 +1,26 @@
+id: trnava
+name: Ubian (Trnava)
+description: Tickets for buses across Trnava.
+icon_id: ubian
+operator: Trnava city (MHD operated by SAD Trnava)
+country_codes:
+  - SK
+website_url: https://eshop.ubian.sk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=eu.ubian
+transport_modes:
+  - bus
+tickets_url: https://eshop.ubian.sk/
+marker:
+  coordinates: [17.5872, 48.3774]
+  label: Ubian (Trnava)
+source_url: https://eshop.ubian.sk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Trnava, the city the MHD
+  network serves, so the shaded shape follows the municipal boundary rather than
+  a stop-density approximation. Ubian is a shared platform, so this record shows
+  the Trnava front end and shares the Ubian app and icon with the Košice and
+  Prešov records. The icon is the official Ubian app icon from Google Play,
+  stored as public/icons/ubian.png.

@@ -1,0 +1,27 @@
+id: mobilly
+name: Mobilly
+description: Tickets for Riga city tickets plus regional trains and buses across Riga and the regional network across Latvia.
+icon_id: mobilly
+operator: Mobilly
+country_codes:
+  - LV
+website_url: https://mobilly.lv/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=lv.mobilly.android
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - rail
+tickets_url: https://mobilly.lv/
+marker:
+  coordinates: [24.1052, 56.9496]
+  label: Mobilly
+source_url: https://mobilly.lv/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  Mobilly is a commercial app that sells Riga city tickets alongside regional
+  train and bus tickets, so the mapped area is the national boundary of Latvia,
+  the extent of the regional services it covers. The icon is the official
+  Mobilly app icon from Google Play, stored as public/icons/mobilly.png.

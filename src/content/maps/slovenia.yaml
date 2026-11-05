@@ -1,0 +1,30 @@
+id: slovenia
+country_code: SI
+title: Public transport apps
+eyebrow: Slovenia
+page_title: Public Transport App Map | Slovenia
+meta_description: Which public transport apps work where, across Slovenia.
+theme_color: '#fef7ff'
+locale: sl-SI
+map_aria_label: Slovenia public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [14.8, 46.1]
+  zoom: 7.2
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#ef4e32'
+  accent_strong: '#932f1d'
+  outline: '#ef4e32'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

@@ -1,0 +1,19 @@
+id: judu-service-area
+app_id: judu
+name: JUDU coverage (Vilnius)
+geometry_refs:
+  - /geo/lithuania/judu-coverage.geojson
+style:
+  fill_color: '#252753'
+  fill_opacity: 0.43
+  outline_color: '#161631'
+  outline_width: 2.5
+  accent: '#252753'
+  accent_strong: '#12122a'
+boundary_description: >-
+  The official boundary of Vilnius, the municipality whose zone map sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://judu.lt/
+checked_at: '2026-11-03'
+status: draft

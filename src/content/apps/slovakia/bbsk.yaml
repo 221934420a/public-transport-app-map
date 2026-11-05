@@ -1,0 +1,30 @@
+id: bbsk
+name: MHD Banská Bystrica + IDS BBSK
+description: Tickets for trolleybuses, buses, regional buses and trains across Banská Bystrica region.
+icon_id: bbsk
+operator: DPMBB / IDS BBSK, a.s.
+country_codes:
+  - SK
+website_url: https://www.idsbbsk.sk/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=sk.mhdapp.bb
+transport_modes:
+  - bus
+  - trolleybus
+  - rail
+tickets_url: https://www.idsbbsk.sk/
+marker:
+  coordinates: [19.1462, 48.7395]
+  label: MHD Banská Bystrica + IDS BBSK
+source_url: https://www.idsbbsk.sk/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Banskobystrický kraj boundary, the
+  region the IDS BBSK integrated system coordinates, so the shaded shape follows
+  the regional boundary rather than a stop-density approximation. The municipal
+  MHD Banská Bystrica app handles city SMS tickets while the IDS BBSK e-shop
+  sells passes; the regional mobile app is still listed as in preparation, so
+  the record links the municipal app. The icon is the official MHD Banská
+  Bystrica + IDS BBSK app icon from Google Play, stored as
+  public/icons/bbsk.png.

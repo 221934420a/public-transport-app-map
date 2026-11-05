@@ -1,0 +1,19 @@
+id: salzburg-service-area
+app_id: salzburg
+name: SalzburgMobil coverage (the city of Salzburg)
+geometry_refs:
+  - /geo/austria/salzburg-coverage.geojson
+style:
+  fill_color: '#ff0000'
+  fill_opacity: 0.43
+  outline_color: '#9c0000'
+  outline_width: 2.5
+  accent: '#ff0000'
+  accent_strong: '#840000'
+boundary_description: >-
+  The official boundary of the city of Salzburg, the authority whose zone map
+  sets the fares sold in the app, so the shaded area matches the zone map rather
+  than a stop-density approximation.
+source_url: https://www.salzburg-ag.at/
+checked_at: '2026-11-03'
+status: draft

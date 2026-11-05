@@ -1,0 +1,26 @@
+id: paks
+name: Mobiljegy Paks
+description: Tickets for buses across Paks.
+icon_id: mobiljegy
+operator: PaksBusz
+country_codes:
+  - HU
+website_url: https://mobiljegy.hu/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=hu.nemzetimobilfizetes.mobiljegyapp
+transport_modes:
+  - bus
+tickets_url: https://mobiljegy.hu/
+marker:
+  coordinates: [18.8591, 46.6264]
+  label: Mobiljegy Paks
+source_url: https://mobiljegy.hu/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  This is the local ticket scope of Közlekedési Mobiljegy, the national platform
+  run by Nemzeti Mobilfizetési Zrt. that the city operator uses for app sales,
+  so the mapped area is the official municipal boundary. It shares the Mobiljegy
+  app and icon with the other city scopes because it is the same app with a
+  different ticket scope. The icon is the official Közlekedési Mobiljegy app
+  icon from Google Play, stored as public/icons/mobiljegy.png.

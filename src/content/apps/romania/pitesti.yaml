@@ -1,0 +1,26 @@
+id: pitesti
+name: Transport public Pitești
+description: Tickets for buses in Pitești.
+icon_id: pitesti
+operator: Publitrans 2000 SA / ADI Pitești
+country_codes:
+  - RO
+website_url: https://www.publitrans.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ro.floresco.tpp
+transport_modes:
+  - bus
+tickets_url: https://www.publitrans.ro/
+marker:
+  coordinates: [24.8697, 44.8565]
+  label: Transport public Pitești
+source_url: https://www.publitrans.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Pitești, the city
+  Publitrans serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. The app is built on the Modeshift platform,
+  which is provisional here because the operator had not confirmed it. The icon
+  is the official Transport public Pitești app icon from Google Play, stored as
+  public/icons/pitesti.png.

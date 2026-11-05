@@ -1,0 +1,18 @@
+id: debrecen-service-area
+app_id: debrecen
+name: MyDKV coverage (Debrecen)
+geometry_refs:
+  - /geo/hungary/debrecen-coverage.geojson
+style:
+  fill_color: '#7cb54e'
+  fill_opacity: 0.43
+  outline_color: '#4e7331'
+  outline_width: 2.5
+  accent: '#7cb54e'
+  accent_strong: '#44652b'
+boundary_description: >-
+  The official boundary of Debrecen, the city DKV serves, so the shaded area
+  matches the zone map rather than a stop-density approximation.
+source_url: https://www.dkv.hu/
+checked_at: '2026-11-03'
+status: draft

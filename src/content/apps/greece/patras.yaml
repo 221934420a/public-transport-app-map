@@ -1,0 +1,26 @@
+id: patras
+name: Αστικές Συγκοινωνίες Πατρών
+description: Tickets for buses across fare zones A and B in Patras.
+icon_id: patras
+operator: Αστικό ΚΤΕΛ Πατρών (Patras Urban KTEL)
+country_codes:
+  - GR
+website_url: https://www.citybus.gr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=gr.citybus.urbantransit.patra
+transport_modes:
+  - bus
+tickets_url: https://www.citybus.gr/
+marker:
+  coordinates: [21.7346, 38.2466]
+  label: Αστικές Συγκοινωνίες Πατρών
+source_url: https://www.citybus.gr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Δήμος Πατρέων boundary, the
+  municipality the urban operator serves, so the shaded shape follows the
+  municipal boundary rather than a stop-density approximation. The app sells
+  singles and monthly smartcard passes across fare zones A and B and shows live
+  vehicle positions. The icon is the official Αστικές Συγκοινωνίες Πατρών app
+  icon from Google Play, stored as public/icons/patras.png.

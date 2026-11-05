@@ -1,0 +1,19 @@
+id: mobilly-service-area
+app_id: mobilly
+name: Mobilly coverage (Riga and the regional network across Latvia)
+geometry_refs:
+  - /geo/latvia/mobilly-coverage.geojson
+style:
+  fill_color: '#f0752c'
+  fill_opacity: 0.43
+  outline_color: '#964a1b'
+  outline_width: 2.5
+  accent: '#f0752c'
+  accent_strong: '#7e3e17'
+boundary_description: >-
+  Mobilly is a commercial app that sells Riga city tickets alongside regional
+  train and bus tickets, so the mapped area is the national boundary of Latvia,
+  the extent of the regional services it covers.
+source_url: https://mobilly.lv/
+checked_at: '2026-11-03'
+status: draft

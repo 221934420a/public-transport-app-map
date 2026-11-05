@@ -1,0 +1,19 @@
+id: tirol-service-area
+app_id: tirol
+name: VVT Tickets coverage (Tyrol)
+geometry_refs:
+  - /geo/austria/tirol-coverage.geojson
+style:
+  fill_color: '#646464'
+  fill_opacity: 0.43
+  outline_color: '#3d3d3d'
+  outline_width: 2.5
+  accent: '#646464'
+  accent_strong: '#333333'
+boundary_description: >-
+  The official boundary of Tyrol, the authority whose zone map sets the fares
+  sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.vvt.at/
+checked_at: '2026-11-03'
+status: draft

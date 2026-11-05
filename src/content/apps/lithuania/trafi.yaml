@@ -1,0 +1,24 @@
+id: trafi
+name: Trafi
+description: Tickets for buses and trolleybuses across Vilnius.
+icon_id: trafi
+operator: Trafi (connected to the JUDU system)
+country_codes:
+  - LT
+website_url: https://www.trafi.com/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.trafi.android.tr
+transport_modes:
+  - bus
+tickets_url: https://www.trafi.com/
+marker:
+  coordinates: [25.2797, 54.6872]
+  label: Trafi
+source_url: https://www.trafi.com/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Vilnius, the municipality
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Trafi app icon from Google Play, stored as public/icons/trafi.png.

@@ -1,0 +1,24 @@
+id: tartu
+name: Pilet.ee Tartu
+description: Tickets for Tartu's 15 city bus routes across Tartu.
+icon_id: pilet
+operator: Tartu city (operated by AS GoBus)
+country_codes:
+  - EE
+website_url: https://tartu.pilet.ee/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.pilet.ee.live
+transport_modes:
+  - bus
+tickets_url: https://tartu.pilet.ee/
+marker:
+  coordinates: [26.7251, 58.3776]
+  label: Pilet.ee Tartu
+source_url: https://pilet.ee/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  This is the tartu.pilet.ee entry point, which sells Tartu city tickets for the
+  15 municipal bus routes, so the mapped area is the official Tartu linn
+  boundary. It shares the Pilet.ee app and icon with the parent record because
+  it is the same app with a narrower ticket scope.

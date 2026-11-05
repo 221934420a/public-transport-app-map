@@ -1,0 +1,26 @@
+id: constanta
+name: CT Bus
+description: Tickets for buses in Constanța.
+icon_id: constanta
+operator: CTBUS S.A.
+country_codes:
+  - RO
+website_url: https://www.ctbus.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ro.ratc
+transport_modes:
+  - bus
+tickets_url: https://www.ctbus.ro/
+marker:
+  coordinates: [28.6348, 44.1598]
+  label: CT Bus
+source_url: https://www.ctbus.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Constanța, the city CTBUS
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. CTBUS became a regional operator in November 2026,
+  adding four metropolitan routes, which will extend beyond this boundary. The
+  icon is the official CT Bus app icon from Google Play, stored as
+  public/icons/constanta.png.

@@ -1,0 +1,26 @@
+id: tirol
+name: VVT Tickets
+description: Tickets for trams, buses and regional trains across Tyrol.
+icon_id: tirol
+operator: Verkehrsverbund Tirol (VVT) / IVB
+country_codes:
+  - AT
+website_url: https://www.vvt.at/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=at.vtg.tickets
+transport_modes:
+  - bus
+  - tram
+  - rail
+tickets_url: https://www.vvt.at/
+marker:
+  coordinates: [11.4041, 47.2692]
+  label: VVT Tickets
+source_url: https://www.vvt.at/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Tyrol, the authority whose
+  zone map sets the fares sold in the app, so the shaded shape follows the zone
+  map rather than a stop-density approximation. The icon is the official VVT
+  Tickets app icon from Google Play, stored as public/icons/tirol.png.

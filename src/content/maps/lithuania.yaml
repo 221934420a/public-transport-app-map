@@ -1,0 +1,30 @@
+id: lithuania
+country_code: LT
+title: Public transport apps
+eyebrow: Lithuania
+page_title: Public Transport App Map | Lithuania
+meta_description: Which public transport apps work where, across Lithuania.
+theme_color: '#fef7ff'
+locale: lt-LT
+map_aria_label: Lithuania public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [24.1, 55.3]
+  zoom: 6.8
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#252753'
+  accent_strong: '#161631'
+  outline: '#252753'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

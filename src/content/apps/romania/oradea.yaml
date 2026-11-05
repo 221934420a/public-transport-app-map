@@ -1,0 +1,25 @@
+id: oradea
+name: OTL Oradea
+description: Tickets for trams and buses in Oradea.
+icon_id: oradea
+operator: OTL – Oradea Transport Local SA
+country_codes:
+  - RO
+website_url: https://www.otl.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ro.otl
+transport_modes:
+  - bus
+  - tram
+tickets_url: https://www.otl.ro/
+marker:
+  coordinates: [21.9286, 47.0465]
+  label: OTL Oradea
+source_url: https://www.otl.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Oradea, the city OTL
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. The icon is the official OTL Oradea app icon from
+  Google Play, stored as public/icons/oradea.png.

@@ -1,0 +1,27 @@
+id: urbana
+name: Urbana
+description: Tickets for buses and the Ljubljana Castle funicular in Ljubljana.
+icon_id: urbana
+operator: LPP d.o.o. (Ljubljanski potniški promet)
+country_codes:
+  - SI
+website_url: https://www.lpp.si/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.margento.urbanaplus
+transport_modes:
+  - bus
+  - funicular
+tickets_url: https://www.lpp.si/
+marker:
+  coordinates: [14.5058, 46.0569]
+  label: Urbana
+source_url: https://www.lpp.si/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Ljubljana, the city LPP
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. Urbana stores value and passes and validates them
+  over Bluetooth against the reader on board; there is no day ticket, since day
+  travel is covered by the Ljubljana Card tourist product. The icon is the
+  official Urbana app icon from Google Play, stored as public/icons/urbana.png.

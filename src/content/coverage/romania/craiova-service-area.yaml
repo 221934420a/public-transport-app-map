@@ -1,0 +1,19 @@
+id: craiova-service-area
+app_id: craiova
+name: Craiova Transport coverage (Craiova)
+geometry_refs:
+  - /geo/romania/craiova-coverage.geojson
+style:
+  fill_color: '#ffb200'
+  fill_opacity: 0.43
+  outline_color: '#9c6d00'
+  outline_width: 2.5
+  accent: '#ffb200'
+  accent_strong: '#845d00'
+boundary_description: >-
+  The mapped service area is the official boundary of Craiova, the city RAT
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation.
+source_url: https://www.rat-craiova.ro/
+checked_at: '2026-11-03'
+status: draft

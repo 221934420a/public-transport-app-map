@@ -1,0 +1,25 @@
+id: zadar
+name: SmartCity Zadar
+description: Tickets for city buses plus the county and island routes in Zadar county.
+icon_id: zadar
+operator: Liburnija d.o.o. / Zadar city
+country_codes:
+  - HR
+website_url: https://www.liburnija-zadar.hr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=co.mediatorium.zadarcityapp
+transport_modes:
+  - bus
+tickets_url: https://www.liburnija-zadar.hr/
+marker:
+  coordinates: [15.2314, 44.1194]
+  label: SmartCity Zadar
+source_url: https://www.liburnija-zadar.hr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Zadarska županija boundary, since
+  Liburnija runs the city network and the county routes including the island
+  services, so the shaded shape follows the county boundary rather than a
+  stop-density approximation. The icon is the official SmartCity Zadar app icon
+  from Google Play, stored as public/icons/zadar.png.

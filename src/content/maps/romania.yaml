@@ -1,0 +1,30 @@
+id: romania
+country_code: RO
+title: Public transport apps
+eyebrow: Romania
+page_title: Public Transport App Map | Romania
+meta_description: Which public transport apps work where, across Romania.
+theme_color: '#fef7ff'
+locale: ro-RO
+map_aria_label: Romania public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [25.0, 45.9]
+  zoom: 6.4
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#3ea94a'
+  accent_strong: '#276b2f'
+  outline: '#3ea94a'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

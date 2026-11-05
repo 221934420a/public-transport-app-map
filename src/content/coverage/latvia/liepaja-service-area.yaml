@@ -1,0 +1,19 @@
+id: liepaja-service-area
+app_id: liepaja
+name: Liepājas pilsēta coverage (Liepāja)
+geometry_refs:
+  - /geo/latvia/liepaja-coverage.geojson
+style:
+  fill_color: '#181617'
+  fill_opacity: 0.43
+  outline_color: '#000000'
+  outline_width: 2.5
+  accent: '#181617'
+  accent_strong: '#000000'
+boundary_description: >-
+  The mapped service area is the official boundary of Liepāja, the city whose
+  fare zone the app sells, so the shaded shape follows the municipal boundary
+  rather than a stop-density approximation.
+source_url: https://www.liepaja.lv/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,20 @@
+id: kavala-service-area
+app_id: kavala
+name: Αστικές Συγκοινωνίες Καβάλας coverage (Kavala)
+geometry_refs:
+  - /geo/greece/kavala-coverage.geojson
+style:
+  fill_color: '#1876c0'
+  fill_opacity: 0.43
+  outline_color: '#0f4773'
+  outline_width: 2.5
+  accent: '#1876c0'
+  accent_strong: '#0d3c62'
+boundary_description: >-
+  The mapped service area is the official Δήμος Καβάλας boundary, the
+  municipality the urban operator serves, so the shaded shape follows the
+  municipal boundary rather than a stop-density approximation. The app runs on
+  the same citybus platform as Patras.
+source_url: https://www.citybus.gr/
+checked_at: '2026-11-03'
+status: draft

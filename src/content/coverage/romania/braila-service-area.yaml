@@ -1,0 +1,19 @@
+id: braila-service-area
+app_id: braila
+name: Braila Transport Public coverage (Brăila)
+geometry_refs:
+  - /geo/romania/braila-coverage.geojson
+style:
+  fill_color: '#0098f9'
+  fill_opacity: 0.43
+  outline_color: '#005c96'
+  outline_width: 2.5
+  accent: '#0098f9'
+  accent_strong: '#004e7f'
+boundary_description: >-
+  The mapped service area is the official boundary of Brăila, the city Braicar
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation.
+source_url: https://www.braicar.ro/
+checked_at: '2026-11-03'
+status: draft

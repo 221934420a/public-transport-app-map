@@ -1,0 +1,24 @@
+id: siauliai
+name: ŠR bilietas
+description: Tickets for buses across Šiauliai.
+icon_id: siauliai
+operator: Šiaulių regionas / Busturas
+country_codes:
+  - LT
+website_url: https://www.busturas.lt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.ridango.siauliai.app
+transport_modes:
+  - bus
+tickets_url: https://www.busturas.lt/
+marker:
+  coordinates: [23.3137, 55.9349]
+  label: ŠR bilietas
+source_url: https://www.busturas.lt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Šiauliai, the municipality
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official ŠR
+  bilietas app icon from Google Play, stored as public/icons/siauliai.png.

@@ -1,0 +1,24 @@
+id: kaunas
+name: Žiogas
+description: Tickets for buses, trolleybuses and the funicular across Kaunas.
+icon_id: kaunas
+operator: UAB Kauno autobusai / Kaunas city
+country_codes:
+  - LT
+website_url: https://www.kaunas.lt/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.kvt.ziogas
+transport_modes:
+  - bus
+tickets_url: https://www.kaunas.lt/
+marker:
+  coordinates: [23.9036, 54.8985]
+  label: Žiogas
+source_url: https://www.kaunas.lt/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Kaunas, the municipality
+  whose zone map sets the fares sold in the app, so the shaded shape follows the
+  zone map rather than a stop-density approximation. The icon is the official
+  Žiogas app icon from Google Play, stored as public/icons/kaunas.png.

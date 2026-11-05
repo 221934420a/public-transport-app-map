@@ -1,0 +1,18 @@
+id: budapestgo-service-area
+app_id: budapestgo
+name: BudapestGO coverage (Budapest)
+geometry_refs:
+  - /geo/hungary/budapestgo-coverage.geojson
+style:
+  fill_color: '#4c0e5f'
+  fill_opacity: 0.43
+  outline_color: '#2f0840'
+  outline_width: 2.5
+  accent: '#4c0e5f'
+  accent_strong: '#280636'
+boundary_description: >-
+  The official boundary of Budapest, the city BKK serves, so the shaded area
+  matches the zone map rather than a stop-density approximation.
+source_url: https://bkk.hu/
+checked_at: '2026-11-03'
+status: draft

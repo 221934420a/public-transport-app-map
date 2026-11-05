@@ -1,0 +1,19 @@
+id: panevezys-service-area
+app_id: panevezys
+name: e.bilietas Panevėžys coverage (Panevėžys)
+geometry_refs:
+  - /geo/lithuania/panevezys-coverage.geojson
+style:
+  fill_color: '#9d231f'
+  fill_opacity: 0.43
+  outline_color: '#621613'
+  outline_width: 2.5
+  accent: '#9d231f'
+  accent_strong: '#521210'
+boundary_description: >-
+  The official boundary of Panevėžys, the municipality whose zone map sets the
+  fares sold in the app, so the shaded area matches the zone map rather than a
+  stop-density approximation.
+source_url: https://www.panevezys.lt/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,19 @@
+id: burgas-service-area
+app_id: burgas
+name: Градски Транспорт Бургас coverage (Burgas)
+geometry_refs:
+  - /geo/bulgaria/burgas-coverage.geojson
+style:
+  fill_color: '#0952be'
+  fill_opacity: 0.43
+  outline_color: '#053172'
+  outline_width: 2.5
+  accent: '#0952be'
+  accent_strong: '#042a62'
+boundary_description: >-
+  The mapped service area is the official Бургас municipal boundary, the area
+  the operator serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. The network is buses only.
+source_url: https://www.burgas.bg/
+checked_at: '2026-11-03'
+status: draft

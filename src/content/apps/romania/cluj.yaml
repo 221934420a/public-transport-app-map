@@ -1,0 +1,26 @@
+id: cluj
+name: Bus CTP Cluj-Napoca
+description: Tickets for trams, trolleybuses and buses in Cluj-Napoca.
+icon_id: cluj
+operator: CTP Cluj-Napoca SA
+country_codes:
+  - RO
+website_url: https://ctpcj.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.mdc.ctpcluj.tickets
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+tickets_url: https://ctpcj.ro/
+marker:
+  coordinates: [23.588, 46.7712]
+  label: Bus CTP Cluj-Napoca
+source_url: https://ctpcj.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official boundary of Cluj-Napoca, the city CTP
+  serves, so the shaded shape follows the municipal boundary rather than a
+  stop-density approximation. The icon is the official Bus CTP Cluj-Napoca app
+  icon from Google Play, stored as public/icons/cluj.png.

@@ -1,0 +1,28 @@
+id: 24pay
+name: 24pay
+description: Tickets for single and day tickets for the local networks it covers in Brașov, Sibiu, Ploiești, Iași, Galați, Constanța and Craiova.
+icon_id: 24pay
+operator: 24pay
+country_codes:
+  - RO
+website_url: https://24pay.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.twentyfourpay
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+tickets_url: https://24pay.ro/
+marker:
+  coordinates: [25.6065, 45.6579]
+  label: 24pay
+source_url: https://24pay.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  24pay is a commercial wallet rather than a city operator, covering the local
+  networks of Brașov, Sibiu, Ploiești, Iași, Galați, Constanța and Craiova, so
+  the mapped area is the union of those official city boundaries rather than a
+  single municipal shape. Tickets sold through it are single, day and monthly
+  fares for each network. The icon is the official 24pay app icon from Google
+  Play, stored as public/icons/24pay.png.

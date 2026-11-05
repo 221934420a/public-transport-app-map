@@ -1,0 +1,28 @@
+id: thessaloniki
+name: TheTA App (OSETH)
+description: Tickets for the metro, buses and suburban rail in Thessaloniki.
+icon_id: thessaloniki
+operator: TheTA S.A. with OASTH and Thessaloniki Metro
+country_codes:
+  - GR
+website_url: https://www.theta.gr/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.amco.city.thessaloniki
+transport_modes:
+  - bus
+  - metro
+  - rail
+tickets_url: https://www.theta.gr/
+marker:
+  coordinates: [22.9444, 40.6401]
+  label: TheTA App (OSETH)
+source_url: https://www.theta.gr/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Δήμος Θεσσαλονίκης boundary, the city
+  the transport authority serves, so the shaded shape follows the municipal
+  boundary rather than a stop-density approximation. Paper tickets were
+  abolished from 1 January 2026 in favour of the ThessTicket electronic ticket
+  bought in the app. The icon is the official TheTA App (OSETH) app icon from
+  Google Play, stored as public/icons/thessaloniki.png.

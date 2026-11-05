@@ -1,0 +1,19 @@
+id: vor-service-area
+app_id: vor
+name: VOR AnachB coverage (Vienna, Lower Austria and Burgenland)
+geometry_refs:
+  - /geo/austria/vor-coverage.geojson
+style:
+  fill_color: '#007ec7'
+  fill_opacity: 0.43
+  outline_color: '#004f7d'
+  outline_width: 2.5
+  accent: '#007ec7'
+  accent_strong: '#00446a'
+boundary_description: >-
+  The official boundary of Vienna, Lower Austria and Burgenland, the authority
+  whose zone map sets the fares sold in the app, so the shaded area matches the
+  zone map rather than a stop-density approximation.
+source_url: https://www.vor.at/
+checked_at: '2026-11-03'
+status: draft

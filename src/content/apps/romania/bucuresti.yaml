@@ -1,0 +1,28 @@
+id: bucuresti
+name: Bilet TB
+description: Tickets for trams, trolleybuses and buses in Bucharest and Ilfov.
+icon_id: bucuresti
+operator: STB SA (Societatea de Transport București)
+country_codes:
+  - RO
+website_url: https://www.stb.ro/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=ro.stbsa.ticketing
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+tickets_url: https://www.stb.ro/
+marker:
+  coordinates: [26.1025, 44.4268]
+  label: Bilet TB
+source_url: https://www.stb.ro/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the union of the official Bucharest and Ilfov
+  county boundaries, the metropolitan area STB serves on the surface, so the
+  shaded shape follows the administrative boundaries rather than a stop-density
+  approximation. The app does not sell metro tickets, which are handled
+  separately by Metrorex. The icon is the official Bilet TB app icon from Google
+  Play, stored as public/icons/bucuresti.png.

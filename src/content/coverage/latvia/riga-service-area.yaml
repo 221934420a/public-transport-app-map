@@ -1,0 +1,19 @@
+id: riga-service-area
+app_id: riga
+name: Rīgas satiksme coverage (Riga)
+geometry_refs:
+  - /geo/latvia/riga-coverage.geojson
+style:
+  fill_color: '#000fa0'
+  fill_opacity: 0.43
+  outline_color: '#000a68'
+  outline_width: 2.5
+  accent: '#000fa0'
+  accent_strong: '#000858'
+boundary_description: >-
+  The mapped service area is the official boundary of Riga, the city whose fare
+  zone the app sells, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation.
+source_url: https://www.rigassatiksme.lv/
+checked_at: '2026-11-03'
+status: draft

@@ -1,0 +1,30 @@
+id: slovakia
+country_code: SK
+title: Public transport apps
+eyebrow: Slovakia
+page_title: Public Transport App Map | Slovakia
+meta_description: Which public transport apps work where, across Slovakia.
+theme_color: '#fef7ff'
+locale: sk-SK
+map_aria_label: Slovakia public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [19.2, 48.7]
+  zoom: 6.6
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#00a5e0'
+  accent_strong: '#006285'
+  outline: '#00a5e0'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}

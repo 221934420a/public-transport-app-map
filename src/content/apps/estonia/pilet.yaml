@@ -1,0 +1,32 @@
+id: pilet
+name: Pilet.ee
+description: Tickets for Tallinn city tickets and county bus tickets across Estonia across Estonia.
+icon_id: pilet
+operator: Ridango AS for Tallinn and the county transport centres
+country_codes:
+  - EE
+website_url: https://pilet.ee/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.pilet.ee.live
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+  - rail
+tickets_url: https://pilet.ee/
+marker:
+  coordinates: [24.7536, 59.437]
+  label: Pilet.ee
+source_url: https://pilet.ee/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  Pilet.ee is the joint Ridango ticketing platform run for Tallinn and the
+  county public-transport centres, selling tickets for Tallinn, Harjumaa, Tartu,
+  Pärnu, Narva, Kohtla-Järve, Rakvere, Läänemaa, Lääne-Virumaa and ten counties
+  of county-line buses, so the mapped area is the national boundary of Estonia.
+  This record is the whole system; the same system also has per-city entry
+  points (tallinn.pilet.ee, tartu.pilet.ee, parnu.pilet.ee, iil.pilet.ee) with
+  narrower ticket scopes, which are listed separately. The icon is the official
+  Pilet.ee app icon from Google Play, stored as public/icons/pilet.png, and is
+  shared by those entry points because it is one app.

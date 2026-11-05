@@ -1,0 +1,25 @@
+id: klappid
+name: Klappið
+description: Tickets for buses across the Greater Reykjavík capital area.
+icon_id: klappid
+operator: Strætó bs (Greater Reykjavík)
+country_codes:
+  - IS
+website_url: https://www.straeto.is/
+app_store_urls:
+  - https://apps.apple.com/is/app/klappi%C3%B0/id1522675092
+transport_modes:
+  - bus
+tickets_url: https://www.straeto.is/
+marker:
+  coordinates: [-21.9426, 64.1466]
+  label: Klappið
+source_url: https://www.straeto.is/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Greater Reykjavík capital-region
+  boundary (Höfuðborgarsvæðið), the area served by Strætó routes 1-36, so the
+  shaded shape matches the zone the app sells tickets for. Klappið is published
+  by Strætó bs but is only distributed through the App Store, so its icon comes
+  from the official App Store listing and is stored as public/icons/klappid.png.

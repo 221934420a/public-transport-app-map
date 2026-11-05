@@ -1,0 +1,26 @@
+id: plovdiv
+name: Градски Транспорт Пловдив
+description: Tickets for trams, trolleybuses and buses in Plovdiv.
+icon_id: plovdiv
+operator: Plovdiv municipality (operator Градски транспорт Пловдив)
+country_codes:
+  - BG
+website_url: https://www.plovdiv.bg/
+app_store_urls:
+  - https://play.google.com/store/apps/details?id=com.modeshift.plovdiv
+transport_modes:
+  - bus
+  - tram
+  - trolleybus
+tickets_url: https://www.plovdiv.bg/
+marker:
+  coordinates: [24.7453, 42.1354]
+  label: Градски Транспорт Пловдив
+source_url: https://www.plovdiv.bg/
+checked_at: '2026-11-03'
+status: draft
+notes: >-
+  The mapped service area is the official Пловдив municipal boundary, the area
+  the operator serves, so the shaded shape follows the municipal boundary rather
+  than a stop-density approximation. The icon is the official Градски Транспорт
+  Пловдив app icon from Google Play, stored as public/icons/plovdiv.png.

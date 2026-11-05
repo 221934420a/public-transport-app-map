@@ -1,0 +1,30 @@
+id: iceland
+country_code: IS
+title: Public transport apps
+eyebrow: Iceland
+page_title: Public Transport App Map | Iceland
+meta_description: Which public transport apps work where, across Iceland.
+theme_color: '#fef7ff'
+locale: is-IS
+map_aria_label: Iceland public transport map
+
+view:
+  style_url: https://tiles.openfreemap.org/styles/positron
+  center: [-21.9, 64.15]
+  zoom: 9
+  max_pitch: 0
+  drag_rotate: false
+
+# Default theme for the map chrome. Each app's service area switches the accent
+# to its own colours when selected.
+theme:
+  accent: '#f57921'
+  accent_strong: '#99490f'
+  outline: '#f57921'
+  marker_border: '#1d1b20'
+
+overview:
+  fill_opacity: 0.43
+  outline_width: 2.5
+
+copy: {}
