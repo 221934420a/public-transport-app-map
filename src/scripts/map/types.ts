@@ -34,6 +34,8 @@ export type App = {
   tickets_url?: string;
   accent: string;
   accent_strong: string;
+  /** Display name of the app's country, filled from the country maps' eyebrow. */
+  country?: string;
   icon?: AppIcon;
   marker?: { coordinates: Coordinate; label?: string };
 };
@@ -75,7 +77,7 @@ export type ShellCopy = {
 export type MapShell = {
   id: string;
   title: string;
-  eyebrow: string;
+  eyebrow?: string;
   locale: string;
   view: {
     style_url: string;

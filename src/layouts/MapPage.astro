@@ -50,6 +50,19 @@ const pageTitle =
   shell.data.page_title ?? `${shell.data.title} | Public Transport Ticket Map`;
 const metaDescription =
   shell.data.meta_description ?? 'Which public transport apps work where, across the UK.';
+
+/**
+ * Country names for the app panel's eyebrow. The index map has no country of its
+ * own, so it names the selected app's country from the same `eyebrow` each
+ * country map uses.
+ */
+const countryNames = Object.fromEntries(
+  mapEntries.flatMap((entry) =>
+    entry.data.country_code && entry.data.eyebrow
+      ? [[entry.data.country_code, entry.data.eyebrow] as const]
+      : [],
+  ),
+);
 ---
 
 <!doctype html>
@@ -78,6 +91,7 @@ const metaDescription =
       icons={icons}
       coverages={countryCoverages}
       tickets={countryTickets}
+      countryNames={countryNames}
     />
   </body>
 </html>

@@ -2,15 +2,14 @@ id: all-countries
 # No `country_code`: the index map draws every app in every mapped country, so a
 # new country shows up on the home page as soon as its records exist.
 title: Public transport apps
-eyebrow: All mapped regions
-page_title: Public Transport App Map
+page_title: FareMap Europe
 meta_description: Which public transport apps work where, across every mapped country and region.
 theme_color: '#fef7ff'
 # One locale formats every ticket on this map; each ticket's own `currency` still
 # decides the symbol, so mixing GBP and DKK fares stays readable.
 locale: en-GB
 featured: true
-map_aria_label: Public transport apps map
+map_aria_label: FareMap Europe
 
 view:
   style_url: https://tiles.openfreemap.org/styles/positron

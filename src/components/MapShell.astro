@@ -8,9 +8,11 @@ interface Props {
   icons: CollectionEntry<'icons'>[];
   coverages: CollectionEntry<'coverage'>[];
   tickets: CollectionEntry<'tickets'>[];
+  /** Country code to display name, used for the panel eyebrow on country-less maps. */
+  countryNames: Record<string, string>;
 }
 
-const { map: shell, apps, icons, coverages, tickets } = Astro.props;
+const { map: shell, apps, icons, coverages, tickets, countryNames } = Astro.props;
 const copy = shell.data.copy;
 
 const panelId = `info-panel-${shell.data.id}`;
@@ -48,12 +50,19 @@ const markerApps = apps
     };
   });
 
+const countryLabel = (codes: string[]) =>
+  codes
+    .map((code) => countryNames[code])
+    .filter(Boolean)
+    .join(' · ');
+
 const data = JSON.stringify({
   shell: shell.data,
   apps: apps.map((entry) => {
     const icon = iconFor(entry.data.icon_id);
     return {
       ...entry.data,
+      country: countryLabel(entry.data.country_codes) || undefined,
       accent: accentFor(entry.data.id, false, shell.data.theme.accent),
       accent_strong: accentFor(entry.data.id, true, shell.data.theme.outline),
       icon: icon
@@ -125,7 +134,11 @@ const themeStyle = [
       </md-icon-button>
       <span class="panel-app-icon" data-panel-icon aria-hidden="true" hidden></span>
       <div class="panel-heading">
-        <p class="eyebrow md-typescale-label-medium text-muted" data-panel-eyebrow>
+        <p
+          class="eyebrow md-typescale-label-medium text-muted"
+          data-panel-eyebrow
+          hidden={!shell.data.eyebrow}
+        >
           {shell.data.eyebrow}
         </p>
         <h1 id={panelTitleId} class="md-typescale-title-large" data-panel-title>

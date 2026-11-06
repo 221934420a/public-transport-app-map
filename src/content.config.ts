@@ -133,7 +133,8 @@ const maps = defineCollection({
     /** ISO 3166-1 alpha-2 country this map covers; omit it to draw every country. */
     country_code: z.string().optional(),
     title: z.string(),
-    eyebrow: z.string().default('Public transport app'),
+    /** Optional label above the panel title; omit it for a bare heading. */
+    eyebrow: z.string().optional(),
     page_title: z.string().optional(),
     meta_description: z.string().optional(),
     theme_color: z.string().default('#f7f2fa'),

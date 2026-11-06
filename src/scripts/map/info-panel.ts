@@ -53,6 +53,12 @@ export const createInfoPanel = (options: {
     }
   };
 
+  const setEyebrow = (text?: string) => {
+    if (!panelEyebrow) return;
+    panelEyebrow.textContent = text ?? '';
+    panelEyebrow.hidden = !text;
+  };
+
   const priceLabel = (ticket: Ticket) => {
     if (ticket.price_options?.length) {
       const minimum = Math.min(...ticket.price_options.map((option) => option.amount));
@@ -104,7 +110,7 @@ export const createInfoPanel = (options: {
     setAccent(shell.theme.accent, shell.theme.accent_strong);
     setPanelIcon(undefined);
     panelTitle.textContent = shell.title;
-    if (panelEyebrow) panelEyebrow.textContent = shell.eyebrow;
+    setEyebrow(shell.eyebrow);
     panelBack.hidden = true;
     panelContent.replaceChildren(
       el('p', 'body-copy md-typescale-body-medium text-muted', copy.area_hint),
@@ -119,7 +125,7 @@ export const createInfoPanel = (options: {
     setAccent(app.accent, app.accent_strong);
     setPanelIcon(app.icon);
     panelTitle.textContent = app.name;
-    if (panelEyebrow) panelEyebrow.textContent = shell.eyebrow;
+    setEyebrow(app.country ?? shell.eyebrow);
     panelBack.hidden = true;
 
     const parts: Node[] = [];
