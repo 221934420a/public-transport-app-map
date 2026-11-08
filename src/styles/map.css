@@ -46,7 +46,6 @@ body {
 
 /* Custom elements stay quiet until their definitions are registered. */
 :where(
-  md-fab,
   md-icon,
   md-icon-button,
   md-list,
@@ -139,41 +138,31 @@ body {
   color: var(--md-sys-color-primary);
 }
 
-/* Extended FAB used as the app marker. */
-.map-marker {
-  --md-fab-container-color: var(--md-sys-color-surface-container-high);
-  --md-fab-container-shape: var(--md-sys-shape-corner-lg);
-  --md-fab-container-elevation: 3;
-  --md-fab-hover-container-elevation: 4;
-  --md-fab-pressed-container-elevation: 2;
-  --md-fab-icon-size: 2.5rem;
-  --md-fab-label-text-color: var(--md-sys-color-on-surface);
-  --md-fab-hover-label-text-color: var(--md-sys-color-on-surface);
-  --md-fab-focus-label-text-color: var(--md-sys-color-on-surface);
-  --md-fab-pressed-label-text-color: var(--md-sys-color-on-surface);
-  --md-fab-hover-state-layer-color: var(--md-sys-color-on-surface);
-  --md-fab-pressed-state-layer-color: var(--md-sys-color-on-surface);
+/* App markers are drawn by the map itself (see src/scripts/map/markers.ts), so
+   these links are the keyboard and screen-reader equivalent of the markers. */
+.marker-list {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
-.map-app-icon,
 .panel-app-icon {
   display: grid;
   flex: 0 0 auto;
   place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: var(--md-sys-shape-corner-md);
   background: var(--map-accent);
 }
 
-.map-app-icon {
-  border-radius: var(--md-sys-shape-corner-sm);
-}
-
-.panel-app-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.map-app-icon svg,
 .panel-app-icon svg {
   width: 2rem;
   height: 2rem;

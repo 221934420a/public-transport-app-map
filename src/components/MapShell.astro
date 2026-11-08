@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import AppIcon from './AppIcon.astro';
 
 interface Props {
   map: CollectionEntry<'maps'>;
@@ -8,7 +7,7 @@ interface Props {
   icons: CollectionEntry<'icons'>[];
   coverages: CollectionEntry<'coverage'>[];
   tickets: CollectionEntry<'tickets'>[];
-  /** Country code to display name, used for the panel eyebrow on country-less maps. */
+  /** Country code to display name, for the panel eyebrow. */
   countryNames: Record<string, string>;
 }
 
@@ -36,19 +35,12 @@ const accentFor = (appId: string, strong: boolean, fallback: string) => {
 
 const markerApps = apps
   .filter((app) => app.data.marker)
-  .map((app) => {
-    const appName = app.data.name;
-    return {
-      app,
-      icon: iconFor(app.data.icon_id),
-      marker: app.data.marker!,
-      accent: accentFor(app.data.id, false, shell.data.theme.accent),
-      label: app.data.marker!.label ?? appName,
-      actionLabel: copy.marker_action_label.replace(/\{(\w+)\}/g, (match, key: string) =>
-        key === 'app' ? appName : match,
-      ),
-    };
-  });
+  .map((app) => ({
+    appId: app.data.id,
+    actionLabel: copy.marker_action_label.replace(/\{(\w+)\}/g, (match, key: string) =>
+      key === 'app' ? app.data.name : match,
+    ),
+  }));
 
 const countryLabel = (codes: string[]) =>
   codes
@@ -90,23 +82,17 @@ const themeStyle = [
 >
   <div class="map-canvas" data-map-canvas></div>
 
-  {
-    markerApps.map(({ app, icon, marker, accent, label, actionLabel }) => (
-      <md-fab
-        class="map-marker"
-        data-map-marker
-        data-app-id={app.data.id}
-        variant="surface"
-        label={label}
-        aria-label={actionLabel}
-        style={`--map-accent: ${accent};`}
-      >
-        <span slot="icon" class="map-app-icon" aria-hidden="true">
-          {icon && <AppIcon icon={icon} />}
-        </span>
-      </md-fab>
-    ))
-  }
+  <nav class="marker-list" aria-label={shell.data.map_aria_label}>
+    <ul>
+      {markerApps.map(({ appId, actionLabel }) => (
+        <li>
+          <button type="button" data-marker-link data-app-id={appId}>
+            {actionLabel}
+          </button>
+        </li>
+      ))}
+    </ul>
+  </nav>
 
   <md-elevated-card class="map-status" role="status" aria-live="polite" data-map-status>
     {copy.loading}

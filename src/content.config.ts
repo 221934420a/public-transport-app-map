@@ -45,8 +45,9 @@ const apps = defineCollection({
 });
 
 /**
- * One icon per file. `svg` is the trusted inner markup of the SVG; keep the
- * root <svg> element in AppIcon so viewBox and accessibility stay consistent.
+ * One icon per file. `svg` is the trusted inner markup of the SVG; the root
+ * <svg> element is added by the panel and by the marker build so viewBox and
+ * accessibility stay consistent.
  */
 const icons = defineCollection({
   loader: recordLoader('icons'),

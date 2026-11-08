@@ -1,5 +1,14 @@
-export const MARKER_ICON_ONLY_ZOOM = 7.5;
-export const MARKER_HIDE_ZOOM = 6;
+/**
+ * App markers are drawn by the map as one symbol layer: the marker images hold
+ * the chip, the app's accent tile and its artwork, so no element per app is
+ * needed.
+ */
+export const MARKER_SOURCE_ID = 'app-markers';
+export const MARKER_LAYER_ID = 'app-markers-layer';
+export const MARKER_MIN_ZOOM = 6;
+export const MARKER_LABEL_ZOOM = 7.5;
+/** Marker images fetched at the same time. */
+export const MARKER_IMAGE_CONCURRENCY = 8;
 /** Markers that share a position are stacked vertically so none is hidden. */
 export const MARKER_STACK_OFFSET = 60;
 

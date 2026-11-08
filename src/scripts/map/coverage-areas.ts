@@ -6,6 +6,7 @@ import {
   AREA_OUTLINE_LAYER_ID,
   AREA_SOURCE_ID,
   GEOMETRY_CONCURRENCY,
+  MARKER_LAYER_ID,
 } from './constants';
 import { fetchGeometry } from './geometry';
 import type { Coverage, MapShell } from './types';
@@ -71,6 +72,17 @@ export const createCoverageAreas = (options: {
     });
 
     map.on('click', AREA_FILL_LAYER_ID, (event) => {
+      // An app marker sits on top of the areas and wins the click. Stacked
+      // markers have a layer each, named after the first one.
+      const markerLayers = (map.getStyle().layers ?? [])
+        .map((layer) => layer.id)
+        .filter((id) => id === MARKER_LAYER_ID || id.startsWith(`${MARKER_LAYER_ID}-`));
+      if (
+        markerLayers.length &&
+        map.queryRenderedFeatures(event.point, { layers: markerLayers }).length
+      ) {
+        return;
+      }
       const features = event.features ?? [];
       if (!features.length) return;
       // Areas are drawn in sort_order, so the last drawn one is on top and
@@ -94,7 +106,6 @@ export const createCoverageAreas = (options: {
   };
 
   const load = async (coverages: Coverage[]) => {
-    addLayers();
     const source = map.getSource(AREA_SOURCE_ID) as GeoJSONSource;
     const loaded: any[] = [];
 
@@ -156,6 +167,7 @@ export const createCoverageAreas = (options: {
   };
 
   return {
+    addLayers,
     load,
     boundsFor: (coverageId: string) => boundsById.get(coverageId),
     focusOverview: (withPanel: boolean) => viewport.focusBounds(withPanel, areaBounds),

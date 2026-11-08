@@ -1,0 +1,10 @@
+{
+  "height": 56,
+  "radius": 16,
+  "margin": 4,
+  "tile": 40,
+  "tileRadius": 8,
+  "artwork": 32,
+  "shadowBlur": 3.3,
+  "shadowOffsetY": 2
+}

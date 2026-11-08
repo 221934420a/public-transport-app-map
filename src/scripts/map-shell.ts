@@ -1,6 +1,5 @@
 import '@material/web/button/text-button.js';
 import '@material/web/divider/divider.js';
-import '@material/web/fab/fab.js';
 import '@material/web/icon/icon.js';
 import '@material/web/iconbutton/icon-button.js';
 import '@material/web/labs/card/elevated-card.js';
@@ -150,9 +149,12 @@ const initialiseMapShell = (root: HTMLElement) => {
         (coverage) => !detailCoverageIds.has(coverage.id),
       );
 
+      // The areas go in first so the marker layer ends up above them.
+      coverageAreas.addLayers();
+      markers.initialise();
+
       await coverageAreas.load(baseCoverages);
 
-      markers.update();
       coverageAreas.focusOverview(infoPanel.isOpen());
     } catch {
       window.clearTimeout(loadingTimeout);
