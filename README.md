@@ -5,6 +5,8 @@ each app has one or more service areas whose boundaries are drawn from official
 GeoJSON and may extend beyond administrative boundaries. Selecting a coloured
 area or its marker opens the panel; ticket prices link to their official source.
 
+Demo: <https://public-transport-app-map.221934420a.workers.dev/>
+
 ## Run locally
 
 Use Node.js 22.23.4 or later, then run:
